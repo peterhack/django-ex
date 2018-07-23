@@ -1,226 +1,246 @@
-# Openshift quickstart: Django
+# Dynatrace CLI (Command Line Interface)
+This Python based CLI makes it easy to access the Dynatrace API (both SaaS and Managed). Besides accessing the underlying API the CLI also implements some DevOps specific use cases that allows you to automate Dynatrace into your DevOps Delivery Pipeline.
 
-This is a [Django](http://www.djangoproject.com) project that you can use as the starting point to develop your own and deploy it on an [OpenShift](https://github.com/openshift/origin) cluster.
+The CLI also caches queried data (Smartscape and Timeseries) on the local disk. This allows you to execute multiple queries against Smartscape without the roundtrip to the Dynatrace API. It also allows you to work "offline". The GitHub repo includes a cached version of our Dynatrace Demo environment API output. This allows you to explore and test most of the supported use cases without having access to a Dynatrace Tenant.
 
-The steps in this document assume that you have access to an OpenShift deployment that you can deploy applications on.
+Here is a schematic overview of how the CLI works:
+![](./images/dtclioverview.png)
 
-## What has been done for you
-
-This is a minimal Django 1.11 project. It was created with these steps:
-
-1. Create a virtualenv
-2. Manually install Django and other dependencies
-3. `pip freeze > requirements.txt`
-4. `django-admin startproject project .`
-3. Update `project/settings.py` to configure `SECRET_KEY`, `DATABASE` and `STATIC_ROOT` entries
-4. `./manage.py startapp welcome`, to create the welcome page's app
-
-From this initial state you can:
-* create new Django apps
-* remove the `welcome` app
-* rename the Django project
-* update settings to suit your needs
-* install more Python libraries and add them to the `requirements.txt` file
-
-## Special files in this repository
-
-Apart from the regular files created by Django (`project/*`, `welcome/*`, `manage.py`), this repository contains:
-
+And here is a sample HTML report that can be generated with the DQL (Dynatrace Query Language) report option:
 ```
-openshift/         - OpenShift-specific files
-├── scripts        - helper scripts
-└── templates      - application templates
-
-requirements.txt   - list of dependencies
+> py dtcli.py dqlr host tags/AWS:Name=et-demo.* host.cpu.system[max%hour],host.cpu.system[avg%hour]
+Generated report for host tags/AWS:Name=et-demo.* host.cpu.system[max%hour],host.cpu.system[avg%hour] in: dqlreport.html
 ```
+![](./images/sampledqlreport.png)
 
-## Warnings
+## Supported Use Cases:
+* Query Smartscape entities (host, process group, service, app) by any property, e.G: Display Name, Technology Type, Tag, ...
+* Query timeseries data for one or multiple entities and metric types -> using DQL (Dynatrace Query Language)
+* Generate HTML Reports of timeseries data based on DQL Query
+* Push Custom Events (Deployments, Configuration Changes, Test Events, ...) to monitored entities
+* Define Custom Tags for entities
+* Monitoring as Code: Enforce monspec.json in your Continuous Delivery Pipeline
+* (TBD) Access Dynatrace problem details and add comments
+* (TBD) Push Custom Metrics
 
-Please be sure to read the following warnings and considerations before running this code on your local workstation, shared systems, or production environments.
+## Requirements:
+* Python 3 Runtime: [Download](https://www.python.org/downloads/)
+* Install Requests Package: pip install requests
+* Dynatrace Tenant: [Get your Saas Trial Tenant](http://bit.ly/dtsaastrial)
 
-### Database configuration
-
-The sample application code and templates in this repository contain database connection settings and credentials that rely on being able to use sqlite.
-
-### Automatic test execution
-
-The sample application code and templates in this repository contain scripts that automatically execute tests via the postCommit hook.  These tests assume that they are being executed against a local test sqlite database. If alternate database credentials are supplied to the build, the tests could make undesireable changes to that database.
-
-## Local development
-
-To run this project in your development machine, follow these steps:
-
-1. (optional) Create and activate a [virtualenv](https://virtualenv.pypa.io/) (you may want to use [virtualenvwrapper](http://virtualenvwrapper.readthedocs.org/)).
-
-2. Ensure that the executable `pg_config` is available on your machine. You can check this using `which pg_config`. If not, install the dependency with one of the following.
-  - macOS: `brew install postgresql` using [Homebrew](https://brew.sh/)
-  - Ubuntu: `sudo apt-get install libpq-dev`
-  - [Others](https://stackoverflow.com/a/12037133/8122577)
-
-3. Fork this repo and clone your fork:
-
-    `git clone https://github.com/openshift/django-ex.git`
-
-4. Install dependencies:
-
-    `pip install -r requirements.txt`
-
-5. Create a development database:
-
-    `./manage.py migrate`
-
-6. If everything is alright, you should be able to start the Django development server:
-
-    `./manage.py runserver`
-
-7. Open your browser and go to http://127.0.0.1:8000, you will be greeted with a welcome page.
-
-
-## Deploying to OpenShift
-
-To follow the next steps, you need to be logged in to an OpenShift cluster and have an OpenShift project where you can work on.
-
-
-### Using an application template
-
-The directory `openshift/templates/` contains OpenShift application templates that you can add to your OpenShift project with:
-
-    oc create -f openshift/templates/<TEMPLATE_NAME>.json
-
-The template `django.json` contains just a minimal set of components to get your Django application into OpenShift.
-
-The template `django-postgresql.json` contains all of the components from `django.json`, plus a PostgreSQL database service and an Image Stream for the Python base image. For simplicity, the PostgreSQL database in this template uses ephemeral storage and, therefore, is not production ready.
-
-After adding your templates, you can go to your OpenShift web console, browse to your project and click the create button. Create a new app from one of the templates that you have just added.
-
-Adjust the parameter values to suit your configuration. Most times you can just accept the default values, however you will probably want to set the `GIT_REPOSITORY` parameter to point to your fork and the `DATABASE_*` parameters to match your database configuration.
-
-Alternatively, you can use the command line to create your new app, assuming your OpenShift deployment has the default set of ImageStreams defined.  Instructions for installing the default ImageStreams are available [here](https://docs.openshift.org/latest/install_config/imagestreams_templates.html).  If you are defining the set of ImageStreams now, remember to pass in the proper cluster-admin credentials and to create the ImageStreams in the 'openshift' namespace:
-
-    oc new-app openshift/templates/django.json -p SOURCE_REPOSITORY_URL=<your repository location>
-
-Your application will be built and deployed automatically. If that doesn't happen, you can debug your build:
-
-    oc get builds
-    # take build name from the command above
-    oc logs build/<build-name>
-
-And you can see information about your deployment too:
-
-    oc describe dc/django-example
-
-In the web console, the overview tab shows you a service, by default called "django-example", that encapsulates all pods running your Django application. You can access your application by browsing to the service's IP address and port.  You can determine these by running
-
-    oc get svc
-
-
-### Without an application template
-
-Templates give you full control of each component of your application.
-Sometimes your application is simple enough and you don't want to bother with templates. In that case, you can let OpenShift inspect your source code and create the required components automatically for you:
-
-```bash
-$ oc new-app centos/python-35-centos7~https://github.com/openshift/django-ex
-imageStreams/python-35-centos7
-imageStreams/django-ex
-buildConfigs/django-ex
-deploymentConfigs/django-ex
-services/django-ex
-A build was created - you can run `oc start-build django-ex` to start it.
-Service "django-ex" created at 172.30.16.213 with port mappings 8080.
+# Trying it yourself
+The easiest to get started is simply checking out this Git repo and install Python. By default the CLI will access cached data in the smpljson directory. Validate that the CLI works for you by executing the following sample
+```
+> py dtcli.py ent app .*easyTravel.*
+['MOBILE_APPLICATION-752C288D59734C79']
 ```
 
-You can access your application by browsing to the service's IP address and port.
+*Using it on Linux*: I heard that instead of py or python you may have to use pyhton3 to execute the script successfully. that would then be
+```
+> python3 dtcli.py ent app .*easyTravel.*
+['MOBILE_APPLICATION-752C288D59734C79']
+```
 
+Alright - now we are ready. Here are more examples and a brief overview of the CLIs capabilities
 
-## Logs
+## Examples
+The CLI assumes the following commands
+py dtcli.py \<command\> \<options\>
 
-By default your Django application is served with gunicorn and configured to output its access log to stderr.
-You can look at the combined stdout and stderr of a given pod with this command:
+command: 
+* config: configure dynatrace tenant, token and cache strategy
+* ent: query entities: app(lication), srv (services, pg (process groups), host
+* ts: list availabbly metric types and query timeseries data
+* prob: access problem information
+* evt: push and access custom events, e.g: deployments
+* dql: Dynatrace Query Language: a more convenient way to query timeseries data for certain entities ina  single command line
 
-    oc get pods         # list all pods in your project
-    oc logs <pod-name>
+option: that really depends on the command. Best is to ask for help to get more details:
 
-This can be useful to observe the correct functioning of your application.
+```
+> py dtcli.py config help
+> py dtcli.py ent help
+> py dtcli.py ts help
+> py dtcli.py dql help
+```
 
+## Examples: Configuration
+Please have a look at the first two configuration examples where I show how to configure a SaaS and a Managed URL. Both URLs are slightly different.
 
-## Special environment variables
+```
+> py dtcli.py config apitoken MYTOKENFORMYTENANT tenanthost mytenant.live.dynatrace.com
+Current configuration stored in dtconfig.json
 
-### APP_CONFIG
+> py dtcli.py config apitoken MYTOKENFORMYTENANT tenanthost mytenant.dynatrace-managed.com/e/abcdef-1111-2222-3333-5cdad722e1b8
+Current configuration stored in dtconfig.json
 
-You can fine tune the gunicorn configuration through the environment variable `APP_CONFIG` that, when set, should point to a config file as documented [here](http://docs.gunicorn.org/en/latest/settings.html).
+> py dtcli.py config cacheupdate 5
+Current configuration stored in dtconfig.json
 
-### DJANGO_SECRET_KEY
+> py dtcli.py config revert
+Reverting back to local cached demo environment. Remember: only read-only operations work
+Current configuration stored in dtconfig.json
 
-When using one of the templates provided in this repository, this environment variable has its value automatically generated. For security purposes, make sure to set this to a random string as documented [here](https://docs.djangoproject.com/en/1.8/ref/settings/#std:setting-SECRET_KEY).
+> py dtcli.py config tenanthost smpljson cacheupdate -1
+Current configuration stored in dtconfig.json
+FYI - This is the same as revert: Always using cache from cache directory smpljson
+```
 
+## Examples: Query Entities
+```
+> py dtcli.py ent app .*easyTravel.*
+['MOBILE_APPLICATION-752C288D59734C79']
 
-## One-off command execution
+> py dtcli.py ent srv JourneyService
+['SERVICE-CDEB60C48DE58E80', 'SERVICE-97EA6CCFEC367EC5', 'SERVICE-A9E9962F2DE6F4BC']
 
-At times you might want to manually execute some command in the context of a running application in OpenShift.
-You can drop into a Python shell for debugging, create a new user for the Django Admin interface, or perform any other task.
+> py dtcli.py ent host tags/AWS:Category?value=DEMOABILITY
+['HOST-F5D85B7DCDD8A93C', 'HOST-54AA0D8B5401A1C2', 'HOST-A02BF7E1B9ADA36D', 'HOST-7453A7E317FCF4AF', 'HOST-76FAA6DC0347DA12', 'HOST-6B659DFBAC76F491', 'HOST-7344649A8D974E74', 'HOST-EA50C80CC9354652', 'HOS
+T-DE6F9EC80D4D7C58', 'HOST-0788564003D72AEF', 'HOST-1E64E15558B9486B', 'HOST-E662F28EFFC7D77D']
 
-You can do all that by using regular CLI commands from OpenShift.
-To make it a little more convenient, you can use the script `openshift/scripts/run-in-container.sh` that wraps some calls to `oc`.
-In the future, the `oc` CLI tool might incorporate changes
-that make this script obsolete.
+> py dtcli.py ent host tags/AWS:Name=.* value
+['et-demo-1-win1', 'et-demo-1-win2', 'et-demo-1-lnx6', 'et-demo-1-lnx7', 'et-demo-1-lnx2', 'et-demo-1-lnx3', 'et-demo-1-lnx4', 'et-demo-1-lnx5', 'et-demo-1-win3', 'et-demo-1-lnx1', 'et-demo-1-win4', 'et-de
+mo-1-lnx8']
 
-Here is how you would run a command in a pod specified by label:
+> py dtcli.py ent srv serviceTechnologyTypes=ASP.NET discoveredName
+['dotNetBackend_easyTravel_x64:9010', 'dotNetFrontend_easyTravel_x64:9000', 'eT-demo1-weather-express', 'eT-demo1-weather-service-restify']
 
-1. Inspect the output of the command below to find the name of a pod that matches a given label:
+> py dtcli.py ent app .\*easyTravel.\* displayName
+['easyTravel Demo']
 
-        oc get pods -l <your-label-selector>
+> py dtcli.py ent app .\*easyTravel.\* entityId
+['MOBILE_APPLICATION-752C288D59734C79']
+```
 
-2. Open a shell in the pod of your choice. Because of how the images produced
-  with CentOS and RHEL work currently, we need to wrap commands with `bash` to
-  enable any Software Collections that may be used (done automatically inside
-  every bash shell).
+## Examples: Query Timeseries
+```
+> py dtcli.py ts list .*response.*
+['ruxit.jmx.appserver.jetty:responsesBytesTotal', 'com.dynatrace.builtin:servicemethod.requestspermin', 'com.dynatrace.builtin:servicemethod.responsetime']
 
-        oc exec -p <pod-name> -it -- bash
+> py dtcli.py ts list .*response.* displayName
+['responsesBytesTotal', 'Method response time', 'Method response time']
 
-3. Finally, execute any command that you need and exit the shell.
+> py dtcli.py ts list dimensions=APPLICATION
+['com.dynatrace.builtin:app.errorcount', 'com.dynatrace.builtin:app.jserrorsduringuseractions', 'com.dynatrace.builtin:app.jserrorswithoutuseractions', 'com.dynatrace.builtin:app.useractionduration', 'com.
+dynatrace.builtin:app.useractionsperminute', 'com.dynatrace.builtin:appmethod.errorcount', 'com.dynatrace.builtin:appmethod.useractionduration', 'com.dynatrace.builtin:appmethod.useractionsperminute']
 
-Related GitHub issues:
-1. https://github.com/GoogleCloudPlatform/kubernetes/issues/8876
-2. https://github.com/openshift/origin/issues/2001
+> py dtcli.py ts describe com.dynatrace.builtin:appmethod.useractionsperminute
+{'displayName': 'com.dynatrace.builtin:appmethod.useractionsperminute', 'types': [], 'unit': 'count/min', 'timeseriesId': 'com.dynatrace.builtin:appmethod.useractionsperminute', 'aggregationTypes': ['COUNT
+'], 'filter': 'BUILTIN', 'dimensions': ['APPLICATION_METHOD']}
 
+> py dtcli.py ts query com.dynatrace.builtin:appmethod.useractionsperminute[count%hour]
+{'APPLICATION_METHOD-0A1EF133D2225DE3': {'unit': 'count/min', 'dataPoints': [[1501779420000, 9.0], [1501779480000, 5.0], [1501779540000, 4.0], [1501779600000, 5.0], [1501779660000, 8.0], [1501779720000, 4.
+0], [1501779780000, 3.0], [1501779840000, 5.0], [1501779900000, 4.0], [1501779960000, 7.0], .........
 
-The wrapper script combines the steps above into one. You can use it like this:
+> py dtcli.py ts query com.dynatrace.builtin:app.useractionduration[avg%hour] APPLICATION-F5E7AEA0AB971DB1
+{'APPLICATION-F5E7AEA0AB971DB1': {'timeseriesId': 'com.dynatrace.builtin:app.useractionduration', 'dataPoints': [[1501779960000, 4474862.904109589], [1501780020000, 6921639.344262295], [1501780080000, 4273
+398.5], [1501780140000, 5725744.966442953], [1501780200000, 4575715.764705882], [1501780260000, 6323631.719298245], [1501780320000, 4294378.218487395], [1501780380000, .......
 
-    ./run-in-container.sh ./manage.py migrate          # manually migrate the database
-                                                       # (done for you as part of the deployment process)
-    ./run-in-container.sh ./manage.py createsuperuser  # create a user to access Django Admin
-    ./run-in-container.sh ./manage.py shell            # open a Python shell in the context of your app
+```
 
-If your Django pods are labeled with a name other than "django", you can use:
+## Examples: Pull and Push Events
+```
+> py dtcli.py evt query from=60 to=0
+{'events': [{'endTime': 9223372036854775807, 'eventId': 6644203702249079783, ...
 
-    POD_NAME=name ./run-in-container.sh ./manage.py check
+> py dtcli.py evt query from=60 to=0 host .*demo.*
+['HOST-776CE98524279B25']
+{'events': [{'impactLevel': 'INFRASTRUCTURE', 'deploymentVersion': '1.0', 'eventId': -6917847702530309177, 'entityName': None, 'source': 'Dynatrace CLI', 'tags': None, 'entityId': 'HOST-776CE98524279B25',
+'severityLevel': None, 'endTime': 1503350534000, 'eventType': 'CUSTOM_DEPLOYMENT', 'startTime': 1503350534000, 'eventStatus': 'CLOSED', 'deploymentName': 'My Custom Deployment'}]}
+ 
+> dtcli.py evt query entityId=APPLICATION-F5E7AEA0AB971DB1
+{'events': [{'endTime': 9223372036854775807, 'eventId': 6644203702249079783, ...
 
-If there is more than one replica, you can also specify a POD by index:
+> py dtcli.py evt push host .*demo.* deploymentName=My%20Custom%20Deployment deploymentVersion=1.0 source=Dynatrace%20CLI
+{'end': '1503350534000', 'customProperties': {}, 'deploymentVersion': '1.0', 'eventType': 'CUSTOM_DEPLOYMENT', 'start': '1503350534000', 'source': 'Dynatrace CLI', 'deploymentName': 'My Custom Deployment',
+ 'attachRules': {'entityIds': ['HOST-776CE98524279B25']}}
+{'storedEventIds': [-6917847702530309177]}
+```
 
-    POD_INDEX=1 ./run-in-container.sh ./manage.py shell
+## Examples: Define custom tags for entities
+```
+> py dtcli.py tag app .*easyTravel.* easyTravelAppTag
 
-Or both together:
+> py dtcli.py tag srv JourneyService journeyServiceTag,serviceTag
 
-    POD_NAME=django-example POD_INDEX=2 ./run-in-container.sh ./manage.py shell
+> py dtcli.py tag app entityId=APPLICATION-F5E7AEA0AB971DB1 easyTravelAppTag
+```
 
+## Examples: Dynatrace Query Language (DQL)
 
-## Data persistence
+The DQL (Dynatrace Query Language) can either be used to query the raw JSON data. You can also replace the command "dql" with "dqlr" which will generate an HTML report based on the HTML templates in the report subdirectory. An example of that report can be seen at the beginning of this readme
 
-You can deploy this application without a configured database in your OpenShift project, in which case Django will use a temporary SQLite database that will live inside your application's container, and persist only until you redeploy your application.
+```
+> py dtcli.py dql app www.easytravel.com app.useractions[count%hour],app.useractionduration[avg%hour]
+[{'APPLICATION-F5E7AEA0AB971DB1': {'entityDisplayName': 'www.easytravel.com', 'timeseriesId': 'com.dynatrace.builtin:app.useractions', 'dataPoints': [[1501788420000, 103.0], [1501788480000, 143.0], [150178
+8540000, 130.0], [1501788600000, 143.0], [1501788660000, 120.0], [1501788720000, 156.0], [1501788780000, 118.0], [1501788840000, 102.0], [1501788900000, 106.0], [1501788960000, 70.0], [1501789020000, 110.0
+], [1501789080000, 115.0], [1501789140000, 145.0], [1501789200000, 139.0], [1501789260000, 137.0], [1501789320000, 115.0], [1501789380000, 140.0], [1501789440000, 98.0], [1501789500000, 105.0], [1501789560
+000, 141.0], [1501789620000, 112.0], [1501789680000, 123.0], [1501789740000, 123.0], [1501789800000, 144.0], [1501789860000, 118.0], [1501789920000, 128.0], [1501789980000, 118.0], [1501790040000, 86.0], [
 
-After each deploy you get a fresh, empty, SQLite database. That is fine for a first contact with OpenShift and perhaps Django, but sooner or later you will want to persist your data across deployments.
+> py dtcli.py dql appmethod .*Book.* appmethod.useractionduration[avg%hour]
+[{'APPLICATION_METHOD-6ED7F83A1EF195DC': {'dataPoints': [[1501792560000, 985400.0], [1501792620000, 605600.0], [1501792680000, 2759333.3333333335], [1501792740000, 445333.3333333333], [1501792800000, 54000
+0.0], [1501792860000, 3709000.0], [1501792920000, 727200.0], [1501792980000, 1670800.0], [1501793040000, 791666.6666666666], [1501793100000, 372200.0], [1501793160000, 1700500.0], [1501793220000, 636285.71
+42857143], [1501793280000, 989250.0], [1501793340000, 1517000.0], [1501793400000, 872250.0], [1501793460000, 893750.0], [1501793520000, 358333.3333333333], [1501793580000, 324000.0], [1501793640000, 953000 ...
 
-To do that, you should add a properly configured database server or ask your OpenShift administrator to add one for you. Then use `oc env` to update the `DATABASE_*` environment variables in your DeploymentConfig to match your database settings.
+> py dtcli.py dqlr host tags/AWS:Name=et-demo.* host.cpu.system[max%hour],host.cpu.system[avg%hour]
+Generated report for host tags/AWS:Name=et-demo.* host.cpu.system[max%hour],host.cpu.system[avg%hour] in: dqlreport.html
+```
+![](./images/sampledqlreport.png)
 
-Redeploy your application to have your changes applied, and open the welcome page again to make sure your application is successfully connected to the database server.
+## Examples: Monitoring as Code (monspec)
 
+To learn more about the concept of Monitoring as Code check out the material around the [Unbreakable Delivery Pipeline](https://www.dynatrace.com/news/blog/unbreakable-devops-pipeline-shift-left-shift-right-self-healing/). 
+The CLI now implements the main uses to gather and compare metrics as part of your CI/CD Delivery Pipeline. All gathered and compared data will end up as a Custom Device with Custom Metrics in Dynatrace, e.g: "My Jenkins Pipeline" with metrics such as "Response Time", "Throughput" or "Number of Incoming Dependencies". 
+The CLI requires two configuration files for which you can find sample definitions in the monspec subfolder:
+* smplmonspec.json: defines the entity (APPLICATION, SERVICE, PROCESS, HOST) that you want to monitor, the environments where these entities are deployed, comparison definitions as well as a set of key performance metrics (=Performance Signature) that should be validated each time you call the CLI
+* smplpipelineinfo.json: describes the pipeline or tool that calls the CLI. This information will define the Custom Device
 
-## Looking for help
+Here now the set of calls to use to integrate with your CI/CD Pipeline:
+```
+> py dtcli.py monspec init monspec/smplmonspec.json monspec/smplpipelineinfo.json
+Creates the Custom Device based on smplpipelineinfo.json and all custom metrics based on smplmonspec and the perfsignature definition
+Output: {"customDevice" : "CUSTOM-DEVICE-1234", "createMetrics" : 6}
 
-If you get stuck at some point, or think that this document needs further details or clarification, you can give feedback and look for help using the channels mentioned in [the OpenShift Origin repo](https://github.com/openshift/origin), or by filing an issue.
+> py dtcli.py monspec remove monspec/smplmonspec.json monspec/smplpipelineinfo.json
+Removes the custom metric defintions and all its data: BE CAREFUL: this will remove all previous data from previous runs!
+Output: {"deletedMetrics" : 6}
 
+> py dtcli.py monspec pull monspec/smplmonspec.json monspec/smplpipelineinfo.json SampleJSonService/Staging 60 0
+Queries all perfsignature metrics defined for the SampleJSonService in the Staging Environment for the last 60 minutes. The last two parameters define timespan (e.g: 60) and timeshift from now (e.g: 0=Now, 60=60 Minutes ago, ...)
+Results will only be printed on the console. NO DATA WRITTEN TO DYNATRACE!
+Output: { "performanceSignature" : [ {"timeseries": "com.dynatrace.builtin:service.responsetime", "result" : 1234, .... } ], "comment" : "Pulled metrics for SampleJSonService/Staging"}
 
-## License
+> py dtcli.py monspec push monspec/smplmonspec.json monspec/smplpipelineinfoo.json SampleJSonService/Staging 60 0
+Same as "dtcli monspec pull" but metrics will be written to the Dynatrace Custom Device for your Pipeline.
+Suggestion: call this from your pipeline at the end of your test runs or even throughout your test run to pull in current metrics and store them on the custom device
+Output: { "performanceSignature" : [ {"timeseries": "com.dynatrace.builtin:service.responsetime", "result" : 1234, .... } ], "comment" : "Pushed metrics for SampleJSonService/Staging"}
 
-This code is dedicated to the public domain to the maximum extent permitted by applicable law, pursuant to [CC0](http://creativecommons.org/publicdomain/zero/1.0/).
+> py dtcli.py monspec base monspec/smplmonspec.json monspec/smplpipelineinfo.json SampleJSonService/Staging 60 60
+Sets custom thresholds for each metric defined in monspec. The data is taken from the defined environment and timeframe, e.g: from Staging 60 minutes 60 minutes ago. 
+Suggestion: This is useful if you have a reference timeframe and environment and you want these values to be your baseline (=threshold). Once set it means that Dynatrace will automatically open Problem Tickets once you "dtcli monspec push". 
+Output: { "performanceSignature" : [ {"timeseries": "com.dynatrace.builtin:service.responsetime", "result" : 1234, .... } ], "comment" : "Pushed theshold definition for SampleJSonService/Staging"}
+
+> py dtcli.py monspec pullcompare monspec/smplmonspec.json monspec/smplpipelineinfo.json SampleJSonService/ProductionToStaging 60
+pullcompare will look at the passed comparision, e.g: ProductionToStaging. It will pull in the metrics for the "compare" environment, and then calcultes the baseline (=thresholds) on every custom device based on these values but also factoring in the scalefactor definition. 
+After that it queries the "source" environment, compares the values with the calculated baseline and calculates how many violations you had.
+All results for each perfsignature metric will be printed on the console. NO DATA WRITTEN TO DYNATRACE!
+Output: { "performanceSignature" : [ {"timeseries": "com.dynatrace.builtin:service.responsetime", "result" : 1234, "result_compare" : 1100, "threshold" : 1200, "violation" : 1.... } ], "totalViolations" : 1, "comment": "Pulled compare for SampleJSonService/ProductionToStaging 60"}
+
+> py dtcli.py monspec pullcompare monspec/smplmonspec.json monspec/smplpipelineinfo.json SampleJSonService/ProductionToStaging 60 0 0
+This is another variation of pullcompare where you can overwrite the values for shiftcomparetimeframe & shiftsourcetimeframe
+Output: { "performanceSignature" : [ {"timeseries": "com.dynatrace.builtin:service.responsetime", "result" : 1234, "result_compare" : 1100, "threshold" : 1200, "violation" : 1.... } ], "totalViolations" : 1, "comment": "Pulled compare for SampleJSonService/ProductionToStaging 60 0 0"}
+
+> py dtcli.py monspec pushcompare monspec/smplmonspec.json monspec/smplpipelineinfo.json SampleJSonService/ProductionToStaging 60
+Same as "dtcli monspec pullcompare" but in this case actually pushes the thresholds back to Dynatrace followed by pushing the actual values. If there are any violations it will also open a problem ticket in Dynatrace. 
+Output: { "performanceSignature" : [ {"timeseries": "com.dynatrace.builtin:service.responsetime", "result" : 1234, "result_compare" : 1100, "threshold" : 1200, "violation" : 1.... } ], "totalViolations" : 1, "comment": "Pushed compare for SampleJSonService/ProductionToStaging"}
+
+> py dtcli.py monspec pushcompare monspec/smplmonspec.json monspec/smplpipelineinfo.json SampleJSonService/ProductionToStaging 60 0 60
+This is another variation of pullpush where you can overwrite the values for shiftcomparetimeframe & shiftsourcetimeframe
+Output: { "performanceSignature" : [ {"timeseries": "com.dynatrace.builtin:service.responsetime", "result" : 1234, "result_compare" : 1100, "threshold" : 1200, "violation" : 1.... } ], "totalViolations" : 1, "comment": "Pushed compare for SampleJSonService/ProductionToStaging"}
+
+> py dtcli.py monspec pushdeploy monspec/smplmonspec.json monspec/smplpipelineinfo.json SampleJSonService/Staging Job123Deployment v123
+Creates a Deployment Event for all entities matching Staging
+Suggestion: Call this from your pipeline after deploying your new build. You will see the deployment and build information in Dynatrace
+Output : { "event" : { "eventId" : "ADBC", ...}}
+
+```

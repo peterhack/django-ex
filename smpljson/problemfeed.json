@@ -1,0 +1,62 @@
+{
+    "result": {
+        "problems": [
+            {
+                "id": "2589185117428363711",
+                "startTime": 1500584760000,
+                "endTime": -1,
+                "displayName": "711",
+                "impactLevel": "INFRASTRUCTURE",
+                "status": "OPEN",
+                "rankedImpacts": [
+                    {
+                        "entityId": "HOST-9B3CDCF3A6732BF1",
+                        "entityName": "OpenStackControllerNode",
+                        "severityLevel": "RESOURCE_CONTENTION",
+                        "impactLevel": "INFRASTRUCTURE",
+                        "eventType": "LOW_DISK_SPACE"
+                    },
+                    {
+                        "entityId": "HOST-9B3CDCF3A6732BF1",
+                        "entityName": "OpenStackControllerNode",
+                        "severityLevel": "RESOURCE_CONTENTION",
+                        "impactLevel": "INFRASTRUCTURE",
+                        "eventType": "LOW_DISK_SPACE"
+                    },
+                    {
+                        "entityId": "HOST-9B3CDCF3A6732BF1",
+                        "entityName": "OpenStackControllerNode",
+                        "severityLevel": "RESOURCE_CONTENTION",
+                        "impactLevel": "INFRASTRUCTURE",
+                        "eventType": "LOW_DISK_SPACE"
+                    },
+                    {
+                        "entityId": "HOST-9B3CDCF3A6732BF1",
+                        "entityName": "OpenStackControllerNode",
+                        "severityLevel": "RESOURCE_CONTENTION",
+                        "impactLevel": "INFRASTRUCTURE",
+                        "eventType": "LOW_DISK_SPACE"
+                    }
+                ],
+                "affectedCounts": {
+                    "INFRASTRUCTURE": 1,
+                    "SERVICE": 0,
+                    "APPLICATION": 0
+                },
+                "recoveredCounts": {
+                    "INFRASTRUCTURE": 0,
+                    "SERVICE": 0,
+                    "APPLICATION": 0
+                },
+                "tagsOfAffectedEntities": [],
+                "severityLevel": "RESOURCE_CONTENTION",
+                "hasRootCause": false
+            }
+        ],
+        "monitored": {
+            "INFRASTRUCTURE": 629,
+            "SERVICE": 75,
+            "APPLICATION": 30
+        }
+    }
+}

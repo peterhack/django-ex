@@ -1,0 +1,4274 @@
+[
+    {
+        "entityId": "PROCESS_GROUP-B34081EFF9E5F516",
+        "displayName": "Apache Web Server apache2",
+        "discoveredName": "Apache Web Server apache2",
+        "tags": [
+            {
+                "context": "CONTEXTLESS",
+                "key": "customizable"
+            },
+            {
+                "context": "CONTEXTLESS",
+                "key": "A1"
+            },
+            {
+                "context": "CONTEXTLESS",
+                "key": "redundant"
+            },
+            {
+                "context": "CONTEXTLESS",
+                "key": "se-day"
+            }
+        ],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-B34081EFF9E5F516",
+                "PROCESS_GROUP-98DC6B5403AE2401",
+                "PROCESS_GROUP-92F466C2A666BEEB",
+                "PROCESS_GROUP-3102C29299C3BA19",
+                "PROCESS_GROUP-F149C77876D37ACD",
+                "PROCESS_GROUP-82330B0B3A8B552C",
+                "PROCESS_GROUP-79044E8C4F250AEC",
+                "PROCESS_GROUP-36BAFEFE448A1CAD",
+                "PROCESS_GROUP-67F568853A349471"
+            ],
+            "runsOn": [
+                "HOST-9B3CDCF3A6732BF1",
+                "HOST-E662F28EFFC7D77D"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-B34081EFF9E5F516",
+                "PROCESS_GROUP-7A0200A043F5C9EA",
+                "PROCESS_GROUP-62548D702A2DD224",
+                "PROCESS_GROUP-92F466C2A666BEEB",
+                "PROCESS_GROUP-AA86A6FBE1EBE661",
+                "PROCESS_GROUP-79044E8C4F250AEC",
+                "PROCESS_GROUP-3C62BB97B6EF6F82",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-31D49FC4694179A9",
+                "PROCESS_GROUP-0D7855288F798D2B",
+                "PROCESS_GROUP-05C8338DBEDE13D6",
+                "PROCESS_GROUP-EC64A7883AD770F0",
+                "PROCESS_GROUP-D60E4B411B9425A1",
+                "PROCESS_GROUP-98DC6B5403AE2401",
+                "PROCESS_GROUP-36435C87FA8F3189",
+                "PROCESS_GROUP-8EDDF9FBE05BB81E",
+                "PROCESS_GROUP-3102C29299C3BA19",
+                "PROCESS_GROUP-322E5E3F4BD25CCA",
+                "PROCESS_GROUP-67F568853A349471",
+                "PROCESS_GROUP-216FDBEF8325B5C6"
+            ],
+            "runsOn": [
+                "SERVICE-2ADB8358FD310C0D",
+                "SERVICE-CC7F2144FE08FEC5",
+                "SERVICE-0121F75E0EDD6D1B",
+                "SERVICE-956BBA97E9404037",
+                "SERVICE-0B792EB0132F0D1C",
+                "SERVICE-787ADAC2936F310B",
+                "SERVICE-752CCEC1757DF3CB",
+                "SERVICE-39B3F0CB8B536DC0"
+            ]
+        },
+        "metadata": {
+            "apacheConfigPaths": "/etc/apache2/apache2.conf"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "APACHE_HTTPD",
+                "edition": null,
+                "version": "2.4.18"
+            },
+            {
+                "type": "PHP",
+                "edition": "Apache",
+                "version": "5.5.9"
+            },
+            {
+                "type": "PYTHON",
+                "edition": null,
+                "version": null
+            }
+        ],
+        "listenPorts": [
+            4990,
+            433,
+            35347,
+            80,
+            70
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-6AA9224F7BCBA368",
+        "displayName": "Ceilometer-polling",
+        "discoveredName": "Ceilometer-polling",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-9B3CDCF3A6732BF1"
+            ]
+        },
+        "toRelationships": {},
+        "softwareTechnologies": [
+            {
+                "type": "OPENSTACK",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "PYTHON",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "CEILOMETER",
+                "edition": null,
+                "version": null
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-BD86267200B0245F",
+        "displayName": "Cinder-API",
+        "discoveredName": "Cinder-API",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-9B3CDCF3A6732BF1"
+            ]
+        },
+        "toRelationships": {},
+        "softwareTechnologies": [
+            {
+                "type": "SQLITE",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "OPENSTACK",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "PYTHON",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "CINDER",
+                "edition": null,
+                "version": null
+            }
+        ],
+        "listenPorts": [
+            8766
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-3C62BB97B6EF6F82",
+        "displayName": "Cinder-scheduler",
+        "discoveredName": "Cinder-scheduler",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-B34081EFF9E5F516",
+                "PROCESS_GROUP-98DC6B5403AE2401",
+                "PROCESS_GROUP-92F466C2A666BEEB",
+                "PROCESS_GROUP-3102C29299C3BA19",
+                "PROCESS_GROUP-82330B0B3A8B552C",
+                "PROCESS_GROUP-79044E8C4F250AEC",
+                "PROCESS_GROUP-67F568853A349471"
+            ],
+            "runsOn": [
+                "HOST-9B3CDCF3A6732BF1"
+            ]
+        },
+        "toRelationships": {},
+        "softwareTechnologies": [
+            {
+                "type": "SQLITE",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "OPENSTACK",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "PYTHON",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "CINDER",
+                "edition": null,
+                "version": null
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-7A0200A043F5C9EA",
+        "displayName": "Cinder-volume",
+        "discoveredName": "Cinder-volume",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-B34081EFF9E5F516",
+                "PROCESS_GROUP-98DC6B5403AE2401",
+                "PROCESS_GROUP-92F466C2A666BEEB",
+                "PROCESS_GROUP-3102C29299C3BA19",
+                "PROCESS_GROUP-82330B0B3A8B552C",
+                "PROCESS_GROUP-79044E8C4F250AEC",
+                "PROCESS_GROUP-67F568853A349471"
+            ],
+            "runsOn": [
+                "HOST-9B3CDCF3A6732BF1"
+            ]
+        },
+        "toRelationships": {},
+        "softwareTechnologies": [
+            {
+                "type": "SQLITE",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "OPENSTACK",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "PYTHON",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "CINDER",
+                "edition": null,
+                "version": null
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-8887457FCA96BFF4",
+        "displayName": "CouchDB_ET",
+        "discoveredName": "CouchDB_ET",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-8887457FCA96BFF4"
+            ],
+            "runsOn": [
+                "HOST-DE6F9EC80D4D7C58"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-5B7B162D62AF0CE4",
+                "PROCESS_GROUP-EC64A7883AD770F0",
+                "PROCESS_GROUP-16FD2750E91EAFAC",
+                "PROCESS_GROUP-8887457FCA96BFF4",
+                "PROCESS_GROUP-06B5EC9BCCF56FC4",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-216FDBEF8325B5C6",
+                "PROCESS_GROUP-AFF88D69DFD27180"
+            ],
+            "runsOn": [
+                "SERVICE-647148447FC4DDD2"
+            ]
+        },
+        "softwareTechnologies": [
+            {
+                "type": "COUCHDB",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "ERLANG",
+                "edition": null,
+                "version": null
+            }
+        ],
+        "listenPorts": [
+            5989,
+            5984
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-93171C725DE981A4",
+        "displayName": "CreditCardAuthorizationS64",
+        "discoveredName": "CreditCardAuthorizationS64",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-A02BF7E1B9ADA36D",
+                "HOST-7453A7E317FCF4AF",
+                "HOST-267CF1D2A12C1BA1"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-07F29EF79A2F51C5",
+                "PROCESS_GROUP-7BAB74848939F900"
+            ]
+        },
+        "metadata": {
+            "executablePaths": "/home/labuser/easytravel-2.0.0-x64/CreditCardAuthorizationS64"
+        },
+        "listenPorts": [
+            1101
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-49876EC2AC6D402B",
+        "displayName": "Ec2Config.exe",
+        "discoveredName": "Ec2Config.exe",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-F5D85B7DCDD8A93C",
+                "HOST-54AA0D8B5401A1C2",
+                "HOST-DE6F9EC80D4D7C58",
+                "HOST-1E64E15558B9486B"
+            ]
+        },
+        "toRelationships": {},
+        "metadata": {
+            "executables": "EC2CONFIG.EXE"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "ASP_NET",
+                "edition": null,
+                "version": "v3.5.1.0"
+            },
+            {
+                "type": "CLR",
+                "edition": "FullCLR",
+                "version": "2.0.50727.5472"
+            },
+            {
+                "type": "DOTNET",
+                "edition": ".NET Framework",
+                "version": "3.5.1.0"
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-F149C77876D37ACD",
+        "displayName": "Erlang Port Mapper",
+        "discoveredName": "Erlang Port Mapper",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-9B3CDCF3A6732BF1"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-05C8338DBEDE13D6",
+                "PROCESS_GROUP-B34081EFF9E5F516",
+                "PROCESS_GROUP-D60E4B411B9425A1",
+                "PROCESS_GROUP-98DC6B5403AE2401",
+                "PROCESS_GROUP-36435C87FA8F3189",
+                "PROCESS_GROUP-3102C29299C3BA19",
+                "PROCESS_GROUP-82330B0B3A8B552C",
+                "PROCESS_GROUP-79044E8C4F250AEC",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-67F568853A349471",
+                "PROCESS_GROUP-216FDBEF8325B5C6",
+                "PROCESS_GROUP-0D7855288F798D2B"
+            ]
+        },
+        "softwareTechnologies": [
+            {
+                "type": "ERLANG",
+                "edition": null,
+                "version": null
+            }
+        ],
+        "listenPorts": [
+            4369
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-3102C29299C3BA19",
+        "displayName": "Glance-API",
+        "discoveredName": "Glance-API",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-B34081EFF9E5F516",
+                "PROCESS_GROUP-98DC6B5403AE2401",
+                "PROCESS_GROUP-92F466C2A666BEEB",
+                "PROCESS_GROUP-3102C29299C3BA19",
+                "PROCESS_GROUP-F149C77876D37ACD",
+                "PROCESS_GROUP-82330B0B3A8B552C",
+                "PROCESS_GROUP-79044E8C4F250AEC",
+                "PROCESS_GROUP-67F568853A349471"
+            ],
+            "runsOn": [
+                "HOST-9B3CDCF3A6732BF1"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-B34081EFF9E5F516",
+                "PROCESS_GROUP-7A0200A043F5C9EA",
+                "PROCESS_GROUP-92F466C2A666BEEB",
+                "PROCESS_GROUP-AA86A6FBE1EBE661",
+                "PROCESS_GROUP-79044E8C4F250AEC",
+                "PROCESS_GROUP-3C62BB97B6EF6F82",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-31D49FC4694179A9",
+                "PROCESS_GROUP-0D7855288F798D2B",
+                "PROCESS_GROUP-05C8338DBEDE13D6",
+                "PROCESS_GROUP-D60E4B411B9425A1",
+                "PROCESS_GROUP-98DC6B5403AE2401",
+                "PROCESS_GROUP-36435C87FA8F3189",
+                "PROCESS_GROUP-8EDDF9FBE05BB81E",
+                "PROCESS_GROUP-3102C29299C3BA19",
+                "PROCESS_GROUP-67F568853A349471",
+                "PROCESS_GROUP-216FDBEF8325B5C6"
+            ]
+        },
+        "softwareTechnologies": [
+            {
+                "type": "OPENSTACK",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "GLANCE",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "PYTHON",
+                "edition": null,
+                "version": null
+            }
+        ],
+        "listenPorts": [
+            9282
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-0D7855288F798D2B",
+        "displayName": "Glance-registry",
+        "discoveredName": "Glance-registry",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-B34081EFF9E5F516",
+                "PROCESS_GROUP-98DC6B5403AE2401",
+                "PROCESS_GROUP-92F466C2A666BEEB",
+                "PROCESS_GROUP-3102C29299C3BA19",
+                "PROCESS_GROUP-F149C77876D37ACD",
+                "PROCESS_GROUP-82330B0B3A8B552C",
+                "PROCESS_GROUP-79044E8C4F250AEC",
+                "PROCESS_GROUP-67F568853A349471"
+            ],
+            "runsOn": [
+                "HOST-9B3CDCF3A6732BF1"
+            ]
+        },
+        "toRelationships": {},
+        "softwareTechnologies": [
+            {
+                "type": "OPENSTACK",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "GLANCE",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "PYTHON",
+                "edition": null,
+                "version": null
+            }
+        ],
+        "listenPorts": [
+            9191
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-1DB7168BDCE9CE4B",
+        "displayName": "Google Chrome",
+        "discoveredName": "Google Chrome",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-DE6F9EC80D4D7C58"
+            ]
+        },
+        "toRelationships": {},
+        "metadata": {
+            "executablePaths": "C:\\PROGRAM FILES (X86)\\GOOGLE\\CHROME\\APPLICATION\\CHROME.EXE"
+        }
+    },
+    {
+        "entityId": "PROCESS_GROUP-AA86A6FBE1EBE661",
+        "displayName": "Horizon",
+        "discoveredName": "Horizon",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-B34081EFF9E5F516",
+                "PROCESS_GROUP-79044E8C4F250AEC",
+                "PROCESS_GROUP-5CA2BA1FE8DB9AC5",
+                "PROCESS_GROUP-92F466C2A666BEEB",
+                "PROCESS_GROUP-3102C29299C3BA19"
+            ],
+            "runsOn": [
+                "HOST-9B3CDCF3A6732BF1"
+            ]
+        },
+        "toRelationships": {},
+        "softwareTechnologies": [
+            {
+                "type": "OPENSTACK",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "HORIZON",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "WSGI",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "PYTHON",
+                "edition": null,
+                "version": null
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-3D9D854163F8F07A",
+        "displayName": "IIS",
+        "discoveredName": "IIS",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-F5D85B7DCDD8A93C",
+                "HOST-A4198073007B0118",
+                "HOST-54AA0D8B5401A1C2",
+                "HOST-DE6F9EC80D4D7C58",
+                "HOST-1E64E15558B9486B"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-D71583273295BF32",
+                "PROCESS_GROUP-7BAB74848939F900"
+            ]
+        },
+        "softwareTechnologies": [
+            {
+                "type": "IIS",
+                "edition": null,
+                "version": null
+            }
+        ],
+        "listenPorts": [
+            9010,
+            80,
+            9000
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-0A9A52EA262BC039",
+        "displayName": "IIS app pool dotNetBackend_easyTravel_x64",
+        "discoveredName": "IIS app pool dotNetBackend_easyTravel_x64",
+        "tags": [
+            {
+                "context": "CONTEXTLESS",
+                "key": "bestPGEver"
+            }
+        ],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-7BAB74848939F900"
+            ],
+            "runsOn": [
+                "HOST-F5D85B7DCDD8A93C",
+                "HOST-54AA0D8B5401A1C2"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-D71583273295BF32",
+                "PROCESS_GROUP-7BAB74848939F900"
+            ],
+            "runsOn": [
+                "SERVICE-336948D8A9581839",
+                "SERVICE-3EDF84132CCE1FE2",
+                "SERVICE-C3D6FE8C37D5F16E",
+                "SERVICE-F08D806E7EF685CF"
+            ]
+        },
+        "metadata": {
+            "iisAppPools": "dotNetBackend_easyTravel_x64"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "ASP_NET",
+                "edition": null,
+                "version": "v3.5.1.0"
+            },
+            {
+                "type": "IIS_APP_POOL",
+                "edition": null,
+                "version": "7.5.7600.16385"
+            },
+            {
+                "type": "WCF",
+                "edition": null,
+                "version": "v3.5.1.0"
+            },
+            {
+                "type": "DOTNET",
+                "edition": ".NET Framework",
+                "version": "3.5.1.0"
+            },
+            {
+                "type": "MSMQ",
+                "edition": null,
+                "version": "v2.0.50727.5420"
+            },
+            {
+                "type": "CLR",
+                "edition": "FullCLR",
+                "version": "2.0.50727.5472"
+            },
+            {
+                "type": "MSSQL_COMPACT_CLIENT",
+                "edition": null,
+                "version": "v3.5.8080.0"
+            }
+        ],
+        "listenPorts": [
+            9010,
+            9020
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-D71583273295BF32",
+        "displayName": "IIS app pool dotNetFrontend_easyTravel_x64",
+        "discoveredName": "IIS app pool dotNetFrontend_easyTravel_x64",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-7BAB74848939F900",
+                "PROCESS_GROUP-0A9A52EA262BC039",
+                "PROCESS_GROUP-3D9D854163F8F07A"
+            ],
+            "runsOn": [
+                "HOST-F5D85B7DCDD8A93C",
+                "HOST-54AA0D8B5401A1C2"
+            ]
+        },
+        "toRelationships": {
+            "runsOn": [
+                "SERVICE-4E5D0A8583FDA67B"
+            ]
+        },
+        "metadata": {
+            "iisAppPools": "dotNetFrontend_easyTravel_x64"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "ASP_NET",
+                "edition": null,
+                "version": "v3.5.1.0"
+            },
+            {
+                "type": "IIS_APP_POOL",
+                "edition": null,
+                "version": "7.5.7600.16385"
+            },
+            {
+                "type": "WCF",
+                "edition": null,
+                "version": "v3.5.1.0"
+            },
+            {
+                "type": "DOTNET",
+                "edition": ".NET Framework",
+                "version": "3.5.1.0"
+            },
+            {
+                "type": "MSMQ",
+                "edition": null,
+                "version": "v2.0.50727.5420"
+            },
+            {
+                "type": "CLR",
+                "edition": "FullCLR",
+                "version": "2.0.50727.5472"
+            }
+        ],
+        "listenPorts": [
+            9000
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-2E99579192C35CEE",
+        "displayName": "IIS app pool eT-demo1-weather-express",
+        "discoveredName": "IIS app pool eT-demo1-weather-express",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-E2C9C5A246550D37"
+            ]
+        },
+        "toRelationships": {
+            "runsOn": [
+                "SERVICE-A7A3303A693FB21F"
+            ]
+        },
+        "metadata": {
+            "iisAppPools": "eT-demo1-weather-express"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "IIS_APP_POOL",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "ASP_NET",
+                "edition": null,
+                "version": "v4.7.2053.0"
+            },
+            {
+                "type": "DOTNET",
+                "edition": ".NET Framework",
+                "version": "4.7.2053.0"
+            },
+            {
+                "type": "WCF",
+                "edition": null,
+                "version": "v4.7.2053.0"
+            },
+            {
+                "type": "CLR",
+                "edition": "FullCLR",
+                "version": "4.7.2053.0"
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-2BCD18F3F9388BFD",
+        "displayName": "IIS app pool eT-demo1-weather-service-restify",
+        "discoveredName": "IIS app pool eT-demo1-weather-service-restify",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-E2C9C5A246550D37"
+            ]
+        },
+        "toRelationships": {
+            "runsOn": [
+                "SERVICE-9E705D3E83EB7B60"
+            ]
+        },
+        "metadata": {
+            "iisAppPools": "eT-demo1-weather-service-restify"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "IIS_APP_POOL",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "ASP_NET",
+                "edition": null,
+                "version": "v4.7.2053.0"
+            },
+            {
+                "type": "DOTNET",
+                "edition": ".NET Framework",
+                "version": "4.7.2053.0"
+            },
+            {
+                "type": "WCF",
+                "edition": null,
+                "version": "v4.7.2053.0"
+            },
+            {
+                "type": "CLR",
+                "edition": "FullCLR",
+                "version": "4.7.2053.0"
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-34ADF6548C3D87CF",
+        "displayName": "IIS app pool ~1eT-demo1-weather-express",
+        "discoveredName": "IIS app pool ~1eT-demo1-weather-express",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-E2C9C5A246550D37"
+            ]
+        },
+        "toRelationships": {
+            "runsOn": [
+                "SERVICE-AC2A3BDC5C4EADFC"
+            ]
+        },
+        "metadata": {
+            "iisAppPools": "~1eT-demo1-weather-express"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "IIS_APP_POOL",
+                "edition": null,
+                "version": null
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-85B11CD4B9D1070A",
+        "displayName": "IIS app pool ~1eT-demo1-weather-service-restify",
+        "discoveredName": "IIS app pool ~1eT-demo1-weather-service-restify",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-E2C9C5A246550D37"
+            ]
+        },
+        "toRelationships": {
+            "runsOn": [
+                "SERVICE-11C674FFD8421F8E"
+            ]
+        },
+        "metadata": {
+            "iisAppPools": "~1eT-demo1-weather-service-restify"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "IIS_APP_POOL",
+                "edition": null,
+                "version": null
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-D5A079B0A96ECB0C",
+        "displayName": "Java Platform SE binary",
+        "discoveredName": "Java Platform SE binary",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-B51CB9FD8D45DE24"
+            ]
+        },
+        "toRelationships": {},
+        "metadata": {
+            "executablePaths": "C:\\USERS\\ADLEX\\APPDATA\\LOCAL\\TEMP\\2\\JRE-8U141-WINDOWS-AU.EXE"
+        }
+    },
+    {
+        "entityId": "PROCESS_GROUP-36435C87FA8F3189",
+        "displayName": "Keystone",
+        "discoveredName": "Keystone",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-B34081EFF9E5F516",
+                "PROCESS_GROUP-98DC6B5403AE2401",
+                "PROCESS_GROUP-92F466C2A666BEEB",
+                "PROCESS_GROUP-3102C29299C3BA19",
+                "PROCESS_GROUP-F149C77876D37ACD",
+                "PROCESS_GROUP-82330B0B3A8B552C",
+                "PROCESS_GROUP-79044E8C4F250AEC",
+                "PROCESS_GROUP-67F568853A349471"
+            ],
+            "runsOn": [
+                "HOST-9B3CDCF3A6732BF1"
+            ]
+        },
+        "toRelationships": {},
+        "softwareTechnologies": [
+            {
+                "type": "OPENSTACK",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "KEYSTONE",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "WSGI",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "PYTHON",
+                "edition": null,
+                "version": null
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-5CA2BA1FE8DB9AC5",
+        "displayName": "Memcached",
+        "discoveredName": "Memcached",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-9B3CDCF3A6732BF1"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-AA86A6FBE1EBE661"
+            ]
+        },
+        "softwareTechnologies": [
+            {
+                "type": "MEMCACHED",
+                "edition": null,
+                "version": null
+            }
+        ],
+        "listenPorts": [
+            11211
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-CFADEC7D6A357A18",
+        "displayName": "MicroJourneyService",
+        "discoveredName": "MicroJourneyService",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-916EA7AD2F55CD3C"
+            ],
+            "runsOn": [
+                "HOST-A02BF7E1B9ADA36D"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-5C5C23F580864AAB"
+            ],
+            "runsOn": [
+                "SERVICE-66D4A23AFADF2142"
+            ]
+        },
+        "metadata": {
+            "nodejsAppNames": "MicroJourneyService"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "NODE_JS",
+                "edition": null,
+                "version": "4.2.4"
+            }
+        ],
+        "listenPorts": [
+            29129,
+            28693,
+            29467,
+            31220,
+            30222,
+            31008,
+            29820,
+            29607,
+            28998,
+            29577,
+            30547
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-F141B7D24878E37D",
+        "displayName": "MongoDB",
+        "discoveredName": "MongoDB",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-9B3CDCF3A6732BF1",
+                "HOST-2BBED3AC0BB98104"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-0F9A178B4D8E2E90",
+                "PROCESS_GROUP-E475868328FEBA27",
+                "PROCESS_GROUP-B27330900F0E858D",
+                "PROCESS_GROUP-66773A22F6A2E575",
+                "PROCESS_GROUP-AF35ED8884F9E3F1",
+                "PROCESS_GROUP-82058D287919CF32",
+                "PROCESS_GROUP-35C6073C07AE0507"
+            ],
+            "runsOn": [
+                "SERVICE-DD2F02A74D59C0A4"
+            ]
+        },
+        "softwareTechnologies": [
+            {
+                "type": "MONGODB",
+                "edition": null,
+                "version": null
+            }
+        ],
+        "listenPorts": [
+            27017
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-36BAFEFE448A1CAD",
+        "displayName": "MySQL",
+        "discoveredName": "MySQL",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-9B3CDCF3A6732BF1",
+                "HOST-E662F28EFFC7D77D",
+                "HOST-7453A7E317FCF4AF"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-4C6452D8029CD1F5",
+                "PROCESS_GROUP-EC64A7883AD770F0",
+                "PROCESS_GROUP-B34081EFF9E5F516",
+                "PROCESS_GROUP-B27330900F0E858D",
+                "PROCESS_GROUP-62548D702A2DD224",
+                "PROCESS_GROUP-06B5EC9BCCF56FC4",
+                "PROCESS_GROUP-322E5E3F4BD25CCA",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-216FDBEF8325B5C6"
+            ],
+            "runsOn": [
+                "SERVICE-BE5D3798679B74C4",
+                "SERVICE-EAFA29FF4B82BAAC"
+            ]
+        },
+        "softwareTechnologies": [
+            {
+                "type": "MYSQL",
+                "edition": null,
+                "version": null
+            }
+        ],
+        "listenPorts": [
+            3306
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-82FFA4102921666F",
+        "displayName": "Neutron-dhcp-agent",
+        "discoveredName": "Neutron-dhcp-agent",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-82330B0B3A8B552C"
+            ],
+            "runsOn": [
+                "HOST-9B3CDCF3A6732BF1"
+            ]
+        },
+        "toRelationships": {},
+        "softwareTechnologies": [
+            {
+                "type": "SQLITE",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "OPENSTACK",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "PYTHON",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "NEUTRON",
+                "edition": null,
+                "version": null
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-B9102B4F42D0620D",
+        "displayName": "Neutron-l3-agent",
+        "discoveredName": "Neutron-l3-agent",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-82330B0B3A8B552C"
+            ],
+            "runsOn": [
+                "HOST-9B3CDCF3A6732BF1"
+            ]
+        },
+        "toRelationships": {},
+        "softwareTechnologies": [
+            {
+                "type": "SQLITE",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "OPENSTACK",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "PYTHON",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "NEUTRON",
+                "edition": null,
+                "version": null
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-EA5111638F5F84F1",
+        "displayName": "Neutron-lbaas-agent",
+        "discoveredName": "Neutron-lbaas-agent",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-82330B0B3A8B552C"
+            ],
+            "runsOn": [
+                "HOST-9B3CDCF3A6732BF1"
+            ]
+        },
+        "toRelationships": {},
+        "softwareTechnologies": [
+            {
+                "type": "SQLITE",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "OPENSTACK",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "PYTHON",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "NEUTRON",
+                "edition": null,
+                "version": null
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-05C8338DBEDE13D6",
+        "displayName": "Neutron-metadata-agent",
+        "discoveredName": "Neutron-metadata-agent",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-B34081EFF9E5F516",
+                "PROCESS_GROUP-98DC6B5403AE2401",
+                "PROCESS_GROUP-92F466C2A666BEEB",
+                "PROCESS_GROUP-3102C29299C3BA19",
+                "PROCESS_GROUP-F149C77876D37ACD",
+                "PROCESS_GROUP-82330B0B3A8B552C",
+                "PROCESS_GROUP-79044E8C4F250AEC",
+                "PROCESS_GROUP-67F568853A349471"
+            ],
+            "runsOn": [
+                "HOST-9B3CDCF3A6732BF1"
+            ]
+        },
+        "toRelationships": {},
+        "softwareTechnologies": [
+            {
+                "type": "SQLITE",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "OPENSTACK",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "PYTHON",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "NEUTRON",
+                "edition": null,
+                "version": null
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-7AAB8DC0959B1467",
+        "displayName": "Neutron-metering-agent",
+        "discoveredName": "Neutron-metering-agent",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-82330B0B3A8B552C"
+            ],
+            "runsOn": [
+                "HOST-9B3CDCF3A6732BF1"
+            ]
+        },
+        "toRelationships": {},
+        "softwareTechnologies": [
+            {
+                "type": "SQLITE",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "OPENSTACK",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "PYTHON",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "NEUTRON",
+                "edition": null,
+                "version": null
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-BF8FB2F813F89D1B",
+        "displayName": "Neutron-ns-metadata-proxy",
+        "discoveredName": "Neutron-ns-metadata-proxy",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-9B3CDCF3A6732BF1"
+            ]
+        },
+        "toRelationships": {},
+        "softwareTechnologies": [
+            {
+                "type": "SQLITE",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "OPENSTACK",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "PYTHON",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "NEUTRON",
+                "edition": null,
+                "version": null
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-C84C3D73A59DAA7C",
+        "displayName": "Neutron-openvswitch-agent",
+        "discoveredName": "Neutron-openvswitch-agent",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-82330B0B3A8B552C"
+            ],
+            "runsOn": [
+                "HOST-9B3CDCF3A6732BF1"
+            ]
+        },
+        "toRelationships": {},
+        "softwareTechnologies": [
+            {
+                "type": "SQLITE",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "OPENSTACK",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "PYTHON",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "NEUTRON",
+                "edition": null,
+                "version": null
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-90BD3F187C88D927",
+        "displayName": "Neutron-rootwrap",
+        "discoveredName": "Neutron-rootwrap",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-9B3CDCF3A6732BF1"
+            ]
+        },
+        "toRelationships": {},
+        "softwareTechnologies": [
+            {
+                "type": "OPENSTACK",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "PYTHON",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "NEUTRON",
+                "edition": null,
+                "version": null
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-67F568853A349471",
+        "displayName": "Neutron-server",
+        "discoveredName": "Neutron-server",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-B34081EFF9E5F516",
+                "PROCESS_GROUP-98DC6B5403AE2401",
+                "PROCESS_GROUP-92F466C2A666BEEB",
+                "PROCESS_GROUP-3102C29299C3BA19",
+                "PROCESS_GROUP-F149C77876D37ACD",
+                "PROCESS_GROUP-82330B0B3A8B552C",
+                "PROCESS_GROUP-79044E8C4F250AEC",
+                "PROCESS_GROUP-67F568853A349471"
+            ],
+            "runsOn": [
+                "HOST-9B3CDCF3A6732BF1"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-B34081EFF9E5F516",
+                "PROCESS_GROUP-7A0200A043F5C9EA",
+                "PROCESS_GROUP-92F466C2A666BEEB",
+                "PROCESS_GROUP-79044E8C4F250AEC",
+                "PROCESS_GROUP-3C62BB97B6EF6F82",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-31D49FC4694179A9",
+                "PROCESS_GROUP-0D7855288F798D2B",
+                "PROCESS_GROUP-05C8338DBEDE13D6",
+                "PROCESS_GROUP-D60E4B411B9425A1",
+                "PROCESS_GROUP-98DC6B5403AE2401",
+                "PROCESS_GROUP-36435C87FA8F3189",
+                "PROCESS_GROUP-8EDDF9FBE05BB81E",
+                "PROCESS_GROUP-3102C29299C3BA19",
+                "PROCESS_GROUP-67F568853A349471",
+                "PROCESS_GROUP-216FDBEF8325B5C6"
+            ]
+        },
+        "softwareTechnologies": [
+            {
+                "type": "SQLITE",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "OPENSTACK",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "PYTHON",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "NEUTRON",
+                "edition": null,
+                "version": null
+            }
+        ],
+        "listenPorts": [
+            9686
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-79044E8C4F250AEC",
+        "displayName": "Nova-api-metadata",
+        "discoveredName": "Nova-api-metadata",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-B34081EFF9E5F516",
+                "PROCESS_GROUP-98DC6B5403AE2401",
+                "PROCESS_GROUP-92F466C2A666BEEB",
+                "PROCESS_GROUP-3102C29299C3BA19",
+                "PROCESS_GROUP-F149C77876D37ACD",
+                "PROCESS_GROUP-82330B0B3A8B552C",
+                "PROCESS_GROUP-79044E8C4F250AEC",
+                "PROCESS_GROUP-67F568853A349471"
+            ],
+            "runsOn": [
+                "HOST-9B3CDCF3A6732BF1"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-B34081EFF9E5F516",
+                "PROCESS_GROUP-7A0200A043F5C9EA",
+                "PROCESS_GROUP-92F466C2A666BEEB",
+                "PROCESS_GROUP-AA86A6FBE1EBE661",
+                "PROCESS_GROUP-79044E8C4F250AEC",
+                "PROCESS_GROUP-3C62BB97B6EF6F82",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-31D49FC4694179A9",
+                "PROCESS_GROUP-0D7855288F798D2B",
+                "PROCESS_GROUP-05C8338DBEDE13D6",
+                "PROCESS_GROUP-D60E4B411B9425A1",
+                "PROCESS_GROUP-98DC6B5403AE2401",
+                "PROCESS_GROUP-36435C87FA8F3189",
+                "PROCESS_GROUP-8EDDF9FBE05BB81E",
+                "PROCESS_GROUP-3102C29299C3BA19",
+                "PROCESS_GROUP-67F568853A349471",
+                "PROCESS_GROUP-216FDBEF8325B5C6"
+            ]
+        },
+        "softwareTechnologies": [
+            {
+                "type": "SQLITE",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "OPENSTACK",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "PYTHON",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "NOVA",
+                "edition": null,
+                "version": null
+            }
+        ],
+        "listenPorts": [
+            8775
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-98DC6B5403AE2401",
+        "displayName": "Nova-api-os-compute",
+        "discoveredName": "Nova-api-os-compute",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-B34081EFF9E5F516",
+                "PROCESS_GROUP-98DC6B5403AE2401",
+                "PROCESS_GROUP-92F466C2A666BEEB",
+                "PROCESS_GROUP-3102C29299C3BA19",
+                "PROCESS_GROUP-F149C77876D37ACD",
+                "PROCESS_GROUP-82330B0B3A8B552C",
+                "PROCESS_GROUP-79044E8C4F250AEC",
+                "PROCESS_GROUP-67F568853A349471"
+            ],
+            "runsOn": [
+                "HOST-9B3CDCF3A6732BF1"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-B34081EFF9E5F516",
+                "PROCESS_GROUP-7A0200A043F5C9EA",
+                "PROCESS_GROUP-92F466C2A666BEEB",
+                "PROCESS_GROUP-79044E8C4F250AEC",
+                "PROCESS_GROUP-3C62BB97B6EF6F82",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-31D49FC4694179A9",
+                "PROCESS_GROUP-0D7855288F798D2B",
+                "PROCESS_GROUP-05C8338DBEDE13D6",
+                "PROCESS_GROUP-D60E4B411B9425A1",
+                "PROCESS_GROUP-98DC6B5403AE2401",
+                "PROCESS_GROUP-36435C87FA8F3189",
+                "PROCESS_GROUP-8EDDF9FBE05BB81E",
+                "PROCESS_GROUP-3102C29299C3BA19",
+                "PROCESS_GROUP-67F568853A349471",
+                "PROCESS_GROUP-216FDBEF8325B5C6"
+            ]
+        },
+        "softwareTechnologies": [
+            {
+                "type": "SQLITE",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "OPENSTACK",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "PYTHON",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "NOVA",
+                "edition": null,
+                "version": null
+            }
+        ],
+        "listenPorts": [
+            8764
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-31D49FC4694179A9",
+        "displayName": "Nova-cert",
+        "discoveredName": "Nova-cert",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-B34081EFF9E5F516",
+                "PROCESS_GROUP-98DC6B5403AE2401",
+                "PROCESS_GROUP-92F466C2A666BEEB",
+                "PROCESS_GROUP-3102C29299C3BA19",
+                "PROCESS_GROUP-82330B0B3A8B552C",
+                "PROCESS_GROUP-79044E8C4F250AEC",
+                "PROCESS_GROUP-67F568853A349471"
+            ],
+            "runsOn": [
+                "HOST-9B3CDCF3A6732BF1"
+            ]
+        },
+        "toRelationships": {},
+        "softwareTechnologies": [
+            {
+                "type": "SQLITE",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "OPENSTACK",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "PYTHON",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "NOVA",
+                "edition": null,
+                "version": null
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-D60E4B411B9425A1",
+        "displayName": "Nova-conductor",
+        "discoveredName": "Nova-conductor",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-B34081EFF9E5F516",
+                "PROCESS_GROUP-98DC6B5403AE2401",
+                "PROCESS_GROUP-92F466C2A666BEEB",
+                "PROCESS_GROUP-3102C29299C3BA19",
+                "PROCESS_GROUP-F149C77876D37ACD",
+                "PROCESS_GROUP-82330B0B3A8B552C",
+                "PROCESS_GROUP-79044E8C4F250AEC",
+                "PROCESS_GROUP-67F568853A349471"
+            ],
+            "runsOn": [
+                "HOST-9B3CDCF3A6732BF1"
+            ]
+        },
+        "toRelationships": {},
+        "softwareTechnologies": [
+            {
+                "type": "SQLITE",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "OPENSTACK",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "PYTHON",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "NOVA",
+                "edition": null,
+                "version": null
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-8EDDF9FBE05BB81E",
+        "displayName": "Nova-scheduler",
+        "discoveredName": "Nova-scheduler",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-B34081EFF9E5F516",
+                "PROCESS_GROUP-98DC6B5403AE2401",
+                "PROCESS_GROUP-92F466C2A666BEEB",
+                "PROCESS_GROUP-3102C29299C3BA19",
+                "PROCESS_GROUP-82330B0B3A8B552C",
+                "PROCESS_GROUP-79044E8C4F250AEC",
+                "PROCESS_GROUP-67F568853A349471"
+            ],
+            "runsOn": [
+                "HOST-9B3CDCF3A6732BF1"
+            ]
+        },
+        "toRelationships": {},
+        "softwareTechnologies": [
+            {
+                "type": "SQLITE",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "OPENSTACK",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "PYTHON",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "NOVA",
+                "edition": null,
+                "version": null
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-216FDBEF8325B5C6",
+        "displayName": "OneAgent log analytics",
+        "discoveredName": "OneAgent log analytics",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-5B7B162D62AF0CE4",
+                "PROCESS_GROUP-07F29EF79A2F51C5",
+                "PROCESS_GROUP-B34081EFF9E5F516",
+                "PROCESS_GROUP-16FD2750E91EAFAC",
+                "PROCESS_GROUP-55D71BDF2290E3C7",
+                "PROCESS_GROUP-92F466C2A666BEEB",
+                "PROCESS_GROUP-916EA7AD2F55CD3C",
+                "PROCESS_GROUP-8887457FCA96BFF4",
+                "PROCESS_GROUP-79044E8C4F250AEC",
+                "PROCESS_GROUP-0B429429B3D9BA2C",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-36BAFEFE448A1CAD",
+                "PROCESS_GROUP-509682C3669AB4F2",
+                "PROCESS_GROUP-98DC6B5403AE2401",
+                "PROCESS_GROUP-5C5C23F580864AAB",
+                "PROCESS_GROUP-D82B4258B906D3C8",
+                "PROCESS_GROUP-3102C29299C3BA19",
+                "PROCESS_GROUP-F149C77876D37ACD",
+                "PROCESS_GROUP-598C8FD67BF2946C",
+                "PROCESS_GROUP-322E5E3F4BD25CCA",
+                "PROCESS_GROUP-7BAB74848939F900",
+                "PROCESS_GROUP-67F568853A349471",
+                "PROCESS_GROUP-AFF88D69DFD27180"
+            ],
+            "runsOn": [
+                "HOST-7453A7E317FCF4AF",
+                "HOST-267CF1D2A12C1BA1",
+                "HOST-BBB6C08450221836",
+                "HOST-923A41D539D53D13",
+                "HOST-A02BF7E1B9ADA36D",
+                "HOST-2210C04945B95C2C",
+                "HOST-363E102D24CFAB71",
+                "HOST-9B3CDCF3A6732BF1",
+                "HOST-2BBED3AC0BB98104",
+                "HOST-CD4B3CFD5EACAA8A",
+                "HOST-0788564003D72AEF",
+                "HOST-B48023C75A5CD3AB",
+                "HOST-76FAA6DC0347DA12",
+                "HOST-FBE542F270B45636",
+                "HOST-E662F28EFFC7D77D",
+                "HOST-6B659DFBAC76F491",
+                "HOST-EA50C80CC9354652",
+                "HOST-7344649A8D974E74",
+                "HOST-A8AA150079BA176E"
+            ]
+        },
+        "toRelationships": {},
+        "metadata": {
+            "executables": "oneagentloganalytics"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "APMNG",
+                "edition": null,
+                "version": null
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-54A8B0B75D36E463",
+        "displayName": "OneAgent log analytics",
+        "discoveredName": "OneAgent log analytics",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-3AD9FB79C914520C"
+            ],
+            "runsOn": [
+                "HOST-BF25E7D0F8FC45D9",
+                "HOST-B51CB9FD8D45DE24",
+                "HOST-8866C5F8CD351C9B",
+                "HOST-F5D85B7DCDD8A93C",
+                "HOST-54AA0D8B5401A1C2",
+                "HOST-DE6F9EC80D4D7C58",
+                "HOST-1E64E15558B9486B",
+                "HOST-A4198073007B0118"
+            ]
+        },
+        "toRelationships": {},
+        "metadata": {
+            "executables": "oneagentloganalytics.exe"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "APMNG",
+                "edition": null,
+                "version": null
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-B27330900F0E858D",
+        "displayName": "OneAgent monitoring extensions",
+        "discoveredName": "OneAgent monitoring extensions",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-82330B0B3A8B552C",
+                "PROCESS_GROUP-F141B7D24878E37D",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-92F466C2A666BEEB",
+                "PROCESS_GROUP-36BAFEFE448A1CAD"
+            ],
+            "runsOn": [
+                "HOST-7453A7E317FCF4AF",
+                "HOST-267CF1D2A12C1BA1",
+                "HOST-BBB6C08450221836",
+                "HOST-923A41D539D53D13",
+                "HOST-A02BF7E1B9ADA36D",
+                "HOST-2210C04945B95C2C",
+                "HOST-363E102D24CFAB71",
+                "HOST-9B3CDCF3A6732BF1",
+                "HOST-2BBED3AC0BB98104",
+                "HOST-CD4B3CFD5EACAA8A",
+                "HOST-0788564003D72AEF",
+                "HOST-B48023C75A5CD3AB",
+                "HOST-76FAA6DC0347DA12",
+                "HOST-FBE542F270B45636",
+                "HOST-E662F28EFFC7D77D",
+                "HOST-6B659DFBAC76F491",
+                "HOST-EA50C80CC9354652",
+                "HOST-7344649A8D974E74",
+                "HOST-A8AA150079BA176E"
+            ]
+        },
+        "toRelationships": {},
+        "metadata": {
+            "executables": "oneagentplugin"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "APMNG",
+                "edition": null,
+                "version": null
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-4F6C4B7F4305AFB7",
+        "displayName": "OneAgent monitoring extensions",
+        "discoveredName": "OneAgent monitoring extensions",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-3AD9FB79C914520C"
+            ],
+            "runsOn": [
+                "HOST-BF25E7D0F8FC45D9",
+                "HOST-B51CB9FD8D45DE24",
+                "HOST-8866C5F8CD351C9B",
+                "HOST-F5D85B7DCDD8A93C",
+                "HOST-54AA0D8B5401A1C2",
+                "HOST-DE6F9EC80D4D7C58",
+                "HOST-1E64E15558B9486B",
+                "HOST-A4198073007B0118"
+            ]
+        },
+        "toRelationships": {},
+        "metadata": {
+            "executables": "oneagentplugin.exe"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "APMNG",
+                "edition": null,
+                "version": null
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-55BB99EBACB51463",
+        "displayName": "OneAgent network monitoring",
+        "discoveredName": "OneAgent network monitoring",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-3AD9FB79C914520C"
+            ],
+            "runsOn": [
+                "HOST-B51CB9FD8D45DE24",
+                "HOST-A4198073007B0118",
+                "HOST-A02BF7E1B9ADA36D",
+                "HOST-2210C04945B95C2C",
+                "HOST-9B3CDCF3A6732BF1",
+                "HOST-BF25E7D0F8FC45D9",
+                "HOST-CD4B3CFD5EACAA8A",
+                "HOST-FBE542F270B45636",
+                "HOST-E662F28EFFC7D77D",
+                "HOST-267CF1D2A12C1BA1",
+                "HOST-1E64E15558B9486B",
+                "HOST-7453A7E317FCF4AF",
+                "HOST-BBB6C08450221836",
+                "HOST-923A41D539D53D13",
+                "HOST-363E102D24CFAB71",
+                "HOST-2BBED3AC0BB98104",
+                "HOST-0788564003D72AEF",
+                "HOST-B48023C75A5CD3AB",
+                "HOST-8866C5F8CD351C9B",
+                "HOST-DE6F9EC80D4D7C58",
+                "HOST-76FAA6DC0347DA12",
+                "HOST-6B659DFBAC76F491",
+                "HOST-EA50C80CC9354652",
+                "HOST-7344649A8D974E74",
+                "HOST-A8AA150079BA176E"
+            ]
+        },
+        "toRelationships": {},
+        "softwareTechnologies": [
+            {
+                "type": "APMNG",
+                "edition": null,
+                "version": null
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-3AD9FB79C914520C",
+        "displayName": "OneAgent system monitoring",
+        "discoveredName": "OneAgent system monitoring",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-5B7B162D62AF0CE4",
+                "PROCESS_GROUP-8887457FCA96BFF4",
+                "PROCESS_GROUP-79044E8C4F250AEC",
+                "PROCESS_GROUP-82330B0B3A8B552C",
+                "PROCESS_GROUP-0B429429B3D9BA2C",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-98DC6B5403AE2401",
+                "PROCESS_GROUP-3102C29299C3BA19",
+                "PROCESS_GROUP-F149C77876D37ACD",
+                "PROCESS_GROUP-7BAB74848939F900",
+                "PROCESS_GROUP-AFF88D69DFD27180",
+                "PROCESS_GROUP-07F29EF79A2F51C5",
+                "PROCESS_GROUP-B34081EFF9E5F516",
+                "PROCESS_GROUP-55D71BDF2290E3C7",
+                "PROCESS_GROUP-16FD2750E91EAFAC",
+                "PROCESS_GROUP-92F466C2A666BEEB",
+                "PROCESS_GROUP-916EA7AD2F55CD3C",
+                "PROCESS_GROUP-36BAFEFE448A1CAD",
+                "PROCESS_GROUP-35C6073C07AE0507",
+                "PROCESS_GROUP-509682C3669AB4F2",
+                "PROCESS_GROUP-5C5C23F580864AAB",
+                "PROCESS_GROUP-D82B4258B906D3C8",
+                "PROCESS_GROUP-598C8FD67BF2946C",
+                "PROCESS_GROUP-322E5E3F4BD25CCA",
+                "PROCESS_GROUP-67F568853A349471"
+            ],
+            "runsOn": [
+                "HOST-B51CB9FD8D45DE24",
+                "HOST-F5D85B7DCDD8A93C",
+                "HOST-A4198073007B0118",
+                "HOST-A02BF7E1B9ADA36D",
+                "HOST-2210C04945B95C2C",
+                "HOST-9B3CDCF3A6732BF1",
+                "HOST-BF25E7D0F8FC45D9",
+                "HOST-CD4B3CFD5EACAA8A",
+                "HOST-FBE542F270B45636",
+                "HOST-E662F28EFFC7D77D",
+                "HOST-54AA0D8B5401A1C2",
+                "HOST-267CF1D2A12C1BA1",
+                "HOST-1E64E15558B9486B",
+                "HOST-7453A7E317FCF4AF",
+                "HOST-BBB6C08450221836",
+                "HOST-923A41D539D53D13",
+                "HOST-363E102D24CFAB71",
+                "HOST-2BBED3AC0BB98104",
+                "HOST-0788564003D72AEF",
+                "HOST-B48023C75A5CD3AB",
+                "HOST-8866C5F8CD351C9B",
+                "HOST-DE6F9EC80D4D7C58",
+                "HOST-76FAA6DC0347DA12",
+                "HOST-6B659DFBAC76F491",
+                "HOST-EA50C80CC9354652",
+                "HOST-7344649A8D974E74",
+                "HOST-A8AA150079BA176E"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-54A8B0B75D36E463",
+                "PROCESS_GROUP-4F6C4B7F4305AFB7",
+                "PROCESS_GROUP-55BB99EBACB51463",
+                "PROCESS_GROUP-B27330900F0E858D",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-216FDBEF8325B5C6"
+            ]
+        },
+        "softwareTechnologies": [
+            {
+                "type": "APMNG",
+                "edition": null,
+                "version": null
+            }
+        ],
+        "listenPorts": [
+            50001,
+            50000,
+            50003,
+            50002
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-4C6452D8029CD1F5",
+        "displayName": "PHP-FPM",
+        "discoveredName": "PHP-FPM",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-36BAFEFE448A1CAD"
+            ],
+            "runsOn": [
+                "HOST-E662F28EFFC7D77D"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-5C5C23F580864AAB"
+            ],
+            "runsOn": [
+                "SERVICE-CCF636B5D98DB355"
+            ]
+        },
+        "metadata": {
+            "executablePaths": "/usr/sbin/php5-fpm"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "PHP",
+                "edition": "FPM",
+                "version": "5.5.9"
+            },
+            {
+                "type": "SQLITE",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "PHP_FPM",
+                "edition": null,
+                "version": null
+            }
+        ],
+        "listenPorts": [
+            9000
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-82330B0B3A8B552C",
+        "displayName": "RabbitMQ",
+        "discoveredName": "RabbitMQ",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-F149C77876D37ACD",
+                "PROCESS_GROUP-82330B0B3A8B552C"
+            ],
+            "runsOn": [
+                "HOST-9B3CDCF3A6732BF1"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-B34081EFF9E5F516",
+                "PROCESS_GROUP-7A0200A043F5C9EA",
+                "PROCESS_GROUP-7AAB8DC0959B1467",
+                "PROCESS_GROUP-82330B0B3A8B552C",
+                "PROCESS_GROUP-79044E8C4F250AEC",
+                "PROCESS_GROUP-C84C3D73A59DAA7C",
+                "PROCESS_GROUP-3C62BB97B6EF6F82",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-31D49FC4694179A9",
+                "PROCESS_GROUP-B9102B4F42D0620D",
+                "PROCESS_GROUP-0D7855288F798D2B",
+                "PROCESS_GROUP-05C8338DBEDE13D6",
+                "PROCESS_GROUP-D60E4B411B9425A1",
+                "PROCESS_GROUP-98DC6B5403AE2401",
+                "PROCESS_GROUP-EA5111638F5F84F1",
+                "PROCESS_GROUP-82FFA4102921666F",
+                "PROCESS_GROUP-36435C87FA8F3189",
+                "PROCESS_GROUP-B27330900F0E858D",
+                "PROCESS_GROUP-8EDDF9FBE05BB81E",
+                "PROCESS_GROUP-3102C29299C3BA19",
+                "PROCESS_GROUP-67F568853A349471"
+            ]
+        },
+        "softwareTechnologies": [
+            {
+                "type": "AMQP",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "RABBITMQ",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "ERLANG",
+                "edition": null,
+                "version": null
+            }
+        ],
+        "listenPorts": [
+            5672,
+            25672
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-8E49A9E418F5B346",
+        "displayName": "SAP",
+        "discoveredName": "SAP",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-6EB28F2B07E8A057",
+                "PROCESS_GROUP-8E49A9E418F5B346"
+            ],
+            "runsOn": [
+                "HOST-BF25E7D0F8FC45D9",
+                "HOST-B51CB9FD8D45DE24",
+                "HOST-8866C5F8CD351C9B"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-8E49A9E418F5B346",
+                "PROCESS_GROUP-F144362E2D016339"
+            ]
+        },
+        "softwareTechnologies": [
+            {
+                "type": "SAP",
+                "edition": null,
+                "version": null
+            }
+        ],
+        "listenPorts": [
+            3900,
+            3200,
+            40080,
+            3600,
+            65000,
+            8100,
+            3300,
+            40002,
+            50014,
+            50013,
+            40001,
+            40000,
+            1128
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-F144362E2D016339",
+        "displayName": "SAP Logon for Windows",
+        "discoveredName": "SAP Logon for Windows",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-8E49A9E418F5B346"
+            ],
+            "runsOn": [
+                "HOST-8866C5F8CD351C9B"
+            ]
+        },
+        "toRelationships": {},
+        "metadata": {
+            "executablePaths": "C:\\PROGRAM FILES (X86)\\SAP\\FRONTEND\\SAPGUI\\SAPLOGON.EXE"
+        }
+    },
+    {
+        "entityId": "PROCESS_GROUP-B17CE1D19815DBF5",
+        "displayName": "Sysinternals Process Explorer",
+        "discoveredName": "Sysinternals Process Explorer",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-A4198073007B0118"
+            ]
+        },
+        "toRelationships": {},
+        "metadata": {
+            "executablePaths": "C:\\USERS\\ADMINISTRATOR\\UTILS\\PROCEXP.EXE"
+        }
+    },
+    {
+        "entityId": "PROCESS_GROUP-EC64A7883AD770F0",
+        "displayName": "Varnish Cache",
+        "discoveredName": "Varnish Cache",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-5B7B162D62AF0CE4",
+                "PROCESS_GROUP-B34081EFF9E5F516",
+                "PROCESS_GROUP-5C5C23F580864AAB",
+                "PROCESS_GROUP-16FD2750E91EAFAC",
+                "PROCESS_GROUP-715E87B8A0A02DB7",
+                "PROCESS_GROUP-8887457FCA96BFF4",
+                "PROCESS_GROUP-916EA7AD2F55CD3C",
+                "PROCESS_GROUP-598C8FD67BF2946C",
+                "PROCESS_GROUP-322E5E3F4BD25CCA",
+                "PROCESS_GROUP-AFF88D69DFD27180",
+                "PROCESS_GROUP-36BAFEFE448A1CAD"
+            ],
+            "runsOn": [
+                "HOST-0788564003D72AEF"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-322E5E3F4BD25CCA",
+                "PROCESS_GROUP-62548D702A2DD224",
+                "PROCESS_GROUP-5C5C23F580864AAB"
+            ],
+            "runsOn": [
+                "SERVICE-0E7AAACB22858658"
+            ]
+        },
+        "metadata": {
+            "executables": "varnishd"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "VARNISH_CACHE",
+                "edition": null,
+                "version": "4.0.4 revision 386f712"
+            }
+        ],
+        "listenPorts": [
+            6082,
+            8079
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-09875E82E2FB98FD",
+        "displayName": "Windows System",
+        "discoveredName": "Windows System",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-09875E82E2FB98FD"
+            ],
+            "runsOn": [
+                "HOST-BF25E7D0F8FC45D9",
+                "HOST-B51CB9FD8D45DE24",
+                "HOST-8866C5F8CD351C9B",
+                "HOST-F5D85B7DCDD8A93C",
+                "HOST-54AA0D8B5401A1C2",
+                "HOST-DE6F9EC80D4D7C58",
+                "HOST-1E64E15558B9486B",
+                "HOST-A4198073007B0118"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-09875E82E2FB98FD"
+            ]
+        },
+        "softwareTechnologies": [
+            {
+                "type": "WINDOWS_SYSTEM",
+                "edition": null,
+                "version": null
+            }
+        ],
+        "listenPorts": [
+            49177,
+            49176,
+            49175,
+            3389,
+            49169,
+            49168,
+            49163,
+            49162,
+            49161,
+            49156,
+            49155,
+            49154,
+            49153,
+            49152,
+            5985,
+            2103,
+            445,
+            1801,
+            47001,
+            2105,
+            49224,
+            49222,
+            139,
+            49220,
+            49218,
+            135,
+            49215,
+            2107,
+            49217,
+            49206,
+            49205,
+            49203,
+            5357,
+            49198,
+            49196,
+            49182,
+            49180,
+            49179
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-89796F701FF7C56A",
+        "displayName": "XenDpriv.exe",
+        "discoveredName": "XenDpriv.exe",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-F5D85B7DCDD8A93C",
+                "HOST-54AA0D8B5401A1C2",
+                "HOST-DE6F9EC80D4D7C58",
+                "HOST-1E64E15558B9486B"
+            ]
+        },
+        "toRelationships": {},
+        "metadata": {
+            "executables": "XENDPRIV.EXE"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "DOTNET",
+                "edition": "Microsoft Corporation",
+                "version": "4.0.30319.1008"
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-7088651B58DDC5E5",
+        "displayName": "XenGuestAgent.exe",
+        "discoveredName": "XenGuestAgent.exe",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-F5D85B7DCDD8A93C",
+                "HOST-54AA0D8B5401A1C2",
+                "HOST-DE6F9EC80D4D7C58",
+                "HOST-1E64E15558B9486B"
+            ]
+        },
+        "toRelationships": {},
+        "metadata": {
+            "executables": "XENGUESTAGENT.EXE"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "DOTNET",
+                "edition": "Microsoft Corporation",
+                "version": "4.0.30319.1008"
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-5C4AD12F1A149132",
+        "displayName": "apl-remotecontrol.jar",
+        "discoveredName": "apl-remotecontrol.jar",
+        "tags": [
+            {
+                "context": "CONTEXTLESS",
+                "key": "A1"
+            }
+        ],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-0788564003D72AEF",
+                "HOST-F5D85B7DCDD8A93C",
+                "HOST-54AA0D8B5401A1C2",
+                "HOST-DE6F9EC80D4D7C58",
+                "HOST-76FAA6DC0347DA12",
+                "HOST-1E64E15558B9486B",
+                "HOST-7453A7E317FCF4AF",
+                "HOST-6B659DFBAC76F491",
+                "HOST-A02BF7E1B9ADA36D",
+                "HOST-EA50C80CC9354652",
+                "HOST-7344649A8D974E74"
+            ]
+        },
+        "toRelationships": {},
+        "metadata": {
+            "javaJarFiles": "apl-remotecontrol.jar"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "JAVA",
+                "edition": null,
+                "version": "1.7.0_121"
+            }
+        ],
+        "listenPorts": [
+            8443
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-0ADCF21169AB2180",
+        "displayName": "apport",
+        "discoveredName": "apport",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-A02BF7E1B9ADA36D"
+            ]
+        },
+        "toRelationships": {},
+        "softwareTechnologies": [
+            {
+                "type": "PYTHON",
+                "edition": null,
+                "version": null
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-F93004A7226E1A4F",
+        "displayName": "bcksrvr.exe",
+        "discoveredName": "bcksrvr.exe",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-BF25E7D0F8FC45D9"
+            ]
+        },
+        "toRelationships": {},
+        "metadata": {
+            "executablePaths": "E:\\SYBASE\\ERP\\ASE-15_0\\BIN\\BCKSRVR.EXE"
+        },
+        "listenPorts": [
+            4902
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-AFF88D69DFD27180",
+        "displayName": "com.dynatrace.easytravel.cmdlauncher.jar easyTravel (x64)",
+        "discoveredName": "com.dynatrace.easytravel.cmdlauncher.jar easyTravel (x64)",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-35C6073C07AE0507",
+                "PROCESS_GROUP-916EA7AD2F55CD3C",
+                "PROCESS_GROUP-8887457FCA96BFF4"
+            ],
+            "runsOn": [
+                "HOST-F5D85B7DCDD8A93C",
+                "HOST-A4198073007B0118",
+                "HOST-54AA0D8B5401A1C2",
+                "HOST-DE6F9EC80D4D7C58",
+                "HOST-1E64E15558B9486B"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-EC64A7883AD770F0",
+                "PROCESS_GROUP-E475868328FEBA27",
+                "PROCESS_GROUP-92F466C2A666BEEB",
+                "PROCESS_GROUP-62548D702A2DD224",
+                "PROCESS_GROUP-06B5EC9BCCF56FC4",
+                "PROCESS_GROUP-322E5E3F4BD25CCA",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-216FDBEF8325B5C6"
+            ],
+            "runsOn": [
+                "SERVICE-EB11557401244A40"
+            ]
+        },
+        "metadata": {
+            "javaJarFiles": "com.dynatrace.easytravel.cmdlauncher.jar",
+            "catalinaBaseValues": "C:/Program Files/dynaTrace/easyTravel (x64)"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "JAVA",
+                "edition": "Oracle HotSpot",
+                "version": "1.8.0_102"
+            },
+            {
+                "type": "TOMCAT",
+                "edition": null,
+                "version": null
+            }
+        ],
+        "listenPorts": [
+            1697
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-5B7B162D62AF0CE4",
+        "displayName": "com.dynatrace.easytravel.cmdlauncher.jar easytravel-2.0.0-x64",
+        "discoveredName": "com.dynatrace.easytravel.cmdlauncher.jar easytravel-2.0.0-x64",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-07F29EF79A2F51C5",
+                "PROCESS_GROUP-5C5C23F580864AAB",
+                "PROCESS_GROUP-8887457FCA96BFF4",
+                "PROCESS_GROUP-916EA7AD2F55CD3C",
+                "PROCESS_GROUP-598C8FD67BF2946C",
+                "PROCESS_GROUP-0B429429B3D9BA2C",
+                "PROCESS_GROUP-322E5E3F4BD25CCA",
+                "PROCESS_GROUP-7BAB74848939F900",
+                "PROCESS_GROUP-35C6073C07AE0507"
+            ],
+            "runsOn": [
+                "HOST-7453A7E317FCF4AF",
+                "HOST-267CF1D2A12C1BA1",
+                "HOST-BBB6C08450221836",
+                "HOST-923A41D539D53D13",
+                "HOST-A02BF7E1B9ADA36D",
+                "HOST-2210C04945B95C2C",
+                "HOST-363E102D24CFAB71",
+                "HOST-B48023C75A5CD3AB",
+                "HOST-76FAA6DC0347DA12",
+                "HOST-FBE542F270B45636",
+                "HOST-6B659DFBAC76F491",
+                "HOST-EA50C80CC9354652",
+                "HOST-7344649A8D974E74",
+                "HOST-A8AA150079BA176E"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-EC64A7883AD770F0",
+                "PROCESS_GROUP-E475868328FEBA27",
+                "PROCESS_GROUP-92F466C2A666BEEB",
+                "PROCESS_GROUP-62548D702A2DD224",
+                "PROCESS_GROUP-06B5EC9BCCF56FC4",
+                "PROCESS_GROUP-322E5E3F4BD25CCA",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-216FDBEF8325B5C6"
+            ],
+            "runsOn": [
+                "SERVICE-48D8F6FB391A5752"
+            ]
+        },
+        "metadata": {
+            "javaJarFiles": "com.dynatrace.easytravel.cmdlauncher.jar",
+            "catalinaBaseValues": "/home/labuser/easytravel-2.0.0-x64"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "JAVA",
+                "edition": "Oracle HotSpot",
+                "version": "1.8.0_112"
+            },
+            {
+                "type": "TOMCAT",
+                "edition": null,
+                "version": null
+            }
+        ],
+        "listenPorts": [
+            1697
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-598C8FD67BF2946C",
+        "displayName": "com.dynatrace.easytravel.pluginservice.jar easytravel-2.0.0-x64",
+        "discoveredName": "com.dynatrace.easytravel.pluginservice.jar easytravel-2.0.0-x64",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-A02BF7E1B9ADA36D"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-5B7B162D62AF0CE4",
+                "PROCESS_GROUP-EC64A7883AD770F0",
+                "PROCESS_GROUP-16FD2750E91EAFAC",
+                "PROCESS_GROUP-62548D702A2DD224",
+                "PROCESS_GROUP-06B5EC9BCCF56FC4",
+                "PROCESS_GROUP-322E5E3F4BD25CCA",
+                "PROCESS_GROUP-7BAB74848939F900",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-216FDBEF8325B5C6"
+            ],
+            "runsOn": [
+                "SERVICE-EBC5F2D81C1A4AE9"
+            ]
+        },
+        "metadata": {
+            "javaJarFiles": "com.dynatrace.easytravel.pluginservice.jar",
+            "catalinaBaseValues": "/home/labuser/easytravel-2.0.0-x64"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "JAVA",
+                "edition": null,
+                "version": "1.8.0_112"
+            },
+            {
+                "type": "TOMCAT",
+                "edition": null,
+                "version": null
+            }
+        ],
+        "listenPorts": [
+            7655,
+            7654
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-62548D702A2DD224",
+        "displayName": "com.dynatrace.easytravel.weblauncher.jar easytravel-2.0.0-x64",
+        "discoveredName": "com.dynatrace.easytravel.weblauncher.jar easytravel-2.0.0-x64",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-5B7B162D62AF0CE4",
+                "PROCESS_GROUP-07F29EF79A2F51C5",
+                "PROCESS_GROUP-B34081EFF9E5F516",
+                "PROCESS_GROUP-16FD2750E91EAFAC",
+                "PROCESS_GROUP-715E87B8A0A02DB7",
+                "PROCESS_GROUP-916EA7AD2F55CD3C",
+                "PROCESS_GROUP-36BAFEFE448A1CAD",
+                "PROCESS_GROUP-509682C3669AB4F2",
+                "PROCESS_GROUP-EC64A7883AD770F0",
+                "PROCESS_GROUP-5C5C23F580864AAB",
+                "PROCESS_GROUP-D82B4258B906D3C8",
+                "PROCESS_GROUP-598C8FD67BF2946C",
+                "PROCESS_GROUP-322E5E3F4BD25CCA",
+                "PROCESS_GROUP-AFF88D69DFD27180"
+            ],
+            "runsOn": [
+                "HOST-0788564003D72AEF",
+                "HOST-CD4B3CFD5EACAA8A"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-07F29EF79A2F51C5",
+                "PROCESS_GROUP-5C5C23F580864AAB"
+            ],
+            "runsOn": [
+                "SERVICE-8DB16D07A0952B2A",
+                "SERVICE-D79DE4740B76CFA2"
+            ]
+        },
+        "metadata": {
+            "javaJarFiles": "com.dynatrace.easytravel.weblauncher.jar",
+            "catalinaBaseValues": "/home/labuser/easytravel-2.0.0-x64"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "TOMCAT",
+                "edition": null,
+                "version": "7.0.39.0"
+            },
+            {
+                "type": "JAVA",
+                "edition": "Oracle HotSpot",
+                "version": "1.8.0_112"
+            }
+        ],
+        "listenPorts": [
+            8095,
+            8094,
+            1697,
+            1527,
+            8444
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-F030F42E6F64BD26",
+        "displayName": "csc.exe",
+        "discoveredName": "csc.exe",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-54AA0D8B5401A1C2"
+            ]
+        },
+        "toRelationships": {},
+        "metadata": {
+            "executables": "csc.exe"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "DOTNET",
+                "edition": "Microsoft Corporation",
+                "version": "2.0.50727.5472"
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-A3E3A683C21079BE",
+        "displayName": "daemon.rb",
+        "discoveredName": "daemon.rb",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-F5D85B7DCDD8A93C",
+                "HOST-54AA0D8B5401A1C2",
+                "HOST-DE6F9EC80D4D7C58",
+                "HOST-1E64E15558B9486B"
+            ]
+        },
+        "toRelationships": {},
+        "metadata": {
+            "rubyScriptPaths": "C:/PROGRAM FILES (X86)/PUPPET LABS/PUPPET/SERVICE/DAEMON.RB"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "RUBY",
+                "edition": "http://www.ruby-lang.org/",
+                "version": "1.9.3p484"
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-0E58BDD5F3188CD8",
+        "displayName": "dnsmasq",
+        "discoveredName": "dnsmasq",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-9B3CDCF3A6732BF1"
+            ]
+        },
+        "toRelationships": {},
+        "metadata": {
+            "executablePaths": "/usr/sbin/dnsmasq"
+        },
+        "listenPorts": [
+            53
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-9DD56679E43994F2",
+        "displayName": "docker",
+        "discoveredName": "docker",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-A02BF7E1B9ADA36D"
+            ]
+        },
+        "toRelationships": {},
+        "metadata": {
+            "executablePaths": "/usr/bin/docker"
+        }
+    },
+    {
+        "entityId": "PROCESS_GROUP-07F29EF79A2F51C5",
+        "displayName": "eT-OpenStack-BusinessBackend",
+        "discoveredName": "eT-OpenStack-BusinessBackend",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-07F29EF79A2F51C5",
+                "PROCESS_GROUP-62548D702A2DD224",
+                "PROCESS_GROUP-93171C725DE981A4"
+            ],
+            "runsOn": [
+                "HOST-267CF1D2A12C1BA1"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-5B7B162D62AF0CE4",
+                "PROCESS_GROUP-07F29EF79A2F51C5",
+                "PROCESS_GROUP-509682C3669AB4F2",
+                "PROCESS_GROUP-62548D702A2DD224",
+                "PROCESS_GROUP-0B429429B3D9BA2C",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-216FDBEF8325B5C6"
+            ],
+            "runsOn": [
+                "SERVICE-BAD95D9E0B1A0E6E",
+                "SERVICE-98FD70A8A4E2FA54",
+                "SERVICE-97EA6CCFEC367EC5",
+                "SERVICE-DF61238058E917B7",
+                "SERVICE-5F16E935853A9D49",
+                "SERVICE-CB6A6FA7C4E3229D",
+                "SERVICE-9198933237C55A77"
+            ]
+        },
+        "metadata": {
+            "dynatraceClusterIds": "eT-OpenStack-BusinessBackend",
+            "javaJarFiles": "com.dynatrace.easytravel.business.backend.jar",
+            "catalinaBaseValues": "/home/labuser/easytravel-2.0.0-x64"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "TOMCAT",
+                "edition": null,
+                "version": "7.0.39.0"
+            },
+            {
+                "type": "JAVA",
+                "edition": "Oracle HotSpot",
+                "version": "1.8.0_112"
+            }
+        ],
+        "listenPorts": [
+            8091,
+            8191
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-0B429429B3D9BA2C",
+        "displayName": "eT-OpenStack-CustomerFrontend",
+        "discoveredName": "eT-OpenStack-CustomerFrontend",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-07F29EF79A2F51C5"
+            ],
+            "runsOn": [
+                "HOST-A8AA150079BA176E"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-5B7B162D62AF0CE4",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-216FDBEF8325B5C6",
+                "PROCESS_GROUP-D82B4258B906D3C8"
+            ],
+            "runsOn": [
+                "SERVICE-B0BF0A5728615C80",
+                "SERVICE-DB684F6F3301CBCB"
+            ]
+        },
+        "metadata": {
+            "dynatraceClusterIds": "eT-OpenStack-CustomerFrontend",
+            "javaJarFiles": "com.dynatrace.easytravel.customer.frontend.jar",
+            "catalinaBaseValues": "/home/labuser/easytravel-2.0.0-x64"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "TOMCAT",
+                "edition": null,
+                "version": "7.0.39.0"
+            },
+            {
+                "type": "JAVA",
+                "edition": "Oracle HotSpot",
+                "version": "1.8.0_112"
+            }
+        ],
+        "listenPorts": [
+            8180,
+            8080,
+            8280
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-D82B4258B906D3C8",
+        "displayName": "eT-OpenStack-LoadBalancer",
+        "discoveredName": "eT-OpenStack-LoadBalancer",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-0B429429B3D9BA2C"
+            ],
+            "runsOn": [
+                "HOST-2210C04945B95C2C"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-216FDBEF8325B5C6",
+                "PROCESS_GROUP-62548D702A2DD224"
+            ]
+        },
+        "metadata": {
+            "dynatraceClusterIds": "eT-OpenStack-LoadBalancer",
+            "apacheConfigPaths": "/home/labuser/.dynaTrace/easyTravel 2.0.0/easyTravel/config/httpd.conf"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "APACHE_HTTPD",
+                "edition": null,
+                "version": "2.2.17"
+            }
+        ],
+        "listenPorts": [
+            8070,
+            9443,
+            8079,
+            8999,
+            8077
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-509682C3669AB4F2",
+        "displayName": "eT-OpenStack-ThirdPartyContentServer",
+        "discoveredName": "eT-OpenStack-ThirdPartyContentServer",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-07F29EF79A2F51C5"
+            ],
+            "runsOn": [
+                "HOST-A8AA150079BA176E"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-216FDBEF8325B5C6",
+                "PROCESS_GROUP-62548D702A2DD224"
+            ],
+            "runsOn": [
+                "SERVICE-F3D104C8C5178CEB"
+            ]
+        },
+        "metadata": {
+            "dynatraceClusterIds": "eT-OpenStack-ThirdPartyContentServer",
+            "javaJarFiles": "com.dynatrace.easytravel.thirdpartycontent.server.jar",
+            "catalinaBaseValues": "/home/labuser/easytravel-2.0.0-x64"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "TOMCAT",
+                "edition": null,
+                "version": "7.0.39.0"
+            },
+            {
+                "type": "JAVA",
+                "edition": "Oracle HotSpot",
+                "version": "1.8.0_112"
+            }
+        ],
+        "listenPorts": [
+            8092,
+            8192
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-7BAB74848939F900",
+        "displayName": "eT-demo-1-BusinessBackend",
+        "discoveredName": "eT-demo-1-BusinessBackend",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "RELATIONAL_DATABASE_SERVICE-5F5E84B8547457D1",
+                "PROCESS_GROUP-598C8FD67BF2946C",
+                "PROCESS_GROUP-3D9D854163F8F07A",
+                "PROCESS_GROUP-7BAB74848939F900",
+                "PROCESS_GROUP-0A9A52EA262BC039",
+                "PROCESS_GROUP-93171C725DE981A4"
+            ],
+            "runsOn": [
+                "HOST-F5D85B7DCDD8A93C",
+                "HOST-54AA0D8B5401A1C2"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-5B7B162D62AF0CE4",
+                "PROCESS_GROUP-D71583273295BF32",
+                "PROCESS_GROUP-16FD2750E91EAFAC",
+                "PROCESS_GROUP-916EA7AD2F55CD3C",
+                "PROCESS_GROUP-7BAB74848939F900",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-216FDBEF8325B5C6",
+                "PROCESS_GROUP-0A9A52EA262BC039"
+            ],
+            "runsOn": [
+                "SERVICE-5E75ECE21896F38C",
+                "SERVICE-CFCE6B09BB62B93F",
+                "SERVICE-1C4C6BB0EEB12D57",
+                "SERVICE-84CB13CAF2432165",
+                "SERVICE-84977E8DCF605164",
+                "SERVICE-B1B96BE6937081D2",
+                "SERVICE-1F282E2AFCE2E74C",
+                "SERVICE-1B5B74098C4430BE",
+                "SERVICE-DD12FCDA0F165BE5",
+                "SERVICE-EC0AEC20F017D197",
+                "SERVICE-CDEB60C48DE58E80",
+                "SERVICE-212E1C21E827375C",
+                "SERVICE-2EADB64092331D52",
+                "SERVICE-5B8C9DFD845E5B26",
+                "SERVICE-46BF16C7F05DE62E"
+            ]
+        },
+        "metadata": {
+            "dynatraceClusterIds": "eT-demo-1-BusinessBackend",
+            "javaJarFiles": "com.dynatrace.easytravel.business.backend.jar",
+            "catalinaBaseValues": "C:/Program Files/dynaTrace/easyTravel (x64)"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "TOMCAT",
+                "edition": null,
+                "version": "7.0.39.0"
+            },
+            {
+                "type": "JAVA",
+                "edition": "Oracle HotSpot",
+                "version": "1.8.0_102"
+            }
+        ],
+        "listenPorts": [
+            28081,
+            28080,
+            5446,
+            28281,
+            28280,
+            11230,
+            28181,
+            28180
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-916EA7AD2F55CD3C",
+        "displayName": "eT-demo-1-BusinessBackend-LoadBalancer",
+        "discoveredName": "eT-demo-1-BusinessBackend-LoadBalancer",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-7BAB74848939F900",
+                "PROCESS_GROUP-916EA7AD2F55CD3C"
+            ],
+            "runsOn": [
+                "HOST-F5D85B7DCDD8A93C",
+                "HOST-54AA0D8B5401A1C2"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-5B7B162D62AF0CE4",
+                "PROCESS_GROUP-8DAC747873A3B39A",
+                "PROCESS_GROUP-16FD2750E91EAFAC",
+                "PROCESS_GROUP-715E87B8A0A02DB7",
+                "PROCESS_GROUP-62548D702A2DD224",
+                "PROCESS_GROUP-916EA7AD2F55CD3C",
+                "PROCESS_GROUP-7B6A1784601B01EA",
+                "PROCESS_GROUP-CFADEC7D6A357A18",
+                "PROCESS_GROUP-06B5EC9BCCF56FC4",
+                "PROCESS_GROUP-073EAAA3AA375CF9",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-EAD34395895687D5",
+                "PROCESS_GROUP-EC64A7883AD770F0",
+                "PROCESS_GROUP-E84C09702A8E5458",
+                "PROCESS_GROUP-5C5C23F580864AAB",
+                "PROCESS_GROUP-322E5E3F4BD25CCA",
+                "PROCESS_GROUP-AFF88D69DFD27180",
+                "PROCESS_GROUP-216FDBEF8325B5C6"
+            ],
+            "runsOn": [
+                "SERVICE-E12B4F6FABFE92D5",
+                "SERVICE-C6A101A598C41F42"
+            ]
+        },
+        "metadata": {
+            "dynatraceClusterIds": "eT-demo-1-BusinessBackend-LoadBalancer",
+            "apacheConfigPaths": "C:/Users/labuser/.dynaTrace/easyTravel 2.0.0/easyTravel/config/httpd.conf"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "APACHE_HTTPD",
+                "edition": null,
+                "version": "2.2.25"
+            }
+        ],
+        "listenPorts": [
+            8091,
+            5077
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-16FD2750E91EAFAC",
+        "displayName": "eT-demo-1-CustomerFrontend",
+        "discoveredName": "eT-demo-1-CustomerFrontend",
+        "tags": [
+            {
+                "context": "CONTEXTLESS",
+                "key": "se-day"
+            }
+        ],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-5C5C23F580864AAB",
+                "PROCESS_GROUP-598C8FD67BF2946C",
+                "PROCESS_GROUP-322E5E3F4BD25CCA",
+                "PROCESS_GROUP-7BAB74848939F900",
+                "PROCESS_GROUP-8887457FCA96BFF4",
+                "PROCESS_GROUP-916EA7AD2F55CD3C"
+            ],
+            "runsOn": [
+                "HOST-6B659DFBAC76F491",
+                "HOST-76FAA6DC0347DA12",
+                "HOST-EA50C80CC9354652",
+                "HOST-7344649A8D974E74"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-EC64A7883AD770F0",
+                "PROCESS_GROUP-322E5E3F4BD25CCA",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-216FDBEF8325B5C6",
+                "PROCESS_GROUP-62548D702A2DD224"
+            ],
+            "runsOn": [
+                "SERVICE-BEABD6B2DE06DC57",
+                "SERVICE-9F3CCA917EA0080A"
+            ]
+        },
+        "metadata": {
+            "dynatraceClusterIds": "eT-demo-1-CustomerFrontend",
+            "javaJarFiles": "com.dynatrace.easytravel.customer.frontend.jar",
+            "catalinaBaseValues": "/home/labuser/easytravel-2.0.0-x64"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "TOMCAT",
+                "edition": null,
+                "version": "7.0.39.0"
+            },
+            {
+                "type": "JAVA",
+                "edition": "Oracle HotSpot",
+                "version": "1.8.0_112"
+            }
+        ],
+        "listenPorts": [
+            8180,
+            8080,
+            8280
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-322E5E3F4BD25CCA",
+        "displayName": "eT-demo-1-Frontend-LoadBalancer",
+        "discoveredName": "eT-demo-1-Frontend-LoadBalancer",
+        "tags": [
+            {
+                "context": "CONTEXTLESS",
+                "key": "processGroup"
+            }
+        ],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-5B7B162D62AF0CE4",
+                "PROCESS_GROUP-EC64A7883AD770F0",
+                "PROCESS_GROUP-B34081EFF9E5F516",
+                "PROCESS_GROUP-5C5C23F580864AAB",
+                "PROCESS_GROUP-16FD2750E91EAFAC",
+                "PROCESS_GROUP-715E87B8A0A02DB7",
+                "PROCESS_GROUP-916EA7AD2F55CD3C",
+                "PROCESS_GROUP-598C8FD67BF2946C",
+                "PROCESS_GROUP-AFF88D69DFD27180",
+                "PROCESS_GROUP-36BAFEFE448A1CAD"
+            ],
+            "runsOn": [
+                "HOST-0788564003D72AEF"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-5B7B162D62AF0CE4",
+                "PROCESS_GROUP-EC64A7883AD770F0",
+                "PROCESS_GROUP-16FD2750E91EAFAC",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-216FDBEF8325B5C6",
+                "PROCESS_GROUP-62548D702A2DD224"
+            ],
+            "runsOn": [
+                "SERVICE-455775D70528668C"
+            ]
+        },
+        "metadata": {
+            "dynatraceClusterIds": "eT-demo-1-Frontend-LoadBalancer"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "APACHE_HTTPD",
+                "edition": null,
+                "version": "2.2.17"
+            },
+            {
+                "type": "PHP",
+                "edition": "Apache",
+                "version": "5.3.17"
+            }
+        ],
+        "listenPorts": [
+            8091,
+            5077,
+            8999,
+            8100,
+            18079
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-EFB998A1C89F05AB",
+        "displayName": "eT-demo1-ThirdPartyContentServer",
+        "discoveredName": "eT-demo1-ThirdPartyContentServer",
+        "tags": [
+            {
+                "context": "CONTEXTLESS",
+                "key": "se-day"
+            }
+        ],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-73533D99D1119192"
+            ]
+        },
+        "toRelationships": {
+            "runsOn": [
+                "SERVICE-C77611330AC70278"
+            ]
+        },
+        "metadata": {
+            "javaMainClasses": "org.apache.catalina.startup.Bootstrap",
+            "cloudFoundrySpaceIds": "b0054649-b2bc-42b0-af9c-ba2700401704",
+            "cloudFoundrySpaceNames": "demo",
+            "cloudFoundryAppNames": "eT-demo1-ThirdPartyContentServer",
+            "catalinaBaseValues": "/home/vcap/app/.java-buildpack/tomcat",
+            "catalinaHomeValues": "/home/vcap/app/.java-buildpack/tomcat"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "TOMCAT",
+                "edition": null,
+                "version": "8.0.41.0"
+            },
+            {
+                "type": "JAVA",
+                "edition": "OpenJDK",
+                "version": "1.8.0_121"
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-10E7CBEF727DBE1C",
+        "displayName": "eT-demo1-weather-express",
+        "discoveredName": "eT-demo1-weather-express",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-0B11418922A75B48"
+            ]
+        },
+        "toRelationships": {
+            "runsOn": [
+                "SERVICE-04C8939E636A67C6"
+            ]
+        },
+        "metadata": {
+            "cloudFoundrySpaceIds": "b0054649-b2bc-42b0-af9c-ba2700401704",
+            "cloudFoundrySpaceNames": "demo",
+            "cloudFoundryAppNames": "eT-demo1-weather-express",
+            "nodejsScriptNames": "/home/vcap/app/bin/www"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "NODE_JS",
+                "edition": null,
+                "version": null
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-065A32BADB6B39CA",
+        "displayName": "eT-demo1-weather-service-restify",
+        "discoveredName": "eT-demo1-weather-service-restify",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-F28FC9042931335E"
+            ]
+        },
+        "toRelationships": {
+            "runsOn": [
+                "SERVICE-EFFA571B5BE47B15"
+            ]
+        },
+        "metadata": {
+            "cloudFoundrySpaceIds": "b0054649-b2bc-42b0-af9c-ba2700401704",
+            "nodejsAppNames": "weather-service-restify",
+            "cloudFoundrySpaceNames": "demo",
+            "cloudFoundryAppNames": "eT-demo1-weather-service-restify"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "NODE_JS",
+                "edition": null,
+                "version": null
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-E475868328FEBA27",
+        "displayName": "eT-vmware-demo-1",
+        "discoveredName": "eT-vmware-demo-1",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-5B7B162D62AF0CE4",
+                "PROCESS_GROUP-F141B7D24878E37D",
+                "PROCESS_GROUP-55D71BDF2290E3C7",
+                "PROCESS_GROUP-E475868328FEBA27",
+                "PROCESS_GROUP-92F466C2A666BEEB",
+                "PROCESS_GROUP-AFF88D69DFD27180",
+                "PROCESS_GROUP-35C6073C07AE0507"
+            ],
+            "runsOn": [
+                "HOST-2BBED3AC0BB98104"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-0F9A178B4D8E2E90",
+                "PROCESS_GROUP-55D71BDF2290E3C7",
+                "PROCESS_GROUP-E475868328FEBA27",
+                "PROCESS_GROUP-66773A22F6A2E575",
+                "PROCESS_GROUP-AF35ED8884F9E3F1",
+                "PROCESS_GROUP-82058D287919CF32",
+                "PROCESS_GROUP-35C6073C07AE0507"
+            ],
+            "runsOn": [
+                "SERVICE-C33083E2FB85CF28"
+            ]
+        },
+        "metadata": {
+            "dynatraceClusterIds": "eT-vmware-demo-1",
+            "javaJarFiles": "com.dynatrace.easytravel.pluginservice.jar",
+            "catalinaBaseValues": "/home/labuser/easytravel-2.0.0-x64"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "JAVA",
+                "edition": null,
+                "version": "1.8.0_112"
+            },
+            {
+                "type": "TOMCAT",
+                "edition": null,
+                "version": null
+            }
+        ],
+        "listenPorts": [
+            8095,
+            8094,
+            7655,
+            1697,
+            5005,
+            7654,
+            8443
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-35C6073C07AE0507",
+        "displayName": "eT-vmware-demo-1-BusinessBackend",
+        "discoveredName": "eT-vmware-demo-1-BusinessBackend",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-E475868328FEBA27",
+                "PROCESS_GROUP-35C6073C07AE0507",
+                "PROCESS_GROUP-F141B7D24878E37D"
+            ],
+            "runsOn": [
+                "HOST-A4198073007B0118"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-5B7B162D62AF0CE4",
+                "PROCESS_GROUP-55D71BDF2290E3C7",
+                "PROCESS_GROUP-E475868328FEBA27",
+                "PROCESS_GROUP-92F466C2A666BEEB",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-AFF88D69DFD27180",
+                "PROCESS_GROUP-35C6073C07AE0507"
+            ],
+            "runsOn": [
+                "SERVICE-F58B907EB7D59255",
+                "SERVICE-CA77399DB993CC33",
+                "SERVICE-1B85479A564273B4",
+                "SERVICE-B59DC875002B5B9B",
+                "SERVICE-31DBD33AB0F27E01",
+                "SERVICE-30CDA82F3715C172",
+                "SERVICE-9A1057940CC6C11F",
+                "SERVICE-A9E9962F2DE6F4BC",
+                "SERVICE-7D81F26A66ABDE07",
+                "SERVICE-C34D300D4D54E20F"
+            ]
+        },
+        "metadata": {
+            "dynatraceClusterIds": "eT-vmware-demo-1-BusinessBackend",
+            "javaJarFiles": "com.dynatrace.easytravel.business.backend.jar",
+            "catalinaBaseValues": "C:/Program Files/dynaTrace/easyTravel (x64)"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "MONGODB_CLIENT",
+                "edition": "driver-core-only",
+                "version": "3.2.2"
+            },
+            {
+                "type": "TOMCAT",
+                "edition": null,
+                "version": "7.0.39.0"
+            },
+            {
+                "type": "JAVA",
+                "edition": "Oracle HotSpot",
+                "version": "1.8.0_102"
+            }
+        ],
+        "listenPorts": [
+            8091,
+            8191
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-AF35ED8884F9E3F1",
+        "displayName": "eT-vmware-demo-1-BusinessBackend-cpu1",
+        "discoveredName": "eT-vmware-demo-1-BusinessBackend-cpu1",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-E475868328FEBA27",
+                "PROCESS_GROUP-F141B7D24878E37D"
+            ],
+            "runsOn": [
+                "HOST-FBE542F270B45636"
+            ]
+        },
+        "toRelationships": {},
+        "metadata": {
+            "dynatraceClusterIds": "eT-vmware-demo-1-BusinessBackend-cpu1",
+            "javaJarFiles": "com.dynatrace.easytravel.business.backend.jar",
+            "executablePaths": "/home/labuser/easytravel-2.0.0-x64/business/cpuload-29626",
+            "catalinaBaseValues": "/home/labuser/easytravel-2.0.0-x64"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "MONGODB_CLIENT",
+                "edition": "driver-core-only",
+                "version": "3.2.2"
+            },
+            {
+                "type": "TOMCAT",
+                "edition": null,
+                "version": "7.0.39.0"
+            },
+            {
+                "type": "JAVA",
+                "edition": "Oracle HotSpot",
+                "version": "1.8.0_112"
+            }
+        ],
+        "listenPorts": [
+            8091,
+            27015,
+            8191
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-82058D287919CF32",
+        "displayName": "eT-vmware-demo-1-BusinessBackend-cpu2",
+        "discoveredName": "eT-vmware-demo-1-BusinessBackend-cpu2",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-E475868328FEBA27",
+                "PROCESS_GROUP-F141B7D24878E37D"
+            ],
+            "runsOn": [
+                "HOST-923A41D539D53D13"
+            ]
+        },
+        "toRelationships": {},
+        "metadata": {
+            "dynatraceClusterIds": "eT-vmware-demo-1-BusinessBackend-cpu2",
+            "javaJarFiles": "com.dynatrace.easytravel.business.backend.jar",
+            "executablePaths": "/home/labuser/easytravel-2.0.0-x64/business/cpuload-26048",
+            "catalinaBaseValues": "/home/labuser/easytravel-2.0.0-x64"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "MONGODB_CLIENT",
+                "edition": "driver-core-only",
+                "version": "3.2.2"
+            },
+            {
+                "type": "TOMCAT",
+                "edition": null,
+                "version": "7.0.39.0"
+            },
+            {
+                "type": "JAVA",
+                "edition": "Oracle HotSpot",
+                "version": "1.8.0_112"
+            }
+        ],
+        "listenPorts": [
+            8091,
+            27015,
+            8191
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-66773A22F6A2E575",
+        "displayName": "eT-vmware-demo-1-BusinessBackend-cpu3",
+        "discoveredName": "eT-vmware-demo-1-BusinessBackend-cpu3",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-E475868328FEBA27",
+                "PROCESS_GROUP-F141B7D24878E37D"
+            ],
+            "runsOn": [
+                "HOST-BBB6C08450221836"
+            ]
+        },
+        "toRelationships": {},
+        "metadata": {
+            "dynatraceClusterIds": "eT-vmware-demo-1-BusinessBackend-cpu3",
+            "javaJarFiles": "com.dynatrace.easytravel.business.backend.jar",
+            "executablePaths": "/home/labuser/easytravel-2.0.0-x64/business/cpuload-21065",
+            "catalinaBaseValues": "/home/labuser/easytravel-2.0.0-x64"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "MONGODB_CLIENT",
+                "edition": "driver-core-only",
+                "version": "3.2.2"
+            },
+            {
+                "type": "TOMCAT",
+                "edition": null,
+                "version": "7.0.39.0"
+            },
+            {
+                "type": "JAVA",
+                "edition": "Oracle HotSpot",
+                "version": "1.8.0_112"
+            }
+        ],
+        "listenPorts": [
+            8091,
+            27015,
+            8191
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-0F9A178B4D8E2E90",
+        "displayName": "eT-vmware-demo-1-BusinessBackend-cpu4",
+        "discoveredName": "eT-vmware-demo-1-BusinessBackend-cpu4",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-E475868328FEBA27",
+                "PROCESS_GROUP-F141B7D24878E37D"
+            ],
+            "runsOn": [
+                "HOST-363E102D24CFAB71"
+            ]
+        },
+        "toRelationships": {},
+        "metadata": {
+            "dynatraceClusterIds": "eT-vmware-demo-1-BusinessBackend-cpu4",
+            "javaJarFiles": "com.dynatrace.easytravel.business.backend.jar",
+            "executablePaths": "/home/labuser/easytravel-2.0.0-x64/business/cpuload-4245",
+            "catalinaBaseValues": "/home/labuser/easytravel-2.0.0-x64"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "MONGODB_CLIENT",
+                "edition": "driver-core-only",
+                "version": "3.2.2"
+            },
+            {
+                "type": "TOMCAT",
+                "edition": null,
+                "version": "7.0.39.0"
+            },
+            {
+                "type": "JAVA",
+                "edition": "Oracle HotSpot",
+                "version": "1.8.0_112"
+            }
+        ],
+        "listenPorts": [
+            8091,
+            27015,
+            8191
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-55D71BDF2290E3C7",
+        "displayName": "eT-vmware-demo-1-CustomerFrontend",
+        "discoveredName": "eT-vmware-demo-1-CustomerFrontend",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-E475868328FEBA27",
+                "PROCESS_GROUP-35C6073C07AE0507"
+            ],
+            "runsOn": [
+                "HOST-A4198073007B0118"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-E475868328FEBA27",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-92F466C2A666BEEB",
+                "PROCESS_GROUP-216FDBEF8325B5C6"
+            ],
+            "runsOn": [
+                "SERVICE-5EC83BA8809BA19E",
+                "SERVICE-815D13D8A8776906"
+            ]
+        },
+        "metadata": {
+            "dynatraceClusterIds": "eT-vmware-demo-1-CustomerFrontend",
+            "javaJarFiles": "com.dynatrace.easytravel.customer.frontend.jar",
+            "catalinaBaseValues": "C:/Program Files/dynaTrace/easyTravel (x64)"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "TOMCAT",
+                "edition": null,
+                "version": "7.0.39.0"
+            },
+            {
+                "type": "JAVA",
+                "edition": "Oracle HotSpot",
+                "version": "1.8.0_102"
+            }
+        ],
+        "listenPorts": [
+            8180,
+            8080,
+            8280
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-92F466C2A666BEEB",
+        "displayName": "haproxy",
+        "discoveredName": "haproxy",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-5B7B162D62AF0CE4",
+                "PROCESS_GROUP-B34081EFF9E5F516",
+                "PROCESS_GROUP-98DC6B5403AE2401",
+                "PROCESS_GROUP-55D71BDF2290E3C7",
+                "PROCESS_GROUP-92F466C2A666BEEB",
+                "PROCESS_GROUP-3102C29299C3BA19",
+                "PROCESS_GROUP-79044E8C4F250AEC",
+                "PROCESS_GROUP-AFF88D69DFD27180",
+                "PROCESS_GROUP-35C6073C07AE0507",
+                "PROCESS_GROUP-67F568853A349471"
+            ],
+            "runsOn": [
+                "HOST-9B3CDCF3A6732BF1",
+                "HOST-2BBED3AC0BB98104"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-B34081EFF9E5F516",
+                "PROCESS_GROUP-7A0200A043F5C9EA",
+                "PROCESS_GROUP-E475868328FEBA27",
+                "PROCESS_GROUP-92F466C2A666BEEB",
+                "PROCESS_GROUP-AA86A6FBE1EBE661",
+                "PROCESS_GROUP-79044E8C4F250AEC",
+                "PROCESS_GROUP-3C62BB97B6EF6F82",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-31D49FC4694179A9",
+                "PROCESS_GROUP-0D7855288F798D2B",
+                "PROCESS_GROUP-05C8338DBEDE13D6",
+                "PROCESS_GROUP-D60E4B411B9425A1",
+                "PROCESS_GROUP-98DC6B5403AE2401",
+                "PROCESS_GROUP-36435C87FA8F3189",
+                "PROCESS_GROUP-B27330900F0E858D",
+                "PROCESS_GROUP-8EDDF9FBE05BB81E",
+                "PROCESS_GROUP-3102C29299C3BA19",
+                "PROCESS_GROUP-67F568853A349471",
+                "PROCESS_GROUP-216FDBEF8325B5C6"
+            ]
+        },
+        "softwareTechnologies": [
+            {
+                "type": "HAPROXY",
+                "edition": null,
+                "version": null
+            }
+        ],
+        "listenPorts": [
+            3333,
+            8079,
+            8777,
+            80,
+            8774,
+            8773,
+            443,
+            5000,
+            9696,
+            35357,
+            9292,
+            1936,
+            8888
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-9A265A109698447C",
+        "displayName": "htop",
+        "discoveredName": "htop",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-7453A7E317FCF4AF"
+            ]
+        },
+        "toRelationships": {},
+        "metadata": {
+            "executablePaths": "/usr/bin/htop"
+        }
+    },
+    {
+        "entityId": "PROCESS_GROUP-433E6519C59493EF",
+        "displayName": "jp2launcher.exe",
+        "discoveredName": "jp2launcher.exe",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-BF25E7D0F8FC45D9",
+                "HOST-B51CB9FD8D45DE24",
+                "HOST-8866C5F8CD351C9B"
+            ]
+        },
+        "toRelationships": {},
+        "metadata": {
+            "executables": "jp2launcher.exe"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "JAVA",
+                "edition": null,
+                "version": "1.8.0_121-b13"
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-8DAC747873A3B39A",
+        "displayName": "mesos-docker-executor",
+        "discoveredName": "mesos-docker-executor",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-E84C09702A8E5458",
+                "PROCESS_GROUP-EAD34395895687D5",
+                "PROCESS_GROUP-916EA7AD2F55CD3C"
+            ],
+            "runsOn": [
+                "HOST-A02BF7E1B9ADA36D"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-EAD34395895687D5"
+            ]
+        },
+        "metadata": {
+            "executablePaths": "/usr/libexec/mesos/mesos-docker-executor"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "SQLITE",
+                "edition": null,
+                "version": null
+            }
+        ],
+        "listenPorts": [
+            59076,
+            39870,
+            36455,
+            50561,
+            40963,
+            56762,
+            40587,
+            56525,
+            56513,
+            48401,
+            51453,
+            44799
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-7B6A1784601B01EA",
+        "displayName": "mesos-master",
+        "discoveredName": "mesos-master",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-E84C09702A8E5458",
+                "PROCESS_GROUP-715E87B8A0A02DB7",
+                "PROCESS_GROUP-EAD34395895687D5",
+                "PROCESS_GROUP-916EA7AD2F55CD3C"
+            ],
+            "runsOn": [
+                "HOST-7453A7E317FCF4AF"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-715E87B8A0A02DB7",
+                "PROCESS_GROUP-EAD34395895687D5"
+            ]
+        },
+        "metadata": {
+            "executablePaths": "/usr/sbin/mesos-master"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "SQLITE",
+                "edition": null,
+                "version": null
+            }
+        ],
+        "listenPorts": [
+            80
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-EAD34395895687D5",
+        "displayName": "mesos-slave",
+        "discoveredName": "mesos-slave",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-7B6A1784601B01EA",
+                "PROCESS_GROUP-8DAC747873A3B39A",
+                "PROCESS_GROUP-916EA7AD2F55CD3C"
+            ],
+            "runsOn": [
+                "HOST-A02BF7E1B9ADA36D"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-7B6A1784601B01EA",
+                "PROCESS_GROUP-8DAC747873A3B39A"
+            ]
+        },
+        "metadata": {
+            "executablePaths": "/usr/sbin/mesos-slave"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "SQLITE",
+                "edition": null,
+                "version": null
+            }
+        ],
+        "listenPorts": [
+            5051
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-715E87B8A0A02DB7",
+        "displayName": "mesosphere.marathon.Main",
+        "discoveredName": "mesosphere.marathon.Main",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-7B6A1784601B01EA",
+                "PROCESS_GROUP-E84C09702A8E5458",
+                "PROCESS_GROUP-916EA7AD2F55CD3C"
+            ],
+            "runsOn": [
+                "HOST-7453A7E317FCF4AF"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-7B6A1784601B01EA",
+                "PROCESS_GROUP-EC64A7883AD770F0",
+                "PROCESS_GROUP-322E5E3F4BD25CCA",
+                "PROCESS_GROUP-62548D702A2DD224"
+            ],
+            "runsOn": [
+                "SERVICE-A76C3B1909ECC146",
+                "SERVICE-4525D4FDC8B7354B",
+                "SERVICE-227B75F33518E258",
+                "SERVICE-703B9BF21E1EE40F",
+                "SERVICE-5F884502368CCF2A",
+                "SERVICE-79E8CEF03FD25672"
+            ]
+        },
+        "metadata": {
+            "javaMainClasses": "mesosphere.marathon.Main"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "JAVA",
+                "edition": "Oracle HotSpot",
+                "version": "1.8.0_121"
+            },
+            {
+                "type": "JETTY",
+                "edition": null,
+                "version": "9.3.z-SNAPSHOT"
+            }
+        ],
+        "listenPorts": [
+            58486,
+            443
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-5C5C23F580864AAB",
+        "displayName": "nginx",
+        "discoveredName": "nginx",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-CFADEC7D6A357A18",
+                "PROCESS_GROUP-4C6452D8029CD1F5",
+                "PROCESS_GROUP-EC64A7883AD770F0",
+                "PROCESS_GROUP-62548D702A2DD224",
+                "PROCESS_GROUP-916EA7AD2F55CD3C"
+            ],
+            "runsOn": [
+                "HOST-A02BF7E1B9ADA36D",
+                "HOST-E662F28EFFC7D77D",
+                "HOST-7453A7E317FCF4AF"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-5B7B162D62AF0CE4",
+                "PROCESS_GROUP-EC64A7883AD770F0",
+                "PROCESS_GROUP-16FD2750E91EAFAC",
+                "PROCESS_GROUP-62548D702A2DD224",
+                "PROCESS_GROUP-06B5EC9BCCF56FC4",
+                "PROCESS_GROUP-322E5E3F4BD25CCA",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-216FDBEF8325B5C6"
+            ],
+            "runsOn": [
+                "SERVICE-AACDE986D49F513B",
+                "SERVICE-83369C2775504DD6",
+                "SERVICE-3940D3F371CCB28F",
+                "SERVICE-3BDE9DF754A60ADE",
+                "SERVICE-EC5F6FEBD542ABB9",
+                "SERVICE-3BCEF1A901914618",
+                "SERVICE-32441588853E34DB",
+                "SERVICE-D279F46CD751424F",
+                "SERVICE-59E5BC414037D1CB"
+            ]
+        },
+        "metadata": {
+            "executables": "nginx"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "NGINX",
+                "edition": null,
+                "version": "nginx/1.10.2"
+            }
+        ],
+        "listenPorts": [
+            28082,
+            28081,
+            8079,
+            8010,
+            8078,
+            8100,
+            28084,
+            28083
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-E84C09702A8E5458",
+        "displayName": "org.apache.zookeeper.server.quorum.QuorumPeerMain",
+        "discoveredName": "org.apache.zookeeper.server.quorum.QuorumPeerMain",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-916EA7AD2F55CD3C"
+            ],
+            "runsOn": [
+                "HOST-7453A7E317FCF4AF"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-7B6A1784601B01EA",
+                "PROCESS_GROUP-715E87B8A0A02DB7",
+                "PROCESS_GROUP-8DAC747873A3B39A"
+            ]
+        },
+        "metadata": {
+            "javaMainClasses": "org.apache.zookeeper.server.quorum.QuorumPeerMain"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "JAVA",
+                "edition": "Oracle HotSpot",
+                "version": "1.8.0_77"
+            }
+        ],
+        "listenPorts": [
+            34039,
+            2181
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-838D433331116482",
+        "displayName": "puppet",
+        "discoveredName": "puppet",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-F5D85B7DCDD8A93C",
+                "HOST-54AA0D8B5401A1C2",
+                "HOST-DE6F9EC80D4D7C58",
+                "HOST-1E64E15558B9486B"
+            ]
+        },
+        "toRelationships": {},
+        "metadata": {
+            "rubyScriptPaths": "C:/Program Files (x86)/Puppet Labs/Puppet/puppet/bin/puppet"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "RUBY",
+                "edition": "http://www.ruby-lang.org/",
+                "version": "1.9.3p484"
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-06B5EC9BCCF56FC4",
+        "displayName": "puppet",
+        "discoveredName": "puppet",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-5B7B162D62AF0CE4",
+                "PROCESS_GROUP-5C5C23F580864AAB",
+                "PROCESS_GROUP-8887457FCA96BFF4",
+                "PROCESS_GROUP-916EA7AD2F55CD3C",
+                "PROCESS_GROUP-598C8FD67BF2946C",
+                "PROCESS_GROUP-AFF88D69DFD27180",
+                "PROCESS_GROUP-36BAFEFE448A1CAD"
+            ],
+            "runsOn": [
+                "HOST-0788564003D72AEF",
+                "HOST-6B659DFBAC76F491",
+                "HOST-A02BF7E1B9ADA36D",
+                "HOST-EA50C80CC9354652",
+                "HOST-7344649A8D974E74"
+            ]
+        },
+        "toRelationships": {},
+        "metadata": {
+            "rubyScriptPaths": "/usr/bin/puppet"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "RUBY",
+                "edition": null,
+                "version": null
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-053695D2963BF537",
+        "displayName": "ruby",
+        "discoveredName": "ruby",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-F5D85B7DCDD8A93C"
+            ]
+        },
+        "toRelationships": {},
+        "metadata": {
+            "rubyScriptPaths": "ruby"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "RUBY",
+                "edition": "http://www.ruby-lang.org/",
+                "version": "1.9.3p484"
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-073EAAA3AA375CF9",
+        "displayName": "ruby",
+        "discoveredName": "ruby",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-916EA7AD2F55CD3C"
+            ],
+            "runsOn": [
+                "HOST-7453A7E317FCF4AF"
+            ]
+        },
+        "toRelationships": {},
+        "metadata": {
+            "rubyScriptPaths": "ruby"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "RUBY",
+                "edition": null,
+                "version": null
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-52CB9DAC75223AF9",
+        "displayName": "screen.exe",
+        "discoveredName": "screen.exe",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-A4198073007B0118"
+            ]
+        },
+        "toRelationships": {},
+        "metadata": {
+            "executablePaths": "C:\\CYGWIN64\\BIN\\SCREEN.EXE"
+        },
+        "listenPorts": [
+            61433
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-CC733B48547F69C5",
+        "displayName": "server.js",
+        "discoveredName": "server.js",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-E2C9C5A246550D37"
+            ]
+        },
+        "toRelationships": {},
+        "metadata": {
+            "nodejsScriptNames": "D:/PROGRAM FILES (X86)/SITEEXTENSIONS/MONACO/1.0.0-20170504/SERVER.JS"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "NODE_JS",
+                "edition": null,
+                "version": null
+            },
+            {
+                "type": "DOTNET",
+                "edition": ".NET Framework",
+                "version": "4.7.2053.0"
+            },
+            {
+                "type": "CLR",
+                "edition": "FullCLR",
+                "version": "4.7.2053.0"
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-6EB28F2B07E8A057",
+        "displayName": "sqlsrvr.exe",
+        "discoveredName": "sqlsrvr.exe",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-6EB28F2B07E8A057"
+            ],
+            "runsOn": [
+                "HOST-BF25E7D0F8FC45D9"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfProcessGroup": [
+                "PROCESS_GROUP-6EB28F2B07E8A057",
+                "PROCESS_GROUP-8E49A9E418F5B346"
+            ]
+        },
+        "metadata": {
+            "executablePaths": "E:\\SYBASE\\ERP\\ASE-15_0\\BIN\\SQLSRVR.EXE"
+        },
+        "listenPorts": [
+            4903,
+            4901
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-8CA5B61378A6F3ED",
+        "displayName": "tgtd",
+        "discoveredName": "tgtd",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-9B3CDCF3A6732BF1"
+            ]
+        },
+        "toRelationships": {},
+        "metadata": {
+            "executablePaths": "/usr/sbin/tgtd"
+        },
+        "listenPorts": [
+            3260
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-B1254BB038A2E59B",
+        "displayName": "weather-service-restify",
+        "discoveredName": "weather-service-restify",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-E2C9C5A246550D37"
+            ]
+        },
+        "toRelationships": {
+            "runsOn": [
+                "SERVICE-C35BC3B8D5E8B9E8",
+                "SERVICE-6852FADC342E35FA"
+            ]
+        },
+        "metadata": {
+            "nodejsAppNames": "weather-service-restify"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "NODE_JS",
+                "edition": null,
+                "version": null
+            }
+        ]
+    },
+    {
+        "entityId": "PROCESS_GROUP-D1C4521309E6F04A",
+        "displayName": "www",
+        "discoveredName": "www",
+        "tags": [],
+        "fromRelationships": {
+            "runsOn": [
+                "HOST-E2C9C5A246550D37"
+            ]
+        },
+        "toRelationships": {
+            "runsOn": [
+                "SERVICE-F78026988393A428",
+                "SERVICE-4922EC6AC5F19093"
+            ]
+        },
+        "metadata": {
+            "nodejsScriptNames": "D:/HOME/SITE/WWWROOT/BIN/WWW"
+        },
+        "softwareTechnologies": [
+            {
+                "type": "NODE_JS",
+                "edition": null,
+                "version": null
+            }
+        ]
+    }
+]

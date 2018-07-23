@@ -1,0 +1,169 @@
+[
+    {
+        "entityId": "APPLICATION-7324C7EE41CC3273",
+        "displayName": "Madison Island",
+        "discoveredName": "Madison Island",
+        "tags": [],
+        "fromRelationships": {
+            "calls": [
+                "SERVICE-EC5F6FEBD542ABB9",
+                "SERVICE-D279F46CD751424F"
+            ]
+        },
+        "toRelationships": {},
+        "applicationType": "CUSTOM"
+    },
+    {
+        "entityId": "APPLICATION-EA7C4B59F27D43EB",
+        "displayName": "Tim Demo Web Site",
+        "customizedName": "Tim Demo Web Site",
+        "discoveredName": "RUM Default Application",
+        "tags": [],
+        "fromRelationships": {
+            "calls": [
+                "SERVICE-0121F75E0EDD6D1B"
+            ]
+        },
+        "toRelationships": {},
+        "applicationType": "DEFAULT"
+    },
+    {
+        "entityId": "APPLICATION-157F59F44773DD97",
+        "displayName": "image gallery",
+        "discoveredName": "image gallery",
+        "tags": [
+            {
+                "context": "CONTEXTLESS",
+                "key": "A1"
+            }
+        ],
+        "fromRelationships": {
+            "calls": [
+                "SERVICE-39B3F0CB8B536DC0"
+            ]
+        },
+        "toRelationships": {},
+        "applicationType": "CUSTOM"
+    },
+    {
+        "entityId": "APPLICATION-F5E7AEA0AB971DB1",
+        "displayName": "www.easytravel.com",
+        "customizedName": "www.easytravel.com",
+        "discoveredName": "ec2-54-174-82-83.compute-1.amazonaws.com:8079",
+        "tags": [],
+        "fromRelationships": {
+            "calls": [
+                "SERVICE-A7A3303A693FB21F",
+                "SERVICE-04C8939E636A67C6",
+                "SERVICE-0E7AAACB22858658"
+            ]
+        },
+        "toRelationships": {},
+        "applicationType": "CUSTOM"
+    },
+    {
+        "entityId": "APPLICATION-91A869F0065D216E",
+        "displayName": "www.easytravelb2b.com",
+        "discoveredName": "www.easytravelb2b.com",
+        "tags": [],
+        "fromRelationships": {
+            "calls": [
+                "SERVICE-4E5D0A8583FDA67B"
+            ]
+        },
+        "toRelationships": {},
+        "applicationType": "CUSTOM"
+    },
+    {
+        "entityId": "APPLICATION-EC64DA15072AD0D2",
+        "displayName": "www.openstack.easytravel.com",
+        "customizedName": "www.openstack.easytravel.com",
+        "discoveredName": "10.5.5.12",
+        "tags": [],
+        "fromRelationships": {
+            "calls": [
+                "SERVICE-DB684F6F3301CBCB"
+            ]
+        },
+        "toRelationships": {},
+        "applicationType": "CUSTOM"
+    },
+    {
+        "entityId": "APPLICATION-884BE7FEA3CE14B6",
+        "displayName": "www.vmware.easytravel.com",
+        "customizedName": "www.vmware.easytravel.com",
+        "discoveredName": "192.168.238.132",
+        "tags": [],
+        "fromRelationships": {
+            "calls": [
+                "SERVICE-815D13D8A8776906"
+            ]
+        },
+        "toRelationships": {},
+        "applicationType": "CUSTOM"
+    },
+    {
+        "entityId": "APPLICATION-9CFC6B2FD1AA9B96",
+        "displayName": "www.weather.easytravel.com",
+        "customizedName": "www.weather.easytravel.com",
+        "discoveredName": "ec2-54-174-82-83.compute-1.amazonaws.com:8100",
+        "tags": [],
+        "fromRelationships": {
+            "calls": [
+                "SERVICE-A7A3303A693FB21F",
+                "SERVICE-04C8939E636A67C6",
+                "SERVICE-0E7AAACB22858658"
+            ]
+        },
+        "toRelationships": {},
+        "applicationType": "CUSTOM"
+    },
+    {
+        "entityId": "MOBILE_APPLICATION-70670247A0AC49C6",
+        "displayName": "IoT Demo",
+        "customizedName": "IoT Demo",
+        "discoveredName": "70670247-a0ac-49c6-b61c-599f34a4d0f7",
+        "tags": [
+            {
+                "context": "CONTEXTLESS",
+                "key": "Test1"
+            },
+            {
+                "context": "CONTEXTLESS",
+                "key": "mobile"
+            }
+        ],
+        "fromRelationships": {
+            "calls": [
+                "SERVICE-04C8939E636A67C6",
+                "SERVICE-0E7AAACB22858658",
+                "SERVICE-815D13D8A8776906",
+                "SERVICE-A7A3303A693FB21F"
+            ]
+        },
+        "toRelationships": {}
+    },
+    {
+        "entityId": "MOBILE_APPLICATION-E2CCCE08FE4849A1",
+        "displayName": "KRL Test (3)",
+        "customizedName": "KRL Test (3)",
+        "discoveredName": "e2ccce08-fe48-49a1-8252-ae14996f01f4",
+        "tags": [],
+        "fromRelationships": {},
+        "toRelationships": {}
+    },
+    {
+        "entityId": "MOBILE_APPLICATION-752C288D59734C79",
+        "displayName": "easyTravel Demo",
+        "customizedName": "easyTravel Demo",
+        "discoveredName": "752c288d-5973-4c79-b7d1-3a49d4d42ea0",
+        "tags": [],
+        "fromRelationships": {
+            "calls": [
+                "SERVICE-0E7AAACB22858658",
+                "SERVICE-DB684F6F3301CBCB"
+            ]
+        },
+        "toRelationships": {}
+    }
+]

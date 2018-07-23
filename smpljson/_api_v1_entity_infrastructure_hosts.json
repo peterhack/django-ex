@@ -1,0 +1,2554 @@
+[
+    {
+        "entityId": "HOST-DB8C1F19FD91CC3C",
+        "displayName": "10.26.24.44",
+        "discoveredName": "10.26.24.44",
+        "tags": [],
+        "fromRelationships": {},
+        "toRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-B51CB9FD8D45DE24"
+            ]
+        },
+        "ipAddresses": [
+            "10.26.24.44"
+        ]
+    },
+    {
+        "entityId": "HOST-121B0D9659376951",
+        "displayName": "172.18.147.235",
+        "discoveredName": "172.18.147.235",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-9B3CDCF3A6732BF1",
+                "HOST-A02BF7E1B9ADA36D"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-B51CB9FD8D45DE24",
+                "HOST-A4198073007B0118",
+                "HOST-A02BF7E1B9ADA36D",
+                "HOST-2210C04945B95C2C",
+                "HOST-9B3CDCF3A6732BF1",
+                "HOST-BF25E7D0F8FC45D9",
+                "HOST-CD4B3CFD5EACAA8A",
+                "HOST-FBE542F270B45636",
+                "HOST-E662F28EFFC7D77D",
+                "HOST-267CF1D2A12C1BA1",
+                "HOST-1E64E15558B9486B",
+                "HOST-7453A7E317FCF4AF",
+                "HOST-BBB6C08450221836",
+                "HOST-923A41D539D53D13",
+                "HOST-363E102D24CFAB71",
+                "HOST-2BBED3AC0BB98104",
+                "HOST-0788564003D72AEF",
+                "HOST-B48023C75A5CD3AB",
+                "HOST-8866C5F8CD351C9B",
+                "HOST-DE6F9EC80D4D7C58",
+                "HOST-76FAA6DC0347DA12",
+                "HOST-6B659DFBAC76F491",
+                "HOST-EA50C80CC9354652",
+                "HOST-7344649A8D974E74",
+                "HOST-A8AA150079BA176E"
+            ]
+        },
+        "ipAddresses": [
+            "172.18.147.235"
+        ]
+    },
+    {
+        "entityId": "HOST-080F8A3DB190A05C",
+        "displayName": "172.18.160.126",
+        "discoveredName": "172.18.160.126",
+        "tags": [],
+        "fromRelationships": {},
+        "toRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-9B3CDCF3A6732BF1"
+            ]
+        },
+        "ipAddresses": [
+            "172.18.160.126"
+        ]
+    },
+    {
+        "entityId": "HOST-7C2502D8E574341B",
+        "displayName": "172.18.160.2",
+        "discoveredName": "172.18.160.2",
+        "tags": [],
+        "fromRelationships": {},
+        "toRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-9B3CDCF3A6732BF1"
+            ]
+        },
+        "ipAddresses": [
+            "172.18.160.2"
+        ]
+    },
+    {
+        "entityId": "HOST-66229FC5E24B95F0",
+        "displayName": "172.31.21.112",
+        "discoveredName": "172.31.21.112",
+        "tags": [],
+        "fromRelationships": {},
+        "toRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-F5D85B7DCDD8A93C",
+                "HOST-54AA0D8B5401A1C2"
+            ]
+        },
+        "ipAddresses": [
+            "172.31.21.112"
+        ]
+    },
+    {
+        "entityId": "HOST-942876D0FD0AF7C5",
+        "displayName": "192.168.1.10",
+        "discoveredName": "192.168.1.10",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-F5D85B7DCDD8A93C",
+                "HOST-A02BF7E1B9ADA36D",
+                "HOST-54AA0D8B5401A1C2"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-A02BF7E1B9ADA36D"
+            ]
+        },
+        "ipAddresses": [
+            "192.168.1.10"
+        ]
+    },
+    {
+        "entityId": "HOST-F2F4A7F8ACA0FCC5",
+        "displayName": "192.168.238.133",
+        "discoveredName": "192.168.238.133",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-9B3CDCF3A6732BF1",
+                "HOST-A02BF7E1B9ADA36D"
+            ]
+        },
+        "toRelationships": {
+            "isSiteOf": [
+                "VMWARE_DATACENTER-653D9C2020EE42A0"
+            ],
+            "isNetworkClientOfHost": [
+                "HOST-B51CB9FD8D45DE24",
+                "HOST-A4198073007B0118",
+                "HOST-A02BF7E1B9ADA36D",
+                "HOST-2210C04945B95C2C",
+                "HOST-9B3CDCF3A6732BF1",
+                "HOST-BF25E7D0F8FC45D9",
+                "HOST-CD4B3CFD5EACAA8A",
+                "HOST-FBE542F270B45636",
+                "HOST-E662F28EFFC7D77D",
+                "HOST-267CF1D2A12C1BA1",
+                "HOST-1E64E15558B9486B",
+                "HOST-7453A7E317FCF4AF",
+                "HOST-BBB6C08450221836",
+                "HOST-923A41D539D53D13",
+                "HOST-363E102D24CFAB71",
+                "HOST-2BBED3AC0BB98104",
+                "HOST-0788564003D72AEF",
+                "HOST-B48023C75A5CD3AB",
+                "HOST-8866C5F8CD351C9B",
+                "HOST-DE6F9EC80D4D7C58",
+                "HOST-76FAA6DC0347DA12",
+                "HOST-6B659DFBAC76F491",
+                "HOST-EA50C80CC9354652",
+                "HOST-7344649A8D974E74",
+                "HOST-A8AA150079BA176E"
+            ]
+        },
+        "osType": "LINUX",
+        "ipAddresses": [
+            "192.168.238.133"
+        ]
+    },
+    {
+        "entityId": "HOST-12F3F4DADF57D3B4",
+        "displayName": "192.168.238.148",
+        "discoveredName": "192.168.238.148",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-B51CB9FD8D45DE24"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-BF25E7D0F8FC45D9",
+                "HOST-B51CB9FD8D45DE24",
+                "HOST-8866C5F8CD351C9B"
+            ]
+        },
+        "ipAddresses": [
+            "192.168.238.148"
+        ]
+    },
+    {
+        "entityId": "HOST-9BA7DA2D0F6B3578",
+        "displayName": "192.168.94.10",
+        "discoveredName": "192.168.94.10",
+        "tags": [],
+        "fromRelationships": {},
+        "toRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-A4198073007B0118"
+            ]
+        },
+        "ipAddresses": [
+            "192.168.94.10"
+        ]
+    },
+    {
+        "entityId": "HOST-73C48D44CC82E36F",
+        "displayName": "34.193.133.134",
+        "discoveredName": "34.193.133.134",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-A02BF7E1B9ADA36D"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-F5D85B7DCDD8A93C",
+                "HOST-54AA0D8B5401A1C2",
+                "HOST-7453A7E317FCF4AF",
+                "HOST-1E64E15558B9486B",
+                "HOST-A02BF7E1B9ADA36D",
+                "HOST-0788564003D72AEF",
+                "HOST-B48023C75A5CD3AB",
+                "HOST-DE6F9EC80D4D7C58",
+                "HOST-76FAA6DC0347DA12",
+                "HOST-E662F28EFFC7D77D",
+                "HOST-6B659DFBAC76F491",
+                "HOST-EA50C80CC9354652",
+                "HOST-7344649A8D974E74"
+            ]
+        },
+        "ipAddresses": [
+            "34.193.133.134"
+        ]
+    },
+    {
+        "entityId": "HOST-477F34EDC707E86E",
+        "displayName": "34.205.202.208",
+        "discoveredName": "34.205.202.208",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-A02BF7E1B9ADA36D"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-B51CB9FD8D45DE24",
+                "HOST-F5D85B7DCDD8A93C",
+                "HOST-54AA0D8B5401A1C2",
+                "HOST-7453A7E317FCF4AF",
+                "HOST-1E64E15558B9486B",
+                "HOST-A4198073007B0118",
+                "HOST-A02BF7E1B9ADA36D",
+                "HOST-0788564003D72AEF",
+                "HOST-B48023C75A5CD3AB",
+                "HOST-DE6F9EC80D4D7C58",
+                "HOST-76FAA6DC0347DA12",
+                "HOST-E662F28EFFC7D77D",
+                "HOST-6B659DFBAC76F491",
+                "HOST-EA50C80CC9354652",
+                "HOST-7344649A8D974E74"
+            ]
+        },
+        "ipAddresses": [
+            "34.205.202.208"
+        ]
+    },
+    {
+        "entityId": "HOST-20145F50E7698C02",
+        "displayName": "52.5.49.208",
+        "discoveredName": "52.5.49.208",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-A02BF7E1B9ADA36D"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-F5D85B7DCDD8A93C",
+                "HOST-54AA0D8B5401A1C2",
+                "HOST-7453A7E317FCF4AF",
+                "HOST-1E64E15558B9486B",
+                "HOST-A02BF7E1B9ADA36D",
+                "HOST-0788564003D72AEF",
+                "HOST-B48023C75A5CD3AB",
+                "HOST-DE6F9EC80D4D7C58",
+                "HOST-76FAA6DC0347DA12",
+                "HOST-E662F28EFFC7D77D",
+                "HOST-6B659DFBAC76F491",
+                "HOST-EA50C80CC9354652",
+                "HOST-7344649A8D974E74"
+            ]
+        },
+        "ipAddresses": [
+            "52.5.49.208"
+        ]
+    },
+    {
+        "entityId": "HOST-530C130D8CD08786",
+        "displayName": "54.85.8.63",
+        "discoveredName": "54.85.8.63",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-A02BF7E1B9ADA36D"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-F5D85B7DCDD8A93C",
+                "HOST-54AA0D8B5401A1C2",
+                "HOST-7453A7E317FCF4AF",
+                "HOST-1E64E15558B9486B",
+                "HOST-A4198073007B0118",
+                "HOST-A02BF7E1B9ADA36D",
+                "HOST-0788564003D72AEF",
+                "HOST-B48023C75A5CD3AB",
+                "HOST-DE6F9EC80D4D7C58",
+                "HOST-76FAA6DC0347DA12",
+                "HOST-E662F28EFFC7D77D",
+                "HOST-6B659DFBAC76F491",
+                "HOST-EA50C80CC9354652",
+                "HOST-7344649A8D974E74"
+            ]
+        },
+        "ipAddresses": [
+            "54.85.8.63"
+        ]
+    },
+    {
+        "entityId": "HOST-7E99E2291EB6BE59",
+        "displayName": "54.86.74.4",
+        "discoveredName": "54.86.74.4",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-A02BF7E1B9ADA36D"
+            ]
+        },
+        "toRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-F5D85B7DCDD8A93C",
+                "HOST-54AA0D8B5401A1C2",
+                "HOST-7453A7E317FCF4AF",
+                "HOST-1E64E15558B9486B",
+                "HOST-A02BF7E1B9ADA36D",
+                "HOST-0788564003D72AEF",
+                "HOST-B48023C75A5CD3AB",
+                "HOST-DE6F9EC80D4D7C58",
+                "HOST-76FAA6DC0347DA12",
+                "HOST-E662F28EFFC7D77D",
+                "HOST-6B659DFBAC76F491",
+                "HOST-EA50C80CC9354652",
+                "HOST-7344649A8D974E74"
+            ]
+        },
+        "ipAddresses": [
+            "54.86.74.4"
+        ]
+    },
+    {
+        "entityId": "HOST-F5D85B7DCDD8A93C",
+        "displayName": "BB1-apache-tomcatjms-iis",
+        "customizedName": "BB1-apache-tomcatjms-iis",
+        "discoveredName": "et-demo-1-win1",
+        "tags": [
+            {
+                "context": "AWS",
+                "key": "APL.Deployment",
+                "value": "{\"type\":\"cc-dev\",\"userName\":\"cwpl-rorzecho\",\"startDate\":1416564900000,\"endDate\":1424818740000}"
+            },
+            {
+                "context": "AWS",
+                "key": "APL.Environment",
+                "value": "{\"id\":\"3654b091-91e4-4816-a6fe-600b36c3fb5e\",\"name\":\"eT-demo-1\",\"hostId\":\"win-1\"}"
+            },
+            {
+                "context": "AWS",
+                "key": "Category",
+                "value": "DEMOABILITY"
+            },
+            {
+                "context": "AWS",
+                "key": "Name",
+                "value": "et-demo-1-win1"
+            },
+            {
+                "context": "AWS",
+                "key": "DetailUsage",
+                "value": "New eT demo environment on account of security issues on ongoing demo environment."
+            },
+            {
+                "context": "AWS",
+                "key": "Email",
+                "value": "rafal.psciuk@dynatrace.com"
+            },
+            {
+                "context": "AWS",
+                "key": "Usage",
+                "value": "APL"
+            },
+            {
+                "context": "CONTEXTLESS",
+                "key": "eric"
+            },
+            {
+                "context": "AWS",
+                "key": "ShouldBeReserved",
+                "value": "true"
+            },
+            {
+                "context": "CONTEXTLESS",
+                "key": "se-day"
+            },
+            {
+                "context": "AWS",
+                "key": "monitor_demo1",
+                "value": "true"
+            }
+        ],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-F5D85B7DCDD8A93C",
+                "HOST-530C130D8CD08786",
+                "HOST-A02BF7E1B9ADA36D",
+                "RELATIONAL_DATABASE_SERVICE-5F5E84B8547457D1",
+                "HOST-477F34EDC707E86E",
+                "HOST-66229FC5E24B95F0",
+                "HOST-73C48D44CC82E36F",
+                "HOST-7E99E2291EB6BE59",
+                "HOST-20145F50E7698C02"
+            ]
+        },
+        "toRelationships": {
+            "isSiteOf": [
+                "GEOLOC_SITE-95196F3C9A4F4215",
+                "AWS_AVAILABILITY_ZONE-334F93507088AE03"
+            ],
+            "isNetworkClientOfHost": [
+                "HOST-0788564003D72AEF",
+                "HOST-F5D85B7DCDD8A93C",
+                "HOST-76FAA6DC0347DA12",
+                "HOST-7453A7E317FCF4AF",
+                "HOST-942876D0FD0AF7C5",
+                "HOST-6B659DFBAC76F491",
+                "HOST-A02BF7E1B9ADA36D"
+            ],
+            "runsOn": [
+                "PROCESS_GROUP-D71583273295BF32",
+                "PROCESS_GROUP-838D433331116482",
+                "PROCESS_GROUP-54A8B0B75D36E463",
+                "PROCESS_GROUP-3D9D854163F8F07A",
+                "PROCESS_GROUP-916EA7AD2F55CD3C",
+                "PROCESS_GROUP-89796F701FF7C56A",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-0A9A52EA262BC039",
+                "PROCESS_GROUP-5C4AD12F1A149132",
+                "PROCESS_GROUP-09875E82E2FB98FD",
+                "PROCESS_GROUP-4F6C4B7F4305AFB7",
+                "PROCESS_GROUP-A3E3A683C21079BE",
+                "PROCESS_GROUP-7088651B58DDC5E5",
+                "PROCESS_GROUP-7BAB74848939F900",
+                "PROCESS_GROUP-053695D2963BF537",
+                "PROCESS_GROUP-AFF88D69DFD27180",
+                "PROCESS_GROUP-49876EC2AC6D402B"
+            ]
+        },
+        "osType": "WINDOWS",
+        "osArchitecture": "X86",
+        "osVersion": "Windows Server 2008 R2 Service Pack 1, ver. 6.1.7601",
+        "hypervisorType": "XEN",
+        "ipAddresses": [
+            "54.196.131.217",
+            "172.31.12.19"
+        ]
+    },
+    {
+        "entityId": "HOST-54AA0D8B5401A1C2",
+        "displayName": "BB2-apache-tomcatjms-iis",
+        "customizedName": "BB2-apache-tomcatjms-iis",
+        "discoveredName": "et-demo-1-win2",
+        "tags": [
+            {
+                "context": "AWS",
+                "key": "APL.Deployment",
+                "value": "{\"type\":\"cc-dev\",\"userName\":\"cwpl-rorzecho\",\"startDate\":1416564900000,\"endDate\":1424818740000}"
+            },
+            {
+                "context": "AWS",
+                "key": "APL.Environment",
+                "value": "{\"id\":\"3654b091-91e4-4816-a6fe-600b36c3fb5e\",\"name\":\"eT-demo-1\",\"hostId\":\"win-2\"}"
+            },
+            {
+                "context": "AWS",
+                "key": "Category",
+                "value": "DEMOABILITY"
+            },
+            {
+                "context": "CONTEXTLESS",
+                "key": "DPDHL"
+            },
+            {
+                "context": "AWS",
+                "key": "Name",
+                "value": "et-demo-1-win2"
+            },
+            {
+                "context": "AWS",
+                "key": "DetailUsage",
+                "value": "New eT demo environment on account of security issues on ongoing demo environment."
+            },
+            {
+                "context": "AWS",
+                "key": "Email",
+                "value": "rafal.psciuk@dynatrace.com"
+            },
+            {
+                "context": "AWS",
+                "key": "Usage",
+                "value": "APL"
+            },
+            {
+                "context": "CONTEXTLESS",
+                "key": "eric"
+            },
+            {
+                "context": "AWS",
+                "key": "ShouldBeReserved",
+                "value": "true"
+            },
+            {
+                "context": "AWS",
+                "key": "monitor_demo1",
+                "value": "true"
+            }
+        ],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-54AA0D8B5401A1C2",
+                "HOST-7453A7E317FCF4AF",
+                "HOST-530C130D8CD08786",
+                "HOST-A02BF7E1B9ADA36D",
+                "RELATIONAL_DATABASE_SERVICE-5F5E84B8547457D1",
+                "HOST-477F34EDC707E86E",
+                "HOST-66229FC5E24B95F0",
+                "HOST-73C48D44CC82E36F",
+                "HOST-7E99E2291EB6BE59",
+                "HOST-20145F50E7698C02"
+            ]
+        },
+        "toRelationships": {
+            "isSiteOf": [
+                "GEOLOC_SITE-95196F3C9A4F4215",
+                "AWS_AVAILABILITY_ZONE-334F93507088AE03"
+            ],
+            "isNetworkClientOfHost": [
+                "HOST-0788564003D72AEF",
+                "HOST-54AA0D8B5401A1C2",
+                "HOST-DE6F9EC80D4D7C58",
+                "HOST-7453A7E317FCF4AF",
+                "HOST-942876D0FD0AF7C5",
+                "HOST-A02BF7E1B9ADA36D",
+                "HOST-EA50C80CC9354652",
+                "HOST-7344649A8D974E74"
+            ],
+            "runsOn": [
+                "PROCESS_GROUP-D71583273295BF32",
+                "PROCESS_GROUP-838D433331116482",
+                "PROCESS_GROUP-54A8B0B75D36E463",
+                "PROCESS_GROUP-3D9D854163F8F07A",
+                "PROCESS_GROUP-916EA7AD2F55CD3C",
+                "PROCESS_GROUP-F030F42E6F64BD26",
+                "PROCESS_GROUP-89796F701FF7C56A",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-0A9A52EA262BC039",
+                "PROCESS_GROUP-5C4AD12F1A149132",
+                "PROCESS_GROUP-09875E82E2FB98FD",
+                "PROCESS_GROUP-4F6C4B7F4305AFB7",
+                "PROCESS_GROUP-A3E3A683C21079BE",
+                "PROCESS_GROUP-7088651B58DDC5E5",
+                "PROCESS_GROUP-7BAB74848939F900",
+                "PROCESS_GROUP-49876EC2AC6D402B",
+                "PROCESS_GROUP-AFF88D69DFD27180"
+            ]
+        },
+        "osType": "WINDOWS",
+        "osArchitecture": "X86",
+        "osVersion": "Windows Server 2008 R2 Service Pack 1, ver. 6.1.7601",
+        "hypervisorType": "XEN",
+        "ipAddresses": [
+            "54.82.182.68",
+            "172.31.15.106"
+        ]
+    },
+    {
+        "entityId": "HOST-A02BF7E1B9ADA36D",
+        "displayName": "CCA-docker-node-nginx-mesos",
+        "customizedName": "CCA-docker-node-nginx-mesos",
+        "discoveredName": "et-demo-1-lnx6",
+        "tags": [
+            {
+                "context": "AWS",
+                "key": "APL.Deployment",
+                "value": "{\"type\":\"cc-dev\",\"userName\":\"cwpl-rorzecho\",\"startDate\":1417431600000,\"endDate\":1425423540000}"
+            },
+            {
+                "context": "AWS",
+                "key": "APL.Environment",
+                "value": "{\"id\":\"3654b091-91e4-4816-a6fe-600b36c3fb5e\",\"name\":\"eT-demo-1\",\"hostId\":\"lnx-6\"}"
+            },
+            {
+                "context": "AWS",
+                "key": "Category",
+                "value": "DEMOABILITY"
+            },
+            {
+                "context": "AWS",
+                "key": "Name",
+                "value": "et-demo-1-lnx6"
+            },
+            {
+                "context": "AWS",
+                "key": "DetailUsage",
+                "value": "New eT demo environment on account of security issues on ongoing demo environment."
+            },
+            {
+                "context": "AWS",
+                "key": "Email",
+                "value": "rafal.psciuk@dynatrace.com"
+            },
+            {
+                "context": "CONTEXTLESS",
+                "key": "seb"
+            },
+            {
+                "context": "CONTEXTLESS",
+                "key": "DDA1"
+            },
+            {
+                "context": "AWS",
+                "key": "Usage",
+                "value": "APL"
+            },
+            {
+                "context": "CONTEXTLESS",
+                "key": "eric"
+            },
+            {
+                "context": "AWS",
+                "key": "ShouldBeReserved",
+                "value": "true"
+            },
+            {
+                "context": "AWS",
+                "key": "monitor_demo1",
+                "value": "true"
+            }
+        ],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-F5D85B7DCDD8A93C",
+                "HOST-54AA0D8B5401A1C2",
+                "HOST-7453A7E317FCF4AF",
+                "HOST-942876D0FD0AF7C5",
+                "HOST-530C130D8CD08786",
+                "HOST-F2F4A7F8ACA0FCC5",
+                "HOST-A02BF7E1B9ADA36D",
+                "HOST-477F34EDC707E86E",
+                "HOST-121B0D9659376951",
+                "HOST-73C48D44CC82E36F",
+                "HOST-20145F50E7698C02",
+                "HOST-7E99E2291EB6BE59"
+            ]
+        },
+        "toRelationships": {
+            "isSiteOf": [
+                "GEOLOC_SITE-95196F3C9A4F4215",
+                "AWS_AVAILABILITY_ZONE-8528D1C56A3E90DC"
+            ],
+            "isNetworkClientOfHost": [
+                "HOST-F5D85B7DCDD8A93C",
+                "HOST-54AA0D8B5401A1C2",
+                "HOST-7453A7E317FCF4AF",
+                "HOST-F2F4A7F8ACA0FCC5",
+                "HOST-A02BF7E1B9ADA36D",
+                "HOST-121B0D9659376951",
+                "HOST-73C48D44CC82E36F",
+                "HOST-20145F50E7698C02",
+                "HOST-0788564003D72AEF",
+                "HOST-76FAA6DC0347DA12",
+                "HOST-942876D0FD0AF7C5",
+                "HOST-530C130D8CD08786",
+                "HOST-6B659DFBAC76F491",
+                "HOST-477F34EDC707E86E",
+                "HOST-EA50C80CC9354652",
+                "HOST-7344649A8D974E74",
+                "HOST-7E99E2291EB6BE59"
+            ],
+            "runsOn": [
+                "PROCESS_GROUP-5B7B162D62AF0CE4",
+                "PROCESS_GROUP-8DAC747873A3B39A",
+                "PROCESS_GROUP-CFADEC7D6A357A18",
+                "PROCESS_GROUP-06B5EC9BCCF56FC4",
+                "PROCESS_GROUP-0ADCF21169AB2180",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-EAD34395895687D5",
+                "PROCESS_GROUP-5C5C23F580864AAB",
+                "PROCESS_GROUP-B27330900F0E858D",
+                "PROCESS_GROUP-5C4AD12F1A149132",
+                "PROCESS_GROUP-9DD56679E43994F2",
+                "PROCESS_GROUP-598C8FD67BF2946C",
+                "PROCESS_GROUP-55BB99EBACB51463",
+                "PROCESS_GROUP-216FDBEF8325B5C6",
+                "PROCESS_GROUP-93171C725DE981A4"
+            ]
+        },
+        "osType": "LINUX",
+        "osArchitecture": "X86",
+        "osVersion": "Ubuntu 14.04.4 LTS, Trusty Tahr (kernel 3.13.0-55-generic)",
+        "hypervisorType": "XEN",
+        "ipAddresses": [
+            "54.172.191.96",
+            "172.31.33.238"
+        ]
+    },
+    {
+        "entityId": "HOST-7453A7E317FCF4AF",
+        "displayName": "CCA-mysql-nginx-mesos-marathon",
+        "customizedName": "CCA-mysql-nginx-mesos-marathon",
+        "discoveredName": "et-demo-1-lnx7",
+        "tags": [
+            {
+                "context": "AWS",
+                "key": "APL.Deployment",
+                "value": "{\"type\":\"cc-dev\",\"userName\":\"cwpl-rorzecho\",\"startDate\":1416564900000,\"endDate\":1424818740000}"
+            },
+            {
+                "context": "AWS",
+                "key": "APL.Environment",
+                "value": "{\"id\":\"3654b091-91e4-4816-a6fe-600b36c3fb5e\",\"name\":\"eT-demo-1\",\"hostId\":\"lnx-7\"}"
+            },
+            {
+                "context": "AWS",
+                "key": "Category",
+                "value": "DEMOABILITY"
+            },
+            {
+                "context": "AWS",
+                "key": "Name",
+                "value": "et-demo-1-lnx7"
+            },
+            {
+                "context": "AWS",
+                "key": "DetailUsage",
+                "value": "New eT demo environment on account of security issues on ongoing demo environment."
+            },
+            {
+                "context": "AWS",
+                "key": "Email",
+                "value": "rafal.psciuk@dynatrace.com"
+            },
+            {
+                "context": "CONTEXTLESS",
+                "key": "A1"
+            },
+            {
+                "context": "AWS",
+                "key": "Usage",
+                "value": "APL"
+            },
+            {
+                "context": "CONTEXTLESS",
+                "key": "eric"
+            },
+            {
+                "context": "AWS",
+                "key": "ShouldBeReserved",
+                "value": "true"
+            },
+            {
+                "context": "AWS",
+                "key": "monitor_demo1",
+                "value": "true"
+            }
+        ],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-0788564003D72AEF",
+                "HOST-F5D85B7DCDD8A93C",
+                "HOST-54AA0D8B5401A1C2",
+                "HOST-7453A7E317FCF4AF",
+                "HOST-530C130D8CD08786",
+                "HOST-F2F4A7F8ACA0FCC5",
+                "HOST-A02BF7E1B9ADA36D",
+                "HOST-477F34EDC707E86E",
+                "HOST-121B0D9659376951",
+                "HOST-73C48D44CC82E36F",
+                "HOST-20145F50E7698C02",
+                "HOST-7E99E2291EB6BE59"
+            ]
+        },
+        "toRelationships": {
+            "isSiteOf": [
+                "GEOLOC_SITE-95196F3C9A4F4215",
+                "AWS_AVAILABILITY_ZONE-8528D1C56A3E90DC"
+            ],
+            "isNetworkClientOfHost": [
+                "HOST-0788564003D72AEF",
+                "HOST-54AA0D8B5401A1C2",
+                "HOST-76FAA6DC0347DA12",
+                "HOST-7453A7E317FCF4AF",
+                "HOST-6B659DFBAC76F491",
+                "HOST-A02BF7E1B9ADA36D",
+                "HOST-EA50C80CC9354652",
+                "HOST-7344649A8D974E74"
+            ],
+            "runsOn": [
+                "PROCESS_GROUP-5B7B162D62AF0CE4",
+                "PROCESS_GROUP-715E87B8A0A02DB7",
+                "PROCESS_GROUP-7B6A1784601B01EA",
+                "PROCESS_GROUP-9A265A109698447C",
+                "PROCESS_GROUP-073EAAA3AA375CF9",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-36BAFEFE448A1CAD",
+                "PROCESS_GROUP-E84C09702A8E5458",
+                "PROCESS_GROUP-5C5C23F580864AAB",
+                "PROCESS_GROUP-B27330900F0E858D",
+                "PROCESS_GROUP-5C4AD12F1A149132",
+                "PROCESS_GROUP-55BB99EBACB51463",
+                "PROCESS_GROUP-216FDBEF8325B5C6",
+                "PROCESS_GROUP-93171C725DE981A4"
+            ]
+        },
+        "osType": "LINUX",
+        "osArchitecture": "X86",
+        "osVersion": "Ubuntu 12.04.3 LTS, Precise Pangolin (kernel 3.2.0-53-virtual)",
+        "hypervisorType": "XEN",
+        "ipAddresses": [
+            "54.174.83.27",
+            "172.31.36.197"
+        ]
+    },
+    {
+        "entityId": "HOST-76FAA6DC0347DA12",
+        "displayName": "CF1-tomcatjms",
+        "customizedName": "CF1-tomcatjms",
+        "discoveredName": "et-demo-1-lnx2",
+        "tags": [
+            {
+                "context": "AWS",
+                "key": "APL.Deployment",
+                "value": "{\"type\":\"cc-dev\",\"userName\":\"cwpl-rorzecho\",\"startDate\":1416564900000,\"endDate\":1424818740000}"
+            },
+            {
+                "context": "AWS",
+                "key": "APL.Environment",
+                "value": "{\"id\":\"3654b091-91e4-4816-a6fe-600b36c3fb5e\",\"name\":\"eT-demo-1\",\"hostId\":\"lnx-2\"}"
+            },
+            {
+                "context": "AWS",
+                "key": "Category",
+                "value": "DEMOABILITY"
+            },
+            {
+                "context": "AWS",
+                "key": "Name",
+                "value": "et-demo-1-lnx2"
+            },
+            {
+                "context": "AWS",
+                "key": "DetailUsage",
+                "value": "New eT demo environment on account of security issues on ongoing demo environment."
+            },
+            {
+                "context": "AWS",
+                "key": "Email",
+                "value": "rafal.psciuk@dynatrace.com"
+            },
+            {
+                "context": "AWS",
+                "key": "Usage",
+                "value": "APL"
+            },
+            {
+                "context": "AWS",
+                "key": "ShouldBeReserved",
+                "value": "true"
+            },
+            {
+                "context": "AWS",
+                "key": "monitor_demo1",
+                "value": "true"
+            }
+        ],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-F5D85B7DCDD8A93C",
+                "HOST-7453A7E317FCF4AF",
+                "HOST-F2F4A7F8ACA0FCC5",
+                "HOST-A02BF7E1B9ADA36D",
+                "HOST-121B0D9659376951",
+                "HOST-73C48D44CC82E36F",
+                "HOST-20145F50E7698C02",
+                "HOST-0788564003D72AEF",
+                "HOST-DE6F9EC80D4D7C58",
+                "HOST-76FAA6DC0347DA12",
+                "HOST-530C130D8CD08786",
+                "HOST-477F34EDC707E86E",
+                "HOST-7E99E2291EB6BE59"
+            ]
+        },
+        "toRelationships": {
+            "isSiteOf": [
+                "GEOLOC_SITE-95196F3C9A4F4215",
+                "AWS_AVAILABILITY_ZONE-334F93507088AE03"
+            ],
+            "isNetworkClientOfHost": [
+                "HOST-0788564003D72AEF",
+                "HOST-76FAA6DC0347DA12"
+            ],
+            "runsOn": [
+                "PROCESS_GROUP-5B7B162D62AF0CE4",
+                "PROCESS_GROUP-16FD2750E91EAFAC",
+                "PROCESS_GROUP-B27330900F0E858D",
+                "PROCESS_GROUP-5C4AD12F1A149132",
+                "PROCESS_GROUP-55BB99EBACB51463",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-216FDBEF8325B5C6"
+            ]
+        },
+        "osType": "LINUX",
+        "osArchitecture": "X86",
+        "osVersion": "Ubuntu 14.04.5 LTS, Trusty Tahr (kernel 3.13.0-108-generic)",
+        "hypervisorType": "XEN",
+        "ipAddresses": [
+            "172.31.3.230",
+            "54.242.51.186"
+        ]
+    },
+    {
+        "entityId": "HOST-6B659DFBAC76F491",
+        "displayName": "CF2-tomcatjms",
+        "customizedName": "CF2-tomcatjms",
+        "discoveredName": "et-demo-1-lnx3",
+        "tags": [
+            {
+                "context": "AWS",
+                "key": "APL.Deployment",
+                "value": "{\"type\":\"cc-dev\",\"userName\":\"cwpl-rorzecho\",\"startDate\":1416564900000,\"endDate\":1424818740000}"
+            },
+            {
+                "context": "AWS",
+                "key": "APL.Environment",
+                "value": "{\"id\":\"3654b091-91e4-4816-a6fe-600b36c3fb5e\",\"name\":\"eT-demo-1\",\"hostId\":\"lnx-3\"}"
+            },
+            {
+                "context": "AWS",
+                "key": "Category",
+                "value": "DEMOABILITY"
+            },
+            {
+                "context": "AWS",
+                "key": "Name",
+                "value": "et-demo-1-lnx3"
+            },
+            {
+                "context": "AWS",
+                "key": "DetailUsage",
+                "value": "New eT demo environment on account of security issues on ongoing demo environment."
+            },
+            {
+                "context": "AWS",
+                "key": "Email",
+                "value": "rafal.psciuk@dynatrace.com"
+            },
+            {
+                "context": "AWS",
+                "key": "Usage",
+                "value": "APL"
+            },
+            {
+                "context": "AWS",
+                "key": "ShouldBeReserved",
+                "value": "true"
+            },
+            {
+                "context": "AWS",
+                "key": "monitor_demo1",
+                "value": "true"
+            }
+        ],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-F5D85B7DCDD8A93C",
+                "HOST-7453A7E317FCF4AF",
+                "HOST-F2F4A7F8ACA0FCC5",
+                "HOST-A02BF7E1B9ADA36D",
+                "HOST-121B0D9659376951",
+                "HOST-73C48D44CC82E36F",
+                "HOST-20145F50E7698C02",
+                "HOST-0788564003D72AEF",
+                "HOST-DE6F9EC80D4D7C58",
+                "HOST-530C130D8CD08786",
+                "HOST-6B659DFBAC76F491",
+                "HOST-477F34EDC707E86E",
+                "HOST-7E99E2291EB6BE59"
+            ]
+        },
+        "toRelationships": {
+            "isSiteOf": [
+                "GEOLOC_SITE-95196F3C9A4F4215",
+                "AWS_AVAILABILITY_ZONE-334F93507088AE03"
+            ],
+            "isNetworkClientOfHost": [
+                "HOST-0788564003D72AEF",
+                "HOST-6B659DFBAC76F491"
+            ],
+            "runsOn": [
+                "PROCESS_GROUP-5B7B162D62AF0CE4",
+                "PROCESS_GROUP-16FD2750E91EAFAC",
+                "PROCESS_GROUP-B27330900F0E858D",
+                "PROCESS_GROUP-5C4AD12F1A149132",
+                "PROCESS_GROUP-06B5EC9BCCF56FC4",
+                "PROCESS_GROUP-55BB99EBACB51463",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-216FDBEF8325B5C6"
+            ]
+        },
+        "osType": "LINUX",
+        "osArchitecture": "X86",
+        "osVersion": "Ubuntu 14.04.5 LTS, Trusty Tahr (kernel 3.13.0-108-generic)",
+        "hypervisorType": "XEN",
+        "ipAddresses": [
+            "54.211.99.97",
+            "172.31.3.41"
+        ]
+    },
+    {
+        "entityId": "HOST-7344649A8D974E74",
+        "displayName": "CF3-tomcatjms",
+        "customizedName": "CF3-tomcatjms",
+        "discoveredName": "et-demo-1-lnx4",
+        "tags": [
+            {
+                "context": "AWS",
+                "key": "APL.Deployment",
+                "value": "{\"type\":\"cc-dev\",\"userName\":\"cwpl-rorzecho\",\"startDate\":1416564900000,\"endDate\":1424818740000}"
+            },
+            {
+                "context": "AWS",
+                "key": "APL.Environment",
+                "value": "{\"id\":\"3654b091-91e4-4816-a6fe-600b36c3fb5e\",\"name\":\"eT-demo-1\",\"hostId\":\"lnx-4\"}"
+            },
+            {
+                "context": "AWS",
+                "key": "Category",
+                "value": "DEMOABILITY"
+            },
+            {
+                "context": "AWS",
+                "key": "Name",
+                "value": "et-demo-1-lnx4"
+            },
+            {
+                "context": "AWS",
+                "key": "DetailUsage",
+                "value": "New eT demo environment on account of security issues on ongoing demo environment."
+            },
+            {
+                "context": "AWS",
+                "key": "Email",
+                "value": "rafal.psciuk@dynatrace.com"
+            },
+            {
+                "context": "AWS",
+                "key": "Usage",
+                "value": "APL"
+            },
+            {
+                "context": "AWS",
+                "key": "ShouldBeReserved",
+                "value": "true"
+            },
+            {
+                "context": "AWS",
+                "key": "monitor_demo1",
+                "value": "true"
+            }
+        ],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-54AA0D8B5401A1C2",
+                "HOST-7453A7E317FCF4AF",
+                "HOST-F2F4A7F8ACA0FCC5",
+                "HOST-A02BF7E1B9ADA36D",
+                "HOST-121B0D9659376951",
+                "HOST-73C48D44CC82E36F",
+                "HOST-20145F50E7698C02",
+                "HOST-0788564003D72AEF",
+                "HOST-DE6F9EC80D4D7C58",
+                "HOST-530C130D8CD08786",
+                "HOST-477F34EDC707E86E",
+                "HOST-7344649A8D974E74",
+                "HOST-7E99E2291EB6BE59"
+            ]
+        },
+        "toRelationships": {
+            "isSiteOf": [
+                "GEOLOC_SITE-95196F3C9A4F4215",
+                "AWS_AVAILABILITY_ZONE-334F93507088AE03"
+            ],
+            "isNetworkClientOfHost": [
+                "HOST-0788564003D72AEF",
+                "HOST-7344649A8D974E74"
+            ],
+            "runsOn": [
+                "PROCESS_GROUP-5B7B162D62AF0CE4",
+                "PROCESS_GROUP-16FD2750E91EAFAC",
+                "PROCESS_GROUP-B27330900F0E858D",
+                "PROCESS_GROUP-5C4AD12F1A149132",
+                "PROCESS_GROUP-06B5EC9BCCF56FC4",
+                "PROCESS_GROUP-55BB99EBACB51463",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-216FDBEF8325B5C6"
+            ]
+        },
+        "osType": "LINUX",
+        "osArchitecture": "X86",
+        "osVersion": "Ubuntu 14.04.5 LTS, Trusty Tahr (kernel 3.13.0-108-generic)",
+        "hypervisorType": "XEN",
+        "ipAddresses": [
+            "172.31.3.5",
+            "52.87.193.213"
+        ]
+    },
+    {
+        "entityId": "HOST-EA50C80CC9354652",
+        "displayName": "CF4-tomcatjms",
+        "customizedName": "CF4-tomcatjms",
+        "discoveredName": "et-demo-1-lnx5",
+        "tags": [
+            {
+                "context": "AWS",
+                "key": "APL.Deployment",
+                "value": "{\"type\":\"cc-dev\",\"userName\":\"cwpl-rorzecho\",\"startDate\":1416564900000,\"endDate\":1424818740000}"
+            },
+            {
+                "context": "AWS",
+                "key": "APL.Environment",
+                "value": "{\"id\":\"3654b091-91e4-4816-a6fe-600b36c3fb5e\",\"name\":\"eT-demo-1\",\"hostId\":\"lnx-5\"}"
+            },
+            {
+                "context": "AWS",
+                "key": "Category",
+                "value": "DEMOABILITY"
+            },
+            {
+                "context": "AWS",
+                "key": "Name",
+                "value": "et-demo-1-lnx5"
+            },
+            {
+                "context": "AWS",
+                "key": "DetailUsage",
+                "value": "New eT demo environment on account of security issues on ongoing demo environment."
+            },
+            {
+                "context": "AWS",
+                "key": "Email",
+                "value": "rafal.psciuk@dynatrace.com"
+            },
+            {
+                "context": "AWS",
+                "key": "Usage",
+                "value": "APL"
+            },
+            {
+                "context": "AWS",
+                "key": "ShouldBeReserved",
+                "value": "true"
+            },
+            {
+                "context": "AWS",
+                "key": "monitor_demo1",
+                "value": "true"
+            }
+        ],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-54AA0D8B5401A1C2",
+                "HOST-7453A7E317FCF4AF",
+                "HOST-F2F4A7F8ACA0FCC5",
+                "HOST-A02BF7E1B9ADA36D",
+                "HOST-121B0D9659376951",
+                "HOST-73C48D44CC82E36F",
+                "HOST-20145F50E7698C02",
+                "HOST-0788564003D72AEF",
+                "HOST-DE6F9EC80D4D7C58",
+                "HOST-530C130D8CD08786",
+                "HOST-477F34EDC707E86E",
+                "HOST-EA50C80CC9354652",
+                "HOST-7E99E2291EB6BE59"
+            ]
+        },
+        "toRelationships": {
+            "isSiteOf": [
+                "GEOLOC_SITE-95196F3C9A4F4215",
+                "AWS_AVAILABILITY_ZONE-334F93507088AE03"
+            ],
+            "isNetworkClientOfHost": [
+                "HOST-0788564003D72AEF",
+                "HOST-EA50C80CC9354652"
+            ],
+            "runsOn": [
+                "PROCESS_GROUP-5B7B162D62AF0CE4",
+                "PROCESS_GROUP-16FD2750E91EAFAC",
+                "PROCESS_GROUP-B27330900F0E858D",
+                "PROCESS_GROUP-5C4AD12F1A149132",
+                "PROCESS_GROUP-06B5EC9BCCF56FC4",
+                "PROCESS_GROUP-55BB99EBACB51463",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-216FDBEF8325B5C6"
+            ]
+        },
+        "osType": "LINUX",
+        "osArchitecture": "X86",
+        "osVersion": "Ubuntu 14.04.2 LTS, Trusty Tahr (kernel 3.13.0-55-generic)",
+        "hypervisorType": "XEN",
+        "ipAddresses": [
+            "54.87.146.74",
+            "172.31.9.189"
+        ]
+    },
+    {
+        "entityId": "HOST-FBE542F270B45636",
+        "displayName": "CPU1",
+        "customizedName": "CPU1",
+        "discoveredName": "cpu-1-2",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-F2F4A7F8ACA0FCC5",
+                "HOST-A4198073007B0118",
+                "HOST-121B0D9659376951",
+                "HOST-FBE542F270B45636",
+                "HOST-2BBED3AC0BB98104"
+            ]
+        },
+        "toRelationships": {
+            "isSiteOf": [
+                "GEOLOC_SITE-CEA3C4681C4E571F",
+                "VMWARE_DATACENTER-653D9C2020EE42A0"
+            ],
+            "isNetworkClientOfHost": [
+                "HOST-FBE542F270B45636",
+                "HOST-2BBED3AC0BB98104"
+            ],
+            "runsOn": [
+                "PROCESS_GROUP-5B7B162D62AF0CE4",
+                "PROCESS_GROUP-AF35ED8884F9E3F1",
+                "PROCESS_GROUP-55BB99EBACB51463",
+                "PROCESS_GROUP-B27330900F0E858D",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-216FDBEF8325B5C6"
+            ]
+        },
+        "osType": "LINUX",
+        "osArchitecture": "X86",
+        "osVersion": "Ubuntu 12.04.3 LTS, Precise Pangolin (kernel 3.8.0-29-generic)",
+        "hypervisorType": "VMWARE",
+        "ipAddresses": [
+            "192.168.238.143"
+        ]
+    },
+    {
+        "entityId": "HOST-923A41D539D53D13",
+        "displayName": "CPU2",
+        "customizedName": "CPU2",
+        "discoveredName": "cpu-2-2",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-923A41D539D53D13",
+                "HOST-F2F4A7F8ACA0FCC5",
+                "HOST-A4198073007B0118",
+                "HOST-121B0D9659376951",
+                "HOST-2BBED3AC0BB98104"
+            ]
+        },
+        "toRelationships": {
+            "isSiteOf": [
+                "GEOLOC_SITE-CEA3C4681C4E571F",
+                "VMWARE_DATACENTER-653D9C2020EE42A0"
+            ],
+            "isNetworkClientOfHost": [
+                "HOST-923A41D539D53D13",
+                "HOST-2BBED3AC0BB98104"
+            ],
+            "runsOn": [
+                "PROCESS_GROUP-5B7B162D62AF0CE4",
+                "PROCESS_GROUP-82058D287919CF32",
+                "PROCESS_GROUP-55BB99EBACB51463",
+                "PROCESS_GROUP-B27330900F0E858D",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-216FDBEF8325B5C6"
+            ]
+        },
+        "osType": "LINUX",
+        "osArchitecture": "X86",
+        "osVersion": "Ubuntu 12.04.3 LTS, Precise Pangolin (kernel 3.8.0-29-generic)",
+        "hypervisorType": "VMWARE",
+        "ipAddresses": [
+            "192.168.238.144"
+        ]
+    },
+    {
+        "entityId": "HOST-BBB6C08450221836",
+        "displayName": "CPU3",
+        "customizedName": "CPU3",
+        "discoveredName": "cpu-3-2",
+        "tags": [
+            {
+                "context": "CONTEXTLESS",
+                "key": "toto"
+            }
+        ],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-F2F4A7F8ACA0FCC5",
+                "HOST-A4198073007B0118",
+                "HOST-121B0D9659376951",
+                "HOST-BBB6C08450221836",
+                "HOST-2BBED3AC0BB98104"
+            ]
+        },
+        "toRelationships": {
+            "isSiteOf": [
+                "GEOLOC_SITE-CEA3C4681C4E571F",
+                "VMWARE_DATACENTER-653D9C2020EE42A0"
+            ],
+            "isNetworkClientOfHost": [
+                "HOST-BBB6C08450221836",
+                "HOST-2BBED3AC0BB98104"
+            ],
+            "runsOn": [
+                "PROCESS_GROUP-5B7B162D62AF0CE4",
+                "PROCESS_GROUP-55BB99EBACB51463",
+                "PROCESS_GROUP-B27330900F0E858D",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-216FDBEF8325B5C6",
+                "PROCESS_GROUP-66773A22F6A2E575"
+            ]
+        },
+        "osType": "LINUX",
+        "osArchitecture": "X86",
+        "osVersion": "Ubuntu 12.04.3 LTS, Precise Pangolin (kernel 3.8.0-29-generic)",
+        "hypervisorType": "VMWARE",
+        "ipAddresses": [
+            "192.168.238.134"
+        ]
+    },
+    {
+        "entityId": "HOST-363E102D24CFAB71",
+        "displayName": "CPU4",
+        "customizedName": "CPU4",
+        "discoveredName": "cpu-4-2",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-F2F4A7F8ACA0FCC5",
+                "HOST-A4198073007B0118",
+                "HOST-121B0D9659376951",
+                "HOST-363E102D24CFAB71",
+                "HOST-2BBED3AC0BB98104"
+            ]
+        },
+        "toRelationships": {
+            "isSiteOf": [
+                "GEOLOC_SITE-CEA3C4681C4E571F",
+                "VMWARE_DATACENTER-653D9C2020EE42A0"
+            ],
+            "isNetworkClientOfHost": [
+                "HOST-363E102D24CFAB71",
+                "HOST-2BBED3AC0BB98104"
+            ],
+            "runsOn": [
+                "PROCESS_GROUP-5B7B162D62AF0CE4",
+                "PROCESS_GROUP-0F9A178B4D8E2E90",
+                "PROCESS_GROUP-55BB99EBACB51463",
+                "PROCESS_GROUP-B27330900F0E858D",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-216FDBEF8325B5C6"
+            ]
+        },
+        "osType": "LINUX",
+        "osArchitecture": "X86",
+        "osVersion": "Ubuntu 12.04.3 LTS, Precise Pangolin (kernel 3.8.0-29-generic)",
+        "hypervisorType": "VMWARE",
+        "ipAddresses": [
+            "192.168.238.145"
+        ]
+    },
+    {
+        "entityId": "HOST-73533D99D1119192",
+        "displayName": "CloudFoundry-ThirdPartyContentServer",
+        "customizedName": "CloudFoundry-ThirdPartyContentServer",
+        "discoveredName": "eT-demo1-ThirdPartyContentServer_0",
+        "tags": [
+            {
+                "context": "CONTEXTLESS",
+                "key": "Cloud Foundry"
+            }
+        ],
+        "fromRelationships": {},
+        "toRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-0788564003D72AEF"
+            ],
+            "runsOn": [
+                "PROCESS_GROUP-EFB998A1C89F05AB"
+            ]
+        },
+        "osType": "LINUX",
+        "osArchitecture": "X86",
+        "osVersion": "Ubuntu 14.04.5 LTS, Trusty Tahr (kernel 4.4.0-83-generic)",
+        "hypervisorType": "XEN",
+        "ipAddresses": [
+            "10.252.139.49"
+        ]
+    },
+    {
+        "entityId": "HOST-F28FC9042931335E",
+        "displayName": "CloudFoundry-WeatherBackend",
+        "customizedName": "CloudFoundry-WeatherBackend",
+        "discoveredName": "eT-demo1-weather-service-restify_0",
+        "tags": [],
+        "fromRelationships": {},
+        "toRelationships": {
+            "runsOn": [
+                "PROCESS_GROUP-065A32BADB6B39CA"
+            ]
+        },
+        "osType": "LINUX",
+        "osArchitecture": "X86",
+        "osVersion": "Ubuntu 14.04.5 LTS, Trusty Tahr (kernel 4.4.0-83-generic)",
+        "hypervisorType": "XEN",
+        "ipAddresses": [
+            "10.243.211.95"
+        ]
+    },
+    {
+        "entityId": "HOST-0B11418922A75B48",
+        "displayName": "CloudFoundry-WeatherFrontend",
+        "customizedName": "CloudFoundry-WeatherFrontend",
+        "discoveredName": "eT-demo1-weather-express_0",
+        "tags": [],
+        "fromRelationships": {},
+        "toRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-0788564003D72AEF"
+            ],
+            "runsOn": [
+                "PROCESS_GROUP-10E7CBEF727DBE1C"
+            ]
+        },
+        "osType": "LINUX",
+        "osArchitecture": "X86",
+        "osVersion": "Ubuntu 14.04.5 LTS, Trusty Tahr (kernel 4.4.0-83-generic)",
+        "hypervisorType": "XEN",
+        "ipAddresses": [
+            "10.241.128.54"
+        ]
+    },
+    {
+        "entityId": "HOST-DE6F9EC80D4D7C58",
+        "displayName": "CouchDB",
+        "customizedName": "CouchDB",
+        "discoveredName": "et-demo-1-win3",
+        "tags": [
+            {
+                "context": "AWS",
+                "key": "APL.Deployment",
+                "value": "{\"type\":\"cc-dev\",\"userName\":\"cwpl-rorzecho\",\"startDate\":1416564900000,\"endDate\":1424818740000}"
+            },
+            {
+                "context": "AWS",
+                "key": "APL.Environment",
+                "value": "{\"id\":\"3654b091-91e4-4816-a6fe-600b36c3fb5e\",\"name\":\"eT-demo-1\",\"hostId\":\"win-3\"}"
+            },
+            {
+                "context": "AWS",
+                "key": "Category",
+                "value": "DEMOABILITY"
+            },
+            {
+                "context": "AWS",
+                "key": "Name",
+                "value": "et-demo-1-win3"
+            },
+            {
+                "context": "AWS",
+                "key": "DetailUsage",
+                "value": "New eT demo environment on account of security issues on ongoing demo environment."
+            },
+            {
+                "context": "AWS",
+                "key": "Email",
+                "value": "rafal.psciuk@dynatrace.com"
+            },
+            {
+                "context": "CONTEXTLESS",
+                "key": "Department XYZ"
+            },
+            {
+                "context": "AWS",
+                "key": "Usage",
+                "value": "APL"
+            },
+            {
+                "context": "AWS",
+                "key": "ShouldBeReserved",
+                "value": "true"
+            },
+            {
+                "context": "AWS",
+                "key": "monitor_demo1",
+                "value": "true"
+            }
+        ],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-54AA0D8B5401A1C2",
+                "HOST-DE6F9EC80D4D7C58",
+                "HOST-530C130D8CD08786",
+                "HOST-F2F4A7F8ACA0FCC5",
+                "HOST-477F34EDC707E86E",
+                "HOST-121B0D9659376951",
+                "HOST-73C48D44CC82E36F",
+                "HOST-7E99E2291EB6BE59",
+                "HOST-20145F50E7698C02"
+            ]
+        },
+        "toRelationships": {
+            "isSiteOf": [
+                "GEOLOC_SITE-95196F3C9A4F4215",
+                "AWS_AVAILABILITY_ZONE-8528D1C56A3E90DC"
+            ],
+            "isNetworkClientOfHost": [
+                "HOST-0788564003D72AEF",
+                "HOST-6B659DFBAC76F491",
+                "HOST-DE6F9EC80D4D7C58",
+                "HOST-76FAA6DC0347DA12",
+                "HOST-EA50C80CC9354652",
+                "HOST-7344649A8D974E74"
+            ],
+            "runsOn": [
+                "PROCESS_GROUP-838D433331116482",
+                "PROCESS_GROUP-54A8B0B75D36E463",
+                "PROCESS_GROUP-3D9D854163F8F07A",
+                "PROCESS_GROUP-8887457FCA96BFF4",
+                "PROCESS_GROUP-89796F701FF7C56A",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-1DB7168BDCE9CE4B",
+                "PROCESS_GROUP-5C4AD12F1A149132",
+                "PROCESS_GROUP-09875E82E2FB98FD",
+                "PROCESS_GROUP-4F6C4B7F4305AFB7",
+                "PROCESS_GROUP-A3E3A683C21079BE",
+                "PROCESS_GROUP-7088651B58DDC5E5",
+                "PROCESS_GROUP-55BB99EBACB51463",
+                "PROCESS_GROUP-49876EC2AC6D402B",
+                "PROCESS_GROUP-AFF88D69DFD27180"
+            ]
+        },
+        "osType": "WINDOWS",
+        "osArchitecture": "X86",
+        "osVersion": "Windows Server 2008 R2 Service Pack 1, ver. 6.1.7601",
+        "hypervisorType": "XEN",
+        "ipAddresses": [
+            "172.31.36.218",
+            "192.168.56.1",
+            "54.172.248.232"
+        ]
+    },
+    {
+        "entityId": "HOST-A4198073007B0118",
+        "displayName": "ETVM-tomcat",
+        "customizedName": "ETVM-tomcat",
+        "discoveredName": "easyTravel-2",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-530C130D8CD08786",
+                "HOST-F2F4A7F8ACA0FCC5",
+                "HOST-9BA7DA2D0F6B3578",
+                "HOST-A4198073007B0118",
+                "HOST-477F34EDC707E86E",
+                "HOST-121B0D9659376951",
+                "HOST-2BBED3AC0BB98104"
+            ]
+        },
+        "toRelationships": {
+            "isSiteOf": [
+                "GEOLOC_SITE-CEA3C4681C4E571F",
+                "VMWARE_DATACENTER-653D9C2020EE42A0"
+            ],
+            "isNetworkClientOfHost": [
+                "HOST-923A41D539D53D13",
+                "HOST-A4198073007B0118",
+                "HOST-363E102D24CFAB71",
+                "HOST-FBE542F270B45636",
+                "HOST-BBB6C08450221836",
+                "HOST-2BBED3AC0BB98104"
+            ],
+            "runsOn": [
+                "PROCESS_GROUP-54A8B0B75D36E463",
+                "PROCESS_GROUP-3D9D854163F8F07A",
+                "PROCESS_GROUP-55D71BDF2290E3C7",
+                "PROCESS_GROUP-B17CE1D19815DBF5",
+                "PROCESS_GROUP-09875E82E2FB98FD",
+                "PROCESS_GROUP-52CB9DAC75223AF9",
+                "PROCESS_GROUP-4F6C4B7F4305AFB7",
+                "PROCESS_GROUP-55BB99EBACB51463",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-AFF88D69DFD27180",
+                "PROCESS_GROUP-35C6073C07AE0507"
+            ]
+        },
+        "osType": "WINDOWS",
+        "osArchitecture": "X86",
+        "osVersion": "Windows 7 Service Pack 1, ver. 6.1.7601",
+        "hypervisorType": "VMWARE",
+        "ipAddresses": [
+            "192.168.238.131"
+        ]
+    },
+    {
+        "entityId": "HOST-0788564003D72AEF",
+        "displayName": "LB-apache-php-varnish",
+        "customizedName": "LB-apache-php-varnish",
+        "discoveredName": "et-demo-1-lnx1",
+        "tags": [
+            {
+                "context": "AWS",
+                "key": "APL.Deployment",
+                "value": "{\"type\":\"cc-dev\",\"userName\":\"cwpl-rorzecho\",\"startDate\":1416564900000,\"endDate\":1424818740000}"
+            },
+            {
+                "context": "AWS",
+                "key": "APL.Environment",
+                "value": "{\"id\":\"3654b091-91e4-4816-a6fe-600b36c3fb5e\",\"name\":\"eT-demo-1\",\"hostId\":\"lnx-1\"}"
+            },
+            {
+                "context": "AWS",
+                "key": "Category",
+                "value": "DEMOABILITY"
+            },
+            {
+                "context": "AWS",
+                "key": "Name",
+                "value": "et-demo-1-lnx1"
+            },
+            {
+                "context": "AWS",
+                "key": "DetailUsage",
+                "value": "New eT demo environment on account of security issues on ongoing demo environment."
+            },
+            {
+                "context": "AWS",
+                "key": "Email",
+                "value": "rafal.psciuk@dynatrace.com"
+            },
+            {
+                "context": "CONTEXTLESS",
+                "key": "ueule"
+            },
+            {
+                "context": "CONTEXTLESS",
+                "key": "DDA1"
+            },
+            {
+                "context": "AWS",
+                "key": "Usage",
+                "value": "APL"
+            },
+            {
+                "context": "AWS",
+                "key": "ShouldBeReserved",
+                "value": "true"
+            },
+            {
+                "context": "AWS",
+                "key": "monitor_demo1",
+                "value": "true"
+            }
+        ],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-F5D85B7DCDD8A93C",
+                "HOST-54AA0D8B5401A1C2",
+                "HOST-7453A7E317FCF4AF",
+                "HOST-73533D99D1119192",
+                "HOST-E2C9C5A246550D37",
+                "HOST-F2F4A7F8ACA0FCC5",
+                "HOST-A02BF7E1B9ADA36D",
+                "HOST-121B0D9659376951",
+                "HOST-73C48D44CC82E36F",
+                "HOST-20145F50E7698C02",
+                "HOST-0788564003D72AEF",
+                "HOST-DE6F9EC80D4D7C58",
+                "HOST-76FAA6DC0347DA12",
+                "HOST-E662F28EFFC7D77D",
+                "HOST-530C130D8CD08786",
+                "HOST-0B11418922A75B48",
+                "HOST-6B659DFBAC76F491",
+                "HOST-477F34EDC707E86E",
+                "HOST-EA50C80CC9354652",
+                "HOST-7344649A8D974E74",
+                "HOST-7E99E2291EB6BE59"
+            ]
+        },
+        "toRelationships": {
+            "isSiteOf": [
+                "GEOLOC_SITE-95196F3C9A4F4215",
+                "AWS_AVAILABILITY_ZONE-334F93507088AE03"
+            ],
+            "isNetworkClientOfHost": [
+                "HOST-0788564003D72AEF",
+                "HOST-6B659DFBAC76F491",
+                "HOST-7453A7E317FCF4AF",
+                "HOST-76FAA6DC0347DA12",
+                "HOST-EA50C80CC9354652",
+                "HOST-7344649A8D974E74"
+            ],
+            "runsOn": [
+                "PROCESS_GROUP-EC64A7883AD770F0",
+                "PROCESS_GROUP-B27330900F0E858D",
+                "PROCESS_GROUP-62548D702A2DD224",
+                "PROCESS_GROUP-5C4AD12F1A149132",
+                "PROCESS_GROUP-06B5EC9BCCF56FC4",
+                "PROCESS_GROUP-322E5E3F4BD25CCA",
+                "PROCESS_GROUP-55BB99EBACB51463",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-216FDBEF8325B5C6"
+            ]
+        },
+        "osType": "LINUX",
+        "osArchitecture": "X86",
+        "osVersion": "Ubuntu 14.04.5 LTS, Trusty Tahr (kernel 3.13.0-108-generic)",
+        "hypervisorType": "XEN",
+        "ipAddresses": [
+            "54.210.22.3",
+            "172.31.8.129"
+        ]
+    },
+    {
+        "entityId": "HOST-2BBED3AC0BB98104",
+        "displayName": "LBVM-mongo-haproxy-docker",
+        "customizedName": "LBVM-mongo-haproxy-docker",
+        "discoveredName": "weblauncher-2",
+        "tags": [
+            {
+                "context": "CONTEXTLESS",
+                "key": "testingTags"
+            },
+            {
+                "context": "CONTEXTLESS",
+                "key": "se-day"
+            }
+        ],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-FBE542F270B45636",
+                "HOST-FFA6AAFBA2A9AA92",
+                "HOST-BBB6C08450221836",
+                "HOST-923A41D539D53D13",
+                "HOST-F2F4A7F8ACA0FCC5",
+                "HOST-A4198073007B0118",
+                "HOST-121B0D9659376951",
+                "HOST-363E102D24CFAB71",
+                "HOST-2BBED3AC0BB98104"
+            ]
+        },
+        "toRelationships": {
+            "isSiteOf": [
+                "GEOLOC_SITE-CEA3C4681C4E571F",
+                "VMWARE_DATACENTER-653D9C2020EE42A0"
+            ],
+            "isNetworkClientOfHost": [
+                "HOST-F3AEAFA7FDF3FFCA",
+                "HOST-FBE542F270B45636",
+                "HOST-BBB6C08450221836",
+                "HOST-923A41D539D53D13",
+                "HOST-A4198073007B0118",
+                "HOST-363E102D24CFAB71",
+                "HOST-2BBED3AC0BB98104"
+            ],
+            "runsOn": [
+                "PROCESS_GROUP-F141B7D24878E37D",
+                "PROCESS_GROUP-E475868328FEBA27",
+                "PROCESS_GROUP-B27330900F0E858D",
+                "PROCESS_GROUP-92F466C2A666BEEB",
+                "PROCESS_GROUP-55BB99EBACB51463",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-216FDBEF8325B5C6"
+            ]
+        },
+        "osType": "LINUX",
+        "osArchitecture": "X86",
+        "osVersion": "Ubuntu 14.04.3 LTS, Trusty Tahr (kernel 3.16.0-51-generic)",
+        "hypervisorType": "VMWARE",
+        "ipAddresses": [
+            "192.168.238.132"
+        ]
+    },
+    {
+        "entityId": "HOST-2210C04945B95C2C",
+        "displayName": "OpenStack-Apache",
+        "customizedName": "OpenStack-Apache",
+        "discoveredName": "easytravel-small-1",
+        "tags": [
+            {
+                "context": "CONTEXTLESS",
+                "key": "testingTags"
+            }
+        ],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-F2F4A7F8ACA0FCC5",
+                "HOST-267CF1D2A12C1BA1",
+                "HOST-121B0D9659376951",
+                "HOST-2210C04945B95C2C",
+                "HOST-A8AA150079BA176E"
+            ]
+        },
+        "toRelationships": {
+            "isSiteOf": [
+                "GEOLOC_SITE-CEA3C4681C4E571F"
+            ],
+            "isNetworkClientOfHost": [
+                "HOST-2210C04945B95C2C",
+                "HOST-CD4B3CFD5EACAA8A"
+            ],
+            "runsOn": [
+                "PROCESS_GROUP-5B7B162D62AF0CE4",
+                "PROCESS_GROUP-55BB99EBACB51463",
+                "PROCESS_GROUP-B27330900F0E858D",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-D82B4258B906D3C8",
+                "PROCESS_GROUP-216FDBEF8325B5C6"
+            ]
+        },
+        "osType": "LINUX",
+        "osArchitecture": "X86",
+        "osVersion": "Ubuntu 14.04.5 LTS, Trusty Tahr (kernel 3.13.0-108-generic)",
+        "hypervisorType": "QEMU",
+        "ipAddresses": [
+            "10.5.5.14",
+            "172.18.160.25"
+        ]
+    },
+    {
+        "entityId": "HOST-267CF1D2A12C1BA1",
+        "displayName": "OpenStack-BusinessBackend",
+        "customizedName": "OpenStack-BusinessBackend",
+        "discoveredName": "easytravel-small-3",
+        "tags": [
+            {
+                "context": "CONTEXTLESS",
+                "key": "OpenStack"
+            }
+        ],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-CD4B3CFD5EACAA8A",
+                "HOST-F2F4A7F8ACA0FCC5",
+                "HOST-267CF1D2A12C1BA1",
+                "HOST-121B0D9659376951"
+            ]
+        },
+        "toRelationships": {
+            "isSiteOf": [
+                "GEOLOC_SITE-CEA3C4681C4E571F",
+                "OPENSTACK_REGION-A085B4A484302609"
+            ],
+            "isNetworkClientOfHost": [
+                "HOST-CD4B3CFD5EACAA8A",
+                "HOST-267CF1D2A12C1BA1",
+                "HOST-2210C04945B95C2C",
+                "HOST-A8AA150079BA176E"
+            ],
+            "runsOn": [
+                "PROCESS_GROUP-5B7B162D62AF0CE4",
+                "PROCESS_GROUP-07F29EF79A2F51C5",
+                "PROCESS_GROUP-B27330900F0E858D",
+                "PROCESS_GROUP-55BB99EBACB51463",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-216FDBEF8325B5C6",
+                "PROCESS_GROUP-93171C725DE981A4"
+            ]
+        },
+        "osType": "LINUX",
+        "osArchitecture": "X86",
+        "osVersion": "Ubuntu 14.04.5 LTS, Trusty Tahr (kernel 3.13.0-108-generic)",
+        "hypervisorType": "QEMU",
+        "ipAddresses": [
+            "10.5.5.15",
+            "172.18.160.23"
+        ]
+    },
+    {
+        "entityId": "HOST-A8AA150079BA176E",
+        "displayName": "OpenStack-CustomerFrontend-ThirdPartyContent",
+        "customizedName": "OpenStack-CustomerFrontend-ThirdPartyContent",
+        "discoveredName": "easytravel-small-2.1",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-F2F4A7F8ACA0FCC5",
+                "HOST-267CF1D2A12C1BA1",
+                "HOST-121B0D9659376951",
+                "HOST-A8AA150079BA176E"
+            ]
+        },
+        "toRelationships": {
+            "isSiteOf": [
+                "GEOLOC_SITE-CEA3C4681C4E571F"
+            ],
+            "isNetworkClientOfHost": [
+                "HOST-2210C04945B95C2C",
+                "HOST-CD4B3CFD5EACAA8A",
+                "HOST-A8AA150079BA176E"
+            ],
+            "runsOn": [
+                "PROCESS_GROUP-5B7B162D62AF0CE4",
+                "PROCESS_GROUP-509682C3669AB4F2",
+                "PROCESS_GROUP-B27330900F0E858D",
+                "PROCESS_GROUP-0B429429B3D9BA2C",
+                "PROCESS_GROUP-55BB99EBACB51463",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-216FDBEF8325B5C6"
+            ]
+        },
+        "osType": "LINUX",
+        "osArchitecture": "X86",
+        "osVersion": "Ubuntu 14.04.5 LTS, Trusty Tahr (kernel 3.13.0-108-generic)",
+        "hypervisorType": "QEMU",
+        "ipAddresses": [
+            "10.5.5.24",
+            "172.18.160.26"
+        ]
+    },
+    {
+        "entityId": "HOST-CD4B3CFD5EACAA8A",
+        "displayName": "OpenStack-WebLauncher",
+        "customizedName": "OpenStack-WebLauncher",
+        "discoveredName": "easytravel-weblauncher",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-CD4B3CFD5EACAA8A",
+                "HOST-F2F4A7F8ACA0FCC5",
+                "HOST-267CF1D2A12C1BA1",
+                "HOST-121B0D9659376951",
+                "HOST-2210C04945B95C2C",
+                "HOST-A8AA150079BA176E"
+            ]
+        },
+        "toRelationships": {
+            "isSiteOf": [
+                "GEOLOC_SITE-CEA3C4681C4E571F",
+                "OPENSTACK_REGION-A085B4A484302609"
+            ],
+            "isNetworkClientOfHost": [
+                "HOST-CD4B3CFD5EACAA8A",
+                "HOST-267CF1D2A12C1BA1"
+            ],
+            "runsOn": [
+                "PROCESS_GROUP-55BB99EBACB51463",
+                "PROCESS_GROUP-B27330900F0E858D",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-216FDBEF8325B5C6",
+                "PROCESS_GROUP-62548D702A2DD224"
+            ]
+        },
+        "osType": "LINUX",
+        "osArchitecture": "X86",
+        "osVersion": "Ubuntu 14.04.5 LTS, Trusty Tahr (kernel 3.13.0-108-generic)",
+        "hypervisorType": "QEMU",
+        "ipAddresses": [
+            "10.5.5.13",
+            "172.18.160.22"
+        ]
+    },
+    {
+        "entityId": "HOST-9B3CDCF3A6732BF1",
+        "displayName": "OpenStackControllerNode",
+        "customizedName": "OpenStackControllerNode",
+        "discoveredName": "pl1l-comp02.maas",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-F2F4A7F8ACA0FCC5",
+                "HOST-7C2502D8E574341B",
+                "HOST-121B0D9659376951",
+                "HOST-9B3CDCF3A6732BF1",
+                "HOST-080F8A3DB190A05C"
+            ]
+        },
+        "toRelationships": {
+            "isSiteOf": [
+                "GEOLOC_SITE-CEA3C4681C4E571F",
+                "OPENSTACK_REGION-A085B4A484302609"
+            ],
+            "isNetworkClientOfHost": [
+                "HOST-F2F4A7F8ACA0FCC5",
+                "HOST-3EC202B44BE81694",
+                "HOST-525C76FBB5E15ADC",
+                "HOST-121B0D9659376951",
+                "HOST-9B3CDCF3A6732BF1"
+            ],
+            "runsOn": [
+                "PROCESS_GROUP-7AAB8DC0959B1467",
+                "PROCESS_GROUP-F141B7D24878E37D",
+                "PROCESS_GROUP-AA86A6FBE1EBE661",
+                "PROCESS_GROUP-8CA5B61378A6F3ED",
+                "PROCESS_GROUP-82330B0B3A8B552C",
+                "PROCESS_GROUP-79044E8C4F250AEC",
+                "PROCESS_GROUP-C84C3D73A59DAA7C",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-B9102B4F42D0620D",
+                "PROCESS_GROUP-BD86267200B0245F",
+                "PROCESS_GROUP-0D7855288F798D2B",
+                "PROCESS_GROUP-6AA9224F7BCBA368",
+                "PROCESS_GROUP-98DC6B5403AE2401",
+                "PROCESS_GROUP-EA5111638F5F84F1",
+                "PROCESS_GROUP-82FFA4102921666F",
+                "PROCESS_GROUP-36435C87FA8F3189",
+                "PROCESS_GROUP-B27330900F0E858D",
+                "PROCESS_GROUP-3102C29299C3BA19",
+                "PROCESS_GROUP-0E58BDD5F3188CD8",
+                "PROCESS_GROUP-BF8FB2F813F89D1B",
+                "PROCESS_GROUP-F149C77876D37ACD",
+                "PROCESS_GROUP-5CA2BA1FE8DB9AC5",
+                "PROCESS_GROUP-55BB99EBACB51463",
+                "PROCESS_GROUP-B34081EFF9E5F516",
+                "PROCESS_GROUP-7A0200A043F5C9EA",
+                "PROCESS_GROUP-92F466C2A666BEEB",
+                "PROCESS_GROUP-3C62BB97B6EF6F82",
+                "PROCESS_GROUP-31D49FC4694179A9",
+                "PROCESS_GROUP-36BAFEFE448A1CAD",
+                "PROCESS_GROUP-05C8338DBEDE13D6",
+                "PROCESS_GROUP-D60E4B411B9425A1",
+                "PROCESS_GROUP-8EDDF9FBE05BB81E",
+                "PROCESS_GROUP-67F568853A349471",
+                "PROCESS_GROUP-216FDBEF8325B5C6",
+                "PROCESS_GROUP-90BD3F187C88D927"
+            ]
+        },
+        "osType": "LINUX",
+        "osArchitecture": "X86",
+        "osVersion": "Ubuntu 16.04.1 LTS (Xenial Xerus) (kernel 4.4.0-75-generic)",
+        "ipAddresses": [
+            "172.18.160.67"
+        ]
+    },
+    {
+        "entityId": "HOST-E2C9C5A246550D37",
+        "displayName": "RD0003FF68FAD3",
+        "discoveredName": "RD0003FF68FAD3",
+        "tags": [
+            {
+                "context": "CONTEXTLESS",
+                "key": "test"
+            }
+        ],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-E2C9C5A246550D37"
+            ]
+        },
+        "toRelationships": {
+            "isSiteOf": [
+                "AZURE_REGION-F4FDC1868C659C90"
+            ],
+            "isNetworkClientOfHost": [
+                "HOST-0788564003D72AEF",
+                "HOST-E2C9C5A246550D37"
+            ],
+            "runsOn": [
+                "PROCESS_GROUP-2E99579192C35CEE",
+                "PROCESS_GROUP-B1254BB038A2E59B",
+                "PROCESS_GROUP-CC733B48547F69C5",
+                "PROCESS_GROUP-34ADF6548C3D87CF",
+                "PROCESS_GROUP-D1C4521309E6F04A",
+                "PROCESS_GROUP-85B11CD4B9D1070A",
+                "PROCESS_GROUP-2BCD18F3F9388BFD"
+            ]
+        },
+        "osType": "WINDOWS",
+        "osArchitecture": "X86",
+        "osVersion": "Windows Server 2012, ver. 6.2.9200",
+        "hypervisorType": "HYPERV",
+        "ipAddresses": [
+            "100.76.254.12"
+        ]
+    },
+    {
+        "entityId": "HOST-8866C5F8CD351C9B",
+        "displayName": "SAPAPP1D1.easytravel.com",
+        "discoveredName": "SAPAPP1D1.easytravel.com",
+        "tags": [
+            {
+                "context": "CONTEXTLESS",
+                "key": "test-xxx"
+            }
+        ],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-B51CB9FD8D45DE24",
+                "HOST-8866C5F8CD351C9B",
+                "HOST-F2F4A7F8ACA0FCC5",
+                "HOST-12F3F4DADF57D3B4",
+                "HOST-121B0D9659376951"
+            ]
+        },
+        "toRelationships": {
+            "isSiteOf": [
+                "GEOLOC_SITE-CEA3C4681C4E571F",
+                "VMWARE_DATACENTER-653D9C2020EE42A0"
+            ],
+            "isNetworkClientOfHost": [
+                "HOST-B51CB9FD8D45DE24",
+                "HOST-8866C5F8CD351C9B"
+            ],
+            "runsOn": [
+                "PROCESS_GROUP-54A8B0B75D36E463",
+                "PROCESS_GROUP-8E49A9E418F5B346",
+                "PROCESS_GROUP-09875E82E2FB98FD",
+                "PROCESS_GROUP-F144362E2D016339",
+                "PROCESS_GROUP-4F6C4B7F4305AFB7",
+                "PROCESS_GROUP-433E6519C59493EF",
+                "PROCESS_GROUP-55BB99EBACB51463",
+                "PROCESS_GROUP-3AD9FB79C914520C"
+            ]
+        },
+        "osType": "WINDOWS",
+        "osArchitecture": "X86",
+        "osVersion": "Windows Server 2012 R2, ver. 6.3.9600",
+        "hypervisorType": "VMWARE",
+        "ipAddresses": [
+            "192.168.238.151"
+        ]
+    },
+    {
+        "entityId": "HOST-B51CB9FD8D45DE24",
+        "displayName": "SAPAPP2D1.easytravel.com",
+        "discoveredName": "SAPAPP2D1.easytravel.com",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-BF25E7D0F8FC45D9",
+                "HOST-8866C5F8CD351C9B",
+                "HOST-B51CB9FD8D45DE24",
+                "HOST-DB8C1F19FD91CC3C",
+                "HOST-F2F4A7F8ACA0FCC5",
+                "HOST-12F3F4DADF57D3B4",
+                "HOST-477F34EDC707E86E",
+                "HOST-121B0D9659376951"
+            ]
+        },
+        "toRelationships": {
+            "isSiteOf": [
+                "GEOLOC_SITE-CEA3C4681C4E571F",
+                "VMWARE_DATACENTER-653D9C2020EE42A0"
+            ],
+            "isNetworkClientOfHost": [
+                "HOST-B51CB9FD8D45DE24",
+                "HOST-8866C5F8CD351C9B",
+                "HOST-12F3F4DADF57D3B4"
+            ],
+            "runsOn": [
+                "PROCESS_GROUP-54A8B0B75D36E463",
+                "PROCESS_GROUP-8E49A9E418F5B346",
+                "PROCESS_GROUP-09875E82E2FB98FD",
+                "PROCESS_GROUP-D5A079B0A96ECB0C",
+                "PROCESS_GROUP-4F6C4B7F4305AFB7",
+                "PROCESS_GROUP-433E6519C59493EF",
+                "PROCESS_GROUP-55BB99EBACB51463",
+                "PROCESS_GROUP-3AD9FB79C914520C"
+            ]
+        },
+        "osType": "WINDOWS",
+        "osArchitecture": "X86",
+        "osVersion": "Windows Server 2012 R2, ver. 6.3.9600",
+        "hypervisorType": "VMWARE",
+        "ipAddresses": [
+            "192.168.238.150"
+        ]
+    },
+    {
+        "entityId": "HOST-BF25E7D0F8FC45D9",
+        "displayName": "SAPDB1D1.easytravel.com",
+        "discoveredName": "SAPDB1D1.easytravel.com",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-BF25E7D0F8FC45D9",
+                "HOST-F2F4A7F8ACA0FCC5",
+                "HOST-12F3F4DADF57D3B4",
+                "HOST-121B0D9659376951"
+            ]
+        },
+        "toRelationships": {
+            "isSiteOf": [
+                "GEOLOC_SITE-CEA3C4681C4E571F"
+            ],
+            "isNetworkClientOfHost": [
+                "HOST-BF25E7D0F8FC45D9",
+                "HOST-B51CB9FD8D45DE24"
+            ],
+            "runsOn": [
+                "PROCESS_GROUP-54A8B0B75D36E463",
+                "PROCESS_GROUP-8E49A9E418F5B346",
+                "PROCESS_GROUP-09875E82E2FB98FD",
+                "PROCESS_GROUP-4F6C4B7F4305AFB7",
+                "PROCESS_GROUP-433E6519C59493EF",
+                "PROCESS_GROUP-6EB28F2B07E8A057",
+                "PROCESS_GROUP-55BB99EBACB51463",
+                "PROCESS_GROUP-F93004A7226E1A4F",
+                "PROCESS_GROUP-3AD9FB79C914520C"
+            ]
+        },
+        "osType": "WINDOWS",
+        "osArchitecture": "X86",
+        "osVersion": "Windows Server 2012 R2, ver. 6.3.9600",
+        "hypervisorType": "VMWARE",
+        "ipAddresses": [
+            "192.168.238.149"
+        ]
+    },
+    {
+        "entityId": "HOST-1E64E15558B9486B",
+        "displayName": "WIN4-tomcat",
+        "customizedName": "WIN4-tomcat",
+        "discoveredName": "et-demo-1-win4",
+        "tags": [
+            {
+                "context": "AWS",
+                "key": "APL.Deployment",
+                "value": "{\"type\":\"cc-dev\",\"userName\":\"cwpl-rorzecho\",\"startDate\":1416564900000,\"endDate\":1424818740000}"
+            },
+            {
+                "context": "AWS",
+                "key": "APL.Environment",
+                "value": "{\"id\":\"3654b091-91e4-4816-a6fe-600b36c3fb5e\",\"name\":\"eT-demo-1\",\"hostId\":\"win-4\"}"
+            },
+            {
+                "context": "AWS",
+                "key": "Category",
+                "value": "DEMOABILITY"
+            },
+            {
+                "context": "AWS",
+                "key": "Name",
+                "value": "et-demo-1-win4"
+            },
+            {
+                "context": "AWS",
+                "key": "DetailUsage",
+                "value": "New eT demo environment on account of security issues on ongoing demo environment."
+            },
+            {
+                "context": "AWS",
+                "key": "Email",
+                "value": "rafal.psciuk@dynatrace.com"
+            },
+            {
+                "context": "AWS",
+                "key": "Usage",
+                "value": "APL"
+            },
+            {
+                "context": "AWS",
+                "key": "ShouldBeReserved",
+                "value": "true"
+            },
+            {
+                "context": "AWS",
+                "key": "monitor_demo1",
+                "value": "true"
+            }
+        ],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-1E64E15558B9486B",
+                "HOST-530C130D8CD08786",
+                "HOST-F2F4A7F8ACA0FCC5",
+                "HOST-477F34EDC707E86E",
+                "HOST-121B0D9659376951",
+                "HOST-73C48D44CC82E36F",
+                "HOST-7E99E2291EB6BE59",
+                "HOST-20145F50E7698C02"
+            ]
+        },
+        "toRelationships": {
+            "isSiteOf": [
+                "GEOLOC_SITE-95196F3C9A4F4215",
+                "AWS_AVAILABILITY_ZONE-8528D1C56A3E90DC"
+            ],
+            "isNetworkClientOfHost": [
+                "HOST-1E64E15558B9486B"
+            ],
+            "runsOn": [
+                "PROCESS_GROUP-838D433331116482",
+                "PROCESS_GROUP-54A8B0B75D36E463",
+                "PROCESS_GROUP-3D9D854163F8F07A",
+                "PROCESS_GROUP-89796F701FF7C56A",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-5C4AD12F1A149132",
+                "PROCESS_GROUP-09875E82E2FB98FD",
+                "PROCESS_GROUP-4F6C4B7F4305AFB7",
+                "PROCESS_GROUP-A3E3A683C21079BE",
+                "PROCESS_GROUP-7088651B58DDC5E5",
+                "PROCESS_GROUP-55BB99EBACB51463",
+                "PROCESS_GROUP-49876EC2AC6D402B",
+                "PROCESS_GROUP-AFF88D69DFD27180"
+            ]
+        },
+        "osType": "WINDOWS",
+        "osArchitecture": "X86",
+        "osVersion": "Windows Server 2008 R2 Service Pack 1, ver. 6.1.7601",
+        "hypervisorType": "XEN",
+        "ipAddresses": [
+            "54.174.31.164",
+            "172.31.34.64"
+        ]
+    },
+    {
+        "entityId": "HOST-E662F28EFFC7D77D",
+        "displayName": "angular-magento-fpm-mysql-nginx-docker",
+        "customizedName": "angular-magento-fpm-mysql-nginx-docker",
+        "discoveredName": "et-demo-1-lnx8",
+        "tags": [
+            {
+                "context": "AWS",
+                "key": "Category",
+                "value": "DEMOABILITY"
+            },
+            {
+                "context": "AWS",
+                "key": "Name",
+                "value": "et-demo-1-lnx8"
+            },
+            {
+                "context": "AWS",
+                "key": "DetailUsage",
+                "value": "The demo 1 Auto Scaling Group"
+            },
+            {
+                "context": "AWS",
+                "key": "Email",
+                "value": "rafal.psciuk@dynatrace.com"
+            },
+            {
+                "context": "AWS",
+                "key": "Usage",
+                "value": "APL"
+            },
+            {
+                "context": "AWS",
+                "key": "ShouldBeReserved",
+                "value": "true"
+            },
+            {
+                "context": "AWS",
+                "key": "monitor_demo1",
+                "value": "true"
+            },
+            {
+                "context": "AWS",
+                "key": "aws:autoscaling:groupName",
+                "value": "demo-1-AutoScale-group-small"
+            }
+        ],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-E662F28EFFC7D77D",
+                "HOST-530C130D8CD08786",
+                "HOST-F2F4A7F8ACA0FCC5",
+                "HOST-477F34EDC707E86E",
+                "HOST-121B0D9659376951",
+                "HOST-73C48D44CC82E36F",
+                "HOST-7E99E2291EB6BE59",
+                "HOST-20145F50E7698C02"
+            ]
+        },
+        "toRelationships": {
+            "isSiteOf": [
+                "GEOLOC_SITE-95196F3C9A4F4215",
+                "AWS_AVAILABILITY_ZONE-334F93507088AE03"
+            ],
+            "isNetworkClientOfHost": [
+                "HOST-0788564003D72AEF",
+                "HOST-E662F28EFFC7D77D"
+            ],
+            "runsOn": [
+                "PROCESS_GROUP-4C6452D8029CD1F5",
+                "PROCESS_GROUP-B34081EFF9E5F516",
+                "PROCESS_GROUP-5C5C23F580864AAB",
+                "PROCESS_GROUP-B27330900F0E858D",
+                "PROCESS_GROUP-55BB99EBACB51463",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-216FDBEF8325B5C6",
+                "PROCESS_GROUP-36BAFEFE448A1CAD"
+            ]
+        },
+        "osType": "LINUX",
+        "osArchitecture": "X86",
+        "osVersion": "Ubuntu 14.04.2 LTS, Trusty Tahr (kernel 3.13.0-48-generic)",
+        "hypervisorType": "XEN",
+        "ipAddresses": [
+            "54.91.154.186",
+            "172.31.12.124"
+        ]
+    },
+    {
+        "entityId": "HOST-F3AEAFA7FDF3FFCA",
+        "displayName": "eT-proxy",
+        "discoveredName": "eT-proxy",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-2BBED3AC0BB98104"
+            ]
+        },
+        "toRelationships": {
+            "isSiteOf": [
+                "VMWARE_DATACENTER-653D9C2020EE42A0"
+            ]
+        },
+        "osType": "LINUX",
+        "ipAddresses": [
+            "192.168.238.130"
+        ]
+    },
+    {
+        "entityId": "HOST-FFA6AAFBA2A9AA92",
+        "displayName": "emea-gdn-vc002",
+        "discoveredName": "emea-gdn-vc002",
+        "tags": [],
+        "fromRelationships": {},
+        "toRelationships": {
+            "isSiteOf": [
+                "VMWARE_DATACENTER-653D9C2020EE42A0"
+            ],
+            "isNetworkClientOfHost": [
+                "HOST-2BBED3AC0BB98104"
+            ]
+        },
+        "osType": "LINUX",
+        "ipAddresses": [
+            "192.168.238.142"
+        ]
+    },
+    {
+        "entityId": "HOST-B48023C75A5CD3AB",
+        "displayName": "et-demo-vagrant-master",
+        "customizedName": "et-demo-vagrant-master",
+        "discoveredName": "et-demo-1-vagrant-master",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-B48023C75A5CD3AB",
+                "HOST-530C130D8CD08786",
+                "HOST-F2F4A7F8ACA0FCC5",
+                "HOST-477F34EDC707E86E",
+                "HOST-121B0D9659376951",
+                "HOST-73C48D44CC82E36F",
+                "HOST-7E99E2291EB6BE59",
+                "HOST-20145F50E7698C02"
+            ]
+        },
+        "toRelationships": {
+            "isSiteOf": [
+                "GEOLOC_SITE-95196F3C9A4F4215",
+                "AWS_AVAILABILITY_ZONE-334F93507088AE03"
+            ],
+            "isNetworkClientOfHost": [
+                "HOST-B48023C75A5CD3AB"
+            ],
+            "runsOn": [
+                "PROCESS_GROUP-5B7B162D62AF0CE4",
+                "PROCESS_GROUP-55BB99EBACB51463",
+                "PROCESS_GROUP-B27330900F0E858D",
+                "PROCESS_GROUP-3AD9FB79C914520C",
+                "PROCESS_GROUP-216FDBEF8325B5C6"
+            ]
+        },
+        "osType": "LINUX",
+        "osArchitecture": "X86",
+        "osVersion": "Ubuntu 14.04.5 LTS, Trusty Tahr (kernel 3.13.0-107-generic)",
+        "hypervisorType": "XEN",
+        "ipAddresses": [
+            "10.176.34.155"
+        ]
+    },
+    {
+        "entityId": "HOST-3EC202B44BE81694",
+        "displayName": "pl1l-comp03.maas",
+        "discoveredName": "pl1l-comp03.maas",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-9B3CDCF3A6732BF1"
+            ]
+        },
+        "toRelationships": {
+            "isSiteOf": [
+                "OPENSTACK_REGION-A085B4A484302609"
+            ]
+        },
+        "ipAddresses": [
+            "172.18.160.121"
+        ]
+    },
+    {
+        "entityId": "HOST-525C76FBB5E15ADC",
+        "displayName": "pl1l-comp05.maas",
+        "discoveredName": "pl1l-comp05.maas",
+        "tags": [],
+        "fromRelationships": {
+            "isNetworkClientOfHost": [
+                "HOST-9B3CDCF3A6732BF1"
+            ]
+        },
+        "toRelationships": {
+            "isSiteOf": [
+                "OPENSTACK_REGION-A085B4A484302609"
+            ]
+        },
+        "ipAddresses": [
+            "172.18.160.92"
+        ]
+    }
+]
